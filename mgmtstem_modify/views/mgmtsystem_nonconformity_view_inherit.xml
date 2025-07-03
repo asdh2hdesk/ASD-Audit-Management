@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_mgmtsystem_nonconformity_tree_view_inherit" model="ir.ui.view">
+        <field name="name">mgmtsystem.nonconformity.tree.view.inherit</field>
+        <field name="model">mgmtsystem.nonconformity</field>
+        <field name="inherit_id" ref="mgmtsystem_nonconformity.view_mgmtsystem_nonconformity_tree"/>
+        <field name="arch" type="xml">
+            <!-- <xpath expr="//field[@name='description']" position="replace">
+                <field name="description" widget="html"/>
+            </xpath> -->
+            <xpath expr="//tree" position="replace" >
+                <tree>
+                    <field name="ref" />
+                    <field name="name"/>
+                    <!-- <field name="create_date" /> -->
+                    <!-- <field name="partner_id" /> -->
+                    <field name="description" />
+                    <field name="user_id" />
+                    <field name="responsible_user_id" />
+                    <field name="manager_user_id" />
+                    <field name="system_id" />
+                    <!-- <field name="company_id" groups="base.group_multi_company" /> -->
+                    <field name="stage_id" />
+                </tree>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_mgmtsystem_nonconformity_form_view_inherit" model="ir.ui.view">
+        <field name="name">mgmtsystem.nonconformity.form.view.inherit</field>
+        <field name="model">mgmtsystem.nonconformity</field>
+        <field name="inherit_id" ref="mgmtsystem_nonconformity.view_mgmtsystem_nonconformity_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='description']" position="replace">
+                <field
+                    name="description"
+                    placeholder="Add a description ..."
+                    attrs="{'readonly':[('state','not in',['draft','analysis'])]}"
+                    widget="html"
+                />
+            </xpath>
+            <xpath expr="//field[@name='responsible_user_id']" position="after">
+                <field name="department_id" readonly="1" />
+                <field name="audit_id" />
+            </xpath>
+            <xpath expr="//field[@name='create_date']" position="after">
+                <field name="target_date" />
+                <field name="closing_date" string="Actual Closed Date" attrs="{'invisible': [('closing_date', '=', False)]}"/>
+                <field name="days_since_updated" readonly="1" />
+                <field name="number_of_days_to_open" readonly="1" />
+                <field name="number_of_days_to_close" readonly="1" />
+                <field name="nc_type" readonly="1"/>
+                <field name="audited_department_id" invisible="0" />
+            </xpath>
+
+        </field>
+    </record>
+</odoo>

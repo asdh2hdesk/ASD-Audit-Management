@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Add a button to the mgmtsystem.nonconformity form view -->
+    <record id="audit_revision_data_form_view" model="ir.ui.view">
+        <field name="name">audit.revision.data.form.inherit</field>
+        <field name="model">audit.revision.data</field>
+        <field name="inherit_id" ref="mgmtstem_modify.view_audit_revision_data_form_view"/>
+        <field name="arch" type="xml">
+            <!-- Add the button to the form view -->
+             <xpath expr="//sheet" position="before">
+                <header>
+                    <button name="action_generate_revision_report" string="Download Report"
+                            type="object" class="oe_highlight"/>
+                </header>
+            </xpath>
+        </field>
+    </record>
+</odoo>

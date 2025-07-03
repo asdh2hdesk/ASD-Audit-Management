@@ -1,0 +1,13 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+
+
+access_procedure_format_user,procedure.format.user,model_mgmtsystem_procedure_format_number,proc_format_enhance.group_procedure_format_user,1,1,1,0
+access_procedure_format_manager,procedure.format.manager,model_mgmtsystem_procedure_format_number,proc_format_enhance.group_procedure_format_manager,1,1,1,1
+
+
+access_revision_user,revision.user,model_mgmtsystem_procedure_format_revision,proc_format_enhance.group_procedure_format_user,1,1,1,0
+access_revision_manager,revision.manager,model_mgmtsystem_procedure_format_revision,proc_format_enhance.group_procedure_format_manager,1,1,1,1
+access_approval_config_manager,approval.config.manager,model_procedure_format_approval_config,proc_format_enhance.group_procedure_format_manager,1,1,1,1
+access_approval_config_approver,approval.config.approver,model_procedure_format_approval_config,proc_format_enhance.group_procedure_format_approver,1,1,1,1
+
+

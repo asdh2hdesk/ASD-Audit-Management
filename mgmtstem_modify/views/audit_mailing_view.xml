@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Form View -->
+    <record id="view_audit_target_notification_form" model="ir.ui.view">
+        <field name="name">audit.target.notification.form</field>
+        <field name="model">audit.target.notification</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <!-- <field name="name"/> -->
+                            <field name="audit_id"/>
+                            <field name="reference"/>
+                            <field name="auditor_id"/>
+                        </group>
+                        <group>
+                            <field name="target_date"/>
+                            <field name="days_before"/>
+                            <field name="is_initial_mail_sent" invisible="1"/>
+                            <field name="is_reminder_mail_sent" invisible="1"/>
+                            <field name="user_ids" widget="many2many_tags"/>
+                        </group>
+                    </group>
+                </sheet>
+                <!-- <div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div> -->
+            </form>
+        </field>
+    </record>
+
+    <!-- Tree View -->
+    <record id="view_audit_target_notification_tree" model="ir.ui.view">
+        <field name="name">audit.target.notification.tree</field>
+        <field name="model">audit.target.notification</field>
+        <field name="arch" type="xml">
+            <tree>
+                <!-- <field name="name"/> -->
+                <field name="audit_id"/>
+                <field name="reference"/>
+                <field name="auditor_id"/>
+                <field name="target_date"/>
+                <field name="days_before"/>
+                <field name="user_ids" widget="many2many_tags"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Action -->
+    <record id="action_audit_target_notification" model="ir.actions.act_window">
+        <field name="name">Audit Targets</field>
+        <field name="res_model">audit.target.notification</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Menu -->
+    <menuitem id="menu_audit_target_notification"
+              name="Audit Targets"
+              action="action_audit_target_notification"
+              parent="mgmtstem_modify.menu_smart_audit_root"
+              sequence="3"/>
+</odoo>

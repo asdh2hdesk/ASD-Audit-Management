@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+        <record id="view_mgmtsystem_audit_auditor_tree" model="ir.ui.view">
+            <field name="name">mgmtsystem.audit.auditor.tree</field>
+            <field name="model">mgmtsystem.audit.auditor</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <!-- <field name="user_id" /> -->
+                    <field name="name" string="Auditor Name" />
+                    <field name="audit_id" readonly="1"/>
+                    <field name="audit_ref"/>  
+                    <field name="department_id" string="Auditor Department" readonly="1"/>
+                    <field name="department_ids"  widget="many2many_tags" readonly="1" />
+                    <field name="target_date" readonly="1"/>
+                    <field name="certified_date" readonly="1"/>
+                    <field name="expiry_date" readonly="1"/>
+                    <field name="selected_user_ids" widget="many2many_tags"/>
+                    <field name="state"/>
+                    <field name="login" invisible="1" />
+                    <field name="login_date" invisible="1" />
+                </tree>
+            </field>
+        </record>
+
+
+        <record id="view_mgmtsystem_audit_auditor_form" model="ir.ui.view">
+            <field name="name">mgmtsystem.audit.auditor.form</field>
+            <field name="model">mgmtsystem.audit.auditor</field>
+            <field name="arch" type="xml">
+                <form string="Audit Auditor">
+                    <sheet>
+                        <group>
+                            <group>
+                                <!-- <field name="user_id" /> -->
+                                <field name="name" string="Auditor Name" />
+                                <field name="audit_id" readonly="1" />
+                                <field name="audit_ref"/>   
+                                <field name="department_id" string="Auditor Department" readonly="1"/>
+                                <field name="department_ids"  widget="many2many_tags" readonly="1" />
+                                <field name="target_date" readonly="1" required="1"/>
+                                <field name="certified_date" readonly="1"/>
+                                <field name="expiry_date" readonly="1"/>
+                                <field name="selected_user_ids" widget="many2many_tags" required="1"/>
+                                <field name="login" invisible="1" />
+                                <field name="login_date" invisible="1" />
+                            </group>
+                            <group>
+                                <field name="last_tuv_audit_obs"/>
+                                <field name="last_customer_audit_obs" />
+                                <field name="last_internal_ims_audit_obs"/>   
+                            </group>
+                        </group>
+                        <group>
+                            <field name="deprtmnt_id" required="0"/>
+                            <button class="btn btn-sm btn-info" role="button" name="action_filter_department_lines" string="Toggle Department Filter" type="object" attrs="{'invisible': [('department_id', '=', False)]}"/>
+                            <field name="is_department_filtered" invisible="1"/>
+                        </group>
+                        <notebook>
+                            <page string="Verification Lines" name="verification_lines">
+                                <field name="filtered_line_ids" readonly="0">
+                                    <tree editable="bottom" edit="True" create="False" delete="False">
+                                        <!-- <field name="system_id"/>
+                                        <field name="audit_id" /> -->
+                                        <field name="clause" readonly="1"/>
+                                        <field name="checkpoints" readonly="1"/>
+                                        <field name="department_id" readonly="1" />
+                                        <field name="procedure_id"/>
+                                        <field name="available_format_numbers" invisible="1"/>
+                                        <field name="format_number_ids"  widget="many2many_tags" domain="[('id', 'in', available_format_numbers)]"/>
+                                        <field name="observations"/>
+                                        <field name="criteria"/>
+                                        <field name="objective_evidence"/>
+                                        <field name="evidence_images_ids" widget="many2many_binary" options="{'accepted_file_extensions': 'image/*'}"/>
+                                        <field name="status"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="mgmtsystem_audit_auditor_action" model="ir.actions.act_window">
+            <field name="name">Audit Auditors</field>
+            <field name="res_model">mgmtsystem.audit.auditor</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- Add search view for filtering -->
+        <!-- <record id="view_mgmtsystem_audit_auditor_search" model="ir.ui.view">
+            <field name="name">mgmtsystem.audit.auditor.search</field>
+            <field name="model">mgmtsystem.audit.auditor</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name"/>
+                    <field name="audit_id"/>
+                    <field name="department_id"/>
+                    <separator/>
+                    <filter string="My Audits" name="my_audits" domain="[('user_id', '=', uid)]"/>
+                    <filter string="All Audits" name="all_audits" domain="[]" groups="mgmtsystem.group_mgmtsystem_manager"/>
+                </search>
+            </field>
+        </record> -->
+
+        <!-- Record rule to restrict access based on user_id -->
+        <record id="rule_mgmtsystem_audit_auditor_user" model="ir.rule">
+            <field name="name">Audit Auditor: show only user's own records</field>
+            <field name="model_id" ref="model_mgmtsystem_audit_auditor"/>
+            <field name="domain_force">[('user_id', '=', user.id)]</field>
+            <field name="groups" eval="[(4, ref('mgmtsystem.group_mgmtsystem_auditor'))]"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_unlink" eval="True"/>
+        </record>
+
+        <!-- Record rule for managers to see all records -->
+        <record id="rule_mgmtsystem_audit_auditor_manager" model="ir.rule">
+            <field name="name">Audit Auditor: managers see all records</field>
+            <field name="model_id" ref="model_mgmtsystem_audit_auditor"/>
+            <field name="domain_force">[(1, '=', 1)]</field>
+            <field name="groups" eval="[(4, ref('mgmtsystem.group_mgmtsystem_manager'))]"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_unlink" eval="True"/>
+        </record>
+
+        <menuitem
+            id="mgmtsystem_audit_auditor_menu"
+            action="mgmtsystem_audit_auditor_action"
+            name="Audit Action"
+            parent="mgmtstem_modify.menu_smart_audit_root"
+            sequence="2"
+            groups="mgmtsystem.group_mgmtsystem_manager,mgmtsystem.group_mgmtsystem_auditor"
+        />
+
+
+        <record id="view_mgmtsystem_auditors_page_view_inherited" model="ir.ui.view">
+            <field name="name">mgmtsystem.auditors.page.view.inherited</field>
+            <field name="model">mgmtsystem.audit</field>
+            <field name="inherit_id" ref="mgmtsystem_audit.view_mgmtsystem_audit_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='auditor_user_ids']" position="replace">
+                    <field name="auditors_user_ids" attrs="{'readonly':[('state','=','done')]}">
+                        <tree editable="bottom">
+                            <field name="user_id" readonly="0" string="Auditor Name" required="1"/>
+                            <!-- <field name="name" readonly="0"/> -->
+                            <field name="target_date" required="1"/>
+                            <field name="department_id" readonly="1" string="Auditor Department"/>
+                            <field name="department_ids" widget="many2many_tags" required="1"/>
+                            <!-- <field name="lang" readonly="0"/> -->
+                            <field name="certified_date" readonly="1"/>
+                            <field name="expiry_date" readonly="1"/>
+                            <field name="state"/>
+                            <!-- <field name="login_date" readonly="1"/> -->
+                        </tree>
+                    </field>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="view_mgmt_system_form_view_inherited" model="ir.ui.view">
+            <field name="name">mgmtsystem.form.view.inherited</field>
+            <field name="model">mgmtsystem.system</field>
+            <field name="inherit_id" ref="mgmtsystem.system_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//form" position="replace">
+                     <form string="Management System">
+                        <sheet>
+                            <group>
+                                <field name="name" />
+                                <field name="company_id" groups="base.group_multi_company" />
+                            </group>
+                            <notebook>
+                                <page string="Verification Lines">
+                                        <field
+                                            name="verification_lines_ids" 
+                                            nolabel="1" 
+                                            editable="bottom" 
+                                            >
+                                            <tree editable="bottom">
+                                                <field name="seq" widget="handle"/>
+                                                <field name="clause"/>
+                                                <field name="checkpoints"/>
+                                                <field name="department_id"/>
+                                            </tree>
+                                        </field>
+                                </page>
+                            </notebook>
+                        </sheet>
+                    </form>
+                </xpath>
+            
+            </field>
+        </record>
+
+</odoo>

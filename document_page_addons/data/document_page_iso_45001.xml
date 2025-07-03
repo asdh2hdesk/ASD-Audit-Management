@@ -1,0 +1,1415 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo noupdate="1">
+    <record id="document_page_iso_45001" model="document.page">
+        <field name="name">ISO 45001:2018 Occupational Health and Safety Management Systems</field>
+        <field name="type">category</field>
+        <field name="template">
+            <![CDATA[
+<h1>INTERNATIONAL STANDARD</h1>
+                <h2>ISO 45001</h2>
+                <p>First edition 2018-03-12</p>
+                <h3>Occupational health and safety management systems — Requirements with guidance for use</h3>
+                <p>Systèmes de management de la santé et de la sécurité au travail — Exigences et lignes directrices pour leur utilisation</p>
+                <p>Reference number ISO 45001:2018(E)</p>
+                <p>ISO 45001:2018(E)</p>
+
+                <p><strong>COPYRIGHT PROTECTED DOCUMENT</strong></p>
+                <p>© ISO 2018, Published in Switzerland</p>
+                <p>All rights reserved. Unless otherwise specified, no part of this publication may be reproduced or utilized otherwise in any form or by any means, electronic or mechanical, including photocopying, or posting on the internet or an intranet, without prior written permission. Permission can be requested from either ISO at the address below or ISO’s member body in the country of the requester.</p>
+                <p>ISO copyright office<br>Ch. de Blandonnet 8 • CP 401<br>CH-1214 Vernier, Geneva, Switzerland<br>Tel. +41 22 749 01 11<br>Fax +41 22 749 09 47<br>copyright@iso.org<br>www.iso.org</p>
+
+                <h2>Contents</h2>
+                <p>Page</p>
+                <ul>
+                    <li>Foreword</li>
+                    <li>Introduction</li>
+                    <li>1 Scope</li>
+                    <li>2 Normative references</li>
+                    <li>3 Terms and definitions</li>
+                    <li>4 Context of the organization</li>
+                    <li>4.1 Understanding the organization and its context</li>
+                    <li>4.2 Understanding the needs and expectations of workers and other interested parties</li>
+                    <li>4.3 Determining the scope of the OH&S management system</li>
+                    <li>4.4 OH&S management system</li>
+                    <li>5 Leadership and worker participation</li>
+                    <li>5.1 Leadership and commitment</li>
+                    <li>5.2 OH&S policy</li>
+                    <li>5.3 Organizational roles, responsibilities and authorities</li>
+                    <li>5.4 Consultation and participation of workers</li>
+                    <li>6 Planning</li>
+                    <li>6.1 Actions to address risks and opportunities</li>
+                    <li>6.1.1 General</li>
+                    <li>6.1.2 Hazard identification and assessment of risks and opportunities</li>
+                    <li>6.1.3 Determination of legal requirements and other requirements</li>
+                    <li>6.1.4 Planning action</li>
+                    <li>6.2 OH&S objectives and planning to achieve them</li>
+                    <li>6.2.1 OH&S objectives</li>
+                    <li>6.2.2 Planning to achieve OH&S objectives</li>
+                    <li>7 Support</li>
+                    <li>7.1 Resources</li>
+                    <li>7.2 Competence</li>
+                    <li>7.3 Awareness</li>
+                    <li>7.4 Communication</li>
+                    <li>7.5 Documented information</li>
+                    <li>8 Operation</li>
+                    <li>8.1 Operational planning and control</li>
+                    <li>8.2 Emergency preparedness and response</li>
+                    <li>9 Performance evaluation</li>
+                    <li>9.1 Monitoring, measurement, analysis and performance evaluation</li>
+                    <li>9.2 Internal audit</li>
+                    <li>9.3 Management review</li>
+                    <li>10 Improvement</li>
+                    <li>10.1 General</li>
+                    <li>10.2 Incident, nonconformity and corrective action</li>
+                    <li>10.3 Continual improvement</li>
+                    <li>Annex A (informative) Guidance on the use of this document</li>
+                    <li>Bibliography</li>
+                    <li>Alphabetical index of terms</li>
+                </ul>
+
+                <h2>Foreword</h2>
+                <p>ISO (the International Organization for Standardization) is a worldwide federation of national standards bodies (ISO member bodies). The work of preparing International Standards is normally carried out through ISO technical committees. Each member body interested in a subject for which a technical committee has been established has the right to be represented on that committee. International organizations, governmental and non-governmental, in liaison with ISO, also take part in the work. ISO collaborates closely with the International Electrotechnical Commission (IEC) on all matters of electrotechnical standardization.</p>
+                <p>The procedures used to develop this document and those intended for its further maintenance are described in the ISO/IEC Directives, Part 1. In particular the different approval criteria needed for the different types of ISO documents should be noted. This document was drafted in accordance with the editorial rules of the ISO/IEC Directives, Part 2 (see <a href="http://www.iso.org/directives">www.iso.org/directives</a>).</p>
+                <p>Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. ISO shall not be held responsible for identifying any or all such patent rights. Details of any patent rights identified during the development of the document will be in the Introduction and/or on the ISO list of patent declarations received (see <a href="http://www.iso.org/patents">www.iso.org/patents</a>).</p>
+                <p>Any trade name used in this document is information given for the convenience of users and does not constitute an endorsement.</p>
+                <p>For an explanation on the voluntary nature of standards, the meaning of ISO specific terms and expressions related to conformity assessment, as well as information about ISO’s adherence to the World Trade Organization (WTO) principles in the Technical Barriers to Trade (TBT) see the following URL: <a href="http://www.iso.org/iso/foreword.html">www.iso.org/iso/foreword.html</a>.</p>
+                <p>This document was prepared by Project Committee ISO/PC 283, Occupational health and safety management systems.</p>
+
+                <h2>Introduction</h2>
+                <h3>Background</h3>
+                <p>An organization is responsible for the occupational health and safety of workers and others who can be affected by its activities. This responsibility includes promoting and protecting their physical and mental health.</p>
+                <p>The adoption of an OH&S management system is intended to enable an organization to provide safe and healthy workplaces, prevent work-related injury and ill health, and continually improve its OH&S performance.</p>
+
+                <h3>Aim of an OH&S management system</h3>
+                <p>The purpose of an OH&S management system is to provide a framework for managing OH&S risks and opportunities. The aim and intended outcomes of the OH&S management system are to prevent work-related injury and ill health to workers and to provide safe and healthy workplaces; consequently, it is critically important for the organization to eliminate hazards and minimize OH&S risks by taking effective preventive and protective measures.</p>
+                <p>When these measures are applied by the organization through its OH&S management system, they improve its OH&S performance. An OH&S management system can be more effective and efficient when taking early action to address opportunities for improvement of OH&S performance.</p>
+                <p>Implementing an OH&S management system conforming to this document enables an organization to manage its OH&S risks and improve its OH&S performance. An OH&S management system can assist an organization to fulfil its legal requirements and other requirements.</p>
+
+                <h3>Success factors</h3>
+                <p>The implementation of an OH&S management system is a strategic and operational decision for an organization. The success of the OH&S management system depends on leadership, commitment and participation from all levels and functions of the organization.</p>
+                <p>The implementation and maintenance of an OH&S management system, its effectiveness and its ability to achieve its intended outcomes are dependent on a number of key factors, which can include:</p>
+                <ul>
+                    <li>top management leadership, commitment, responsibilities and accountability;</li>
+                    <li>top management developing, leading and promoting a culture in the organization that supports the intended outcomes of the OH&S management system;</li>
+                    <li>communication;</li>
+                    <li>consultation and participation of workers, and, where they exist, workers’ representatives;</li>
+                    <li>allocation of the necessary resources to maintain it;</li>
+                    <li>OH&S policies, which are compatible with the overall strategic objectives and direction of the organization;</li>
+                    <li>effective process(es) for identifying hazards, controlling OH&S risks and taking advantage of OH&S opportunities;</li>
+                    <li>continual performance evaluation and monitoring of the OH&S management system to improve OH&S performance;</li>
+                    <li>integration of the OH&S management system into the organization’s business processes;</li>
+                    <li>OH&S objectives that align with the OH&S policy and take into account the organization’s hazards, OH&S risks and OH&S opportunities;</li>
+                    <li>compliance with its legal requirements and other requirements.</li>
+                </ul>
+                <p>Demonstration of successful implementation of this document can be used by an organization to give assurance to workers and other interested parties that an effective OH&S management system is in place. Adoption of this document, however, will not in itself guarantee prevention of work-related injury and ill health to workers, provision of safe and healthy workplaces and improved OH&S performance.</p>
+                <p>The level of detail, the complexity, the extent of documented information and the resources needed to ensure the success of an organization’s OH&S management system will depend on a number of factors, such as:</p>
+                <ul>
+                    <li>the organization’s context (e.g. number of workers, size, geography, culture, legal requirements and other requirements);</li>
+                    <li>the scope of the organization’s OH&S management system;</li>
+                    <li>the nature of the organization’s activities and the related OH&S risks.</li>
+                </ul>
+
+                <h3>Plan-Do-Check-Act cycle</h3>
+                <p>The OH&S management system approach applied in this document is founded on the concept of Plan-Do-Check-Act (PDCA).</p>
+                <p>The PDCA concept is an iterative process used by organizations to achieve continual improvement. It can be applied to a management system and to each of its individual elements, as follows:</p>
+                <ul>
+                    <li><strong>Plan</strong>: determine and assess OH&S risks, OH&S opportunities and other risks and other opportunities, establish OH&S objectives and processes necessary to deliver results in accordance with the organization’s OH&S policy;</li>
+                    <li><strong>Do</strong>: implement the processes as planned;</li>
+                    <li><strong>Check</strong>: monitor and measure activities and processes with regard to the OH&S policy and OH&S objectives, and report the results;</li>
+                    <li><strong>Act</strong>: take actions to continually improve the OH&S performance to achieve the intended outcomes.</li>
+                </ul>
+                <p>This document incorporates the PDCA concept into a new framework, as shown in Figure 1.</p>
+                <p><strong>NOTE</strong> The numbers given in brackets refer to the clause numbers in this document.</p>
+                <p><strong>Figure 1 — Relationship between PDCA and the framework in this document</strong></p>
+                <p>[Description: Figure 1 illustrates the PDCA cycle integrated with the clauses of ISO 45001. It typically shows 'Plan' linked to Clauses 4-6, 'Do' to Clause 8, 'Check' to Clause 9, and 'Act' to Clause 10, with Clause 5 (Leadership) overarching the cycle. Since no image is provided, this is a textual representation.]</p>
+
+                <h3>Contents of this document</h3>
+                <p>This document conforms to ISO’s requirements for management system standards. These requirements include a high level structure, identical core text and common terms with core definitions, designed to benefit users implementing multiple ISO management system standards.</p>
+                <p>This document does not include requirements specific to other subjects, such as those for quality, social responsibility, environmental, security or financial management, though its elements can be aligned or integrated with those of other management systems.</p>
+                <p>This document contains requirements that can be used by an organization to implement an OH&S management system and to assess conformity. An organization that wishes to demonstrate conformity to this document can do so by:</p>
+                <ul>
+                    <li>making a self-determination and self-declaration, or</li>
+                    <li>seeking confirmation of its conformity by parties having an interest in the organization, such as customers, or</li>
+                    <li>seeking confirmation of its self-declaration by a party external to the organization, or</li>
+                    <li>seeking certification/registration of its OH&S management system by an external organization.</li>
+                </ul>
+                <p>Clauses 1 to 3 in this document set out the scope, normative references and terms and definitions which apply to the use of this document, while Clauses 4 to 10 contain the requirements to be used to assess conformity to this document. Annex A provides informative explanations to these requirements. The terms and definitions in Clause 3 are arranged in conceptual order, with an alphabetical index provided at the end of this document.</p>
+                <p>In this document, the following verbal forms are used:</p>
+                <ul>
+                    <li>“shall” indicates a requirement;</li>
+                    <li>“should” indicates a recommendation;</li>
+                    <li>“may” indicates a permission;</li>
+                    <li>“can” indicates a possibility or a capability.</li>
+                </ul>
+                <p>Information marked as “NOTE” is for guidance in understanding or clarifying the associated requirement. “Notes to entry” used in Clause 3 provide additional information that supplements the terminological data and can contain provisions relating to the use of a term.</p>
+
+                <h1>INTERNATIONAL STANDARD ISO 45001:2018</h1>
+                <h2>Occupational health and safety management systems — Requirements with guidance for use</h2>
+
+                <h2>1 Scope</h2>
+                <p>This document specifies requirements for an occupational health and safety (OH&S) management system, and gives guidance for its use, to enable organizations to provide safe and healthy workplaces by preventing work-related injury and ill health, as well as by proactively improving its OH&S performance.</p>
+                <p>This document is applicable to any organization that wishes to establish, implement and maintain an OH&S management system to improve occupational health and safety, eliminate hazards and minimize OH&S risks (including system deficiencies), take advantage of OH&S opportunities, and address OH&S management system nonconformities associated with its activities.</p>
+                <p>This document helps an organization to achieve the intended outcomes of its OH&S management system. Consistent with the organization’s OH&S policy, the intended outcomes of an OH&S management system include:</p>
+                <ul>
+                    <li>continual improvement of OH&S performance;</li>
+                    <li>fulfilment of legal requirements and other requirements;</li>
+                    <li>achievement of OH&S objectives.</li>
+                </ul>
+                <p>This document is applicable to any organization regardless of its size, type and activities. It is applicable to the OH&S risks under the organization’s control, taking into account factors such as the context in which the organization operates and the needs and expectations of its workers and other interested parties.</p>
+                <p>This document does not state specific criteria for OH&S performance, nor is it prescriptive about the design of an OH&S management system.</p>
+                <p>This document enables an organization, through its OH&S management system, to integrate other aspects of health and safety, such as worker wellness/wellbeing.</p>
+                <p>This document does not address issues such as product safety, property damage or environmental impacts, beyond the risks to workers and other relevant interested parties.</p>
+                <p>This document can be used in whole or in part to systematically improve occupational health and safety management. However, claims of conformity to this document are not acceptable unless all its requirements are incorporated into an organization’s OH&S management system and fulfilled without exclusion.</p>
+
+                <h2>2 Normative references</h2>
+                <p>There are no normative references in this document.</p>
+
+                <h2>3 Terms and definitions</h2>
+                <p>For the purposes of this document, the following terms and definitions apply.</p>
+                <p>ISO and IEC maintain terminological databases for use in standardization at the following addresses:</p>
+                <ul>
+                    <li>ISO Online browsing platform: available at <a href="https://www.iso.org/obp">https://www.iso.org/obp</a></li>
+                    <li>IEC Electropedia: available at <a href="http://www.electropedia.org/">http://www.electropedia.org/</a></li>
+                </ul>
+
+                <h3>3.1 organization</h3>
+                <p>person or group of people that has its own functions with responsibilities, authorities and relationships to achieve its objectives (3.16)</p>
+                <p><strong>Note 1 to entry:</strong> The concept of organization includes, but is not limited to sole-trader, company, corporation, firm, enterprise, authority, partnership, charity or institution, or part or combination thereof, whether incorporated or not, public or private.</p>
+                <p><strong>Note 2 to entry:</strong> This constitutes one of the common terms and core definitions for ISO management system standards given in Annex SL of the Consolidated ISO Supplement to the ISO/IEC Directives, Part 1.</p>
+
+                <h3>3.2 interested party (preferred term)</h3>
+                <h3>stakeholder (admitted term)</h3>
+                <p>person or organization (3.1) that can affect, be affected by, or perceive itself to be affected by a decision or activity</p>
+                <p><strong>Note 1 to entry:</strong> This constitutes one of the common terms and core definitions for ISO management system standards given in Annex SL of the Consolidated ISO Supplement to the ISO/IEC Directives, Part 1.</p>
+
+                <h3>3.3 worker</h3>
+                <p>person performing work or work-related activities that are under the control of the organization (3.1)</p>
+                <p><strong>Note 1 to entry:</strong> Persons perform work or work-related activities under various arrangements, paid or unpaid, such as regularly or temporarily, intermittently or seasonally, casually or on a part-time basis.</p>
+                <p><strong>Note 2 to entry:</strong> Workers include top management (3.12), managerial and non-managerial persons.</p>
+                <p><strong>Note 3 to entry:</strong> The work or work-related activities performed under the control of the organization may be performed by workers employed by the organization, workers of external providers, contractors, individuals, agency workers, and by other persons to the extent the organization shares control over their work or work-related activities, according to the context of the organization.</p>
+
+                <h3>3.4 participation</h3>
+                <p>involvement in decision-making</p>
+                <p><strong>Note 1 to entry:</strong> Participation includes engaging health and safety committees and workers’ representatives, where they exist.</p>
+
+                <h3>3.5 consultation</h3>
+                <p>seeking views before making a decision</p>
+                <p><strong>Note 1 to entry:</strong> Consultation includes engaging health and safety committees and workers’ representatives, where they exist.</p>
+
+                <h3>3.6 workplace</h3>
+                <p>place under the control of the organization (3.1) where a person needs to be or to go for work purposes</p>
+                <p><strong>Note 1 to entry:</strong> The organization’s responsibilities under the OH&S management system (3.11) for the workplace depend on the degree of control over the workplace.</p>
+
+                <h3>3.7 contractor</h3>
+                <p>external organization (3.1) providing services to the organization in accordance with agreed specifications, terms and conditions</p>
+                <p><strong>Note 1 to entry:</strong> Services may include construction activities, among others.</p>
+
+                <h3>3.8 requirement</h3>
+                <p>need or expectation that is stated, generally implied or obligatory</p>
+                <p><strong>Note 1 to entry:</strong> “Generally implied” means that it is custom or common practice for the organization (3.1) and interested parties (3.2) that the need or expectation under consideration is implied.</p>
+                <p><strong>Note 2 to entry:</strong> A specified requirement is one that is stated, for example in documented information (3.24).</p>
+                <p><strong>Note 3 to entry:</strong> This constitutes one of the common terms and core definitions for ISO management system standards given in Annex SL of the Consolidated ISO Supplement to the ISO/IEC Directives, Part 1.</p>
+
+                <h3>3.9 legal requirements and other requirements</h3>
+                <p>legal requirements that an organization (3.1) has to comply with and other requirements (3.8) that an organization has to or chooses to comply with</p>
+                <p><strong>Note 1 to entry:</strong> For the purposes of this document, legal requirements and other requirements are those relevant to the OH&S management system (3.11).</p>
+                <p><strong>Note 2 to entry:</strong> “Legal requirements and other requirements” include the provisions in collective agreements.</p>
+                <p><strong>Note 3 to entry:</strong> Legal requirements and other requirements include those that determine the persons who are workers’ (3.3) representatives in accordance with laws, regulations, collective agreements and practices.</p>
+
+                <h3>3.10 management system</h3>
+                <p>set of interrelated or interacting elements of an organization (3.1) to establish policies (3.14) and objectives (3.16) and processes (3.25) to achieve those objectives</p>
+                <p><strong>Note 1 to entry:</strong> A management system can address a single discipline or several disciplines.</p>
+                <p><strong>Note 2 to entry:</strong> The system elements include the organization’s structure, roles and responsibilities, planning, operation, performance evaluation and improvement.</p>
+                <p><strong>Note 3 to entry:</strong> The scope of a management system may include the whole of the organization, specific and identified functions of the organization, specific and identified sections of the organization, or one or more functions across a group of organizations.</p>
+                <p><strong>Note 4 to entry:</strong> This constitutes one of the common terms and core definitions for ISO management system standards given in Annex SL of the Consolidated ISO Supplement to the ISO/IEC Directives, Part 1. Note 2 to entry has been modified to clarify some of the wider elements of a management system.</p>
+
+                <h3>3.11 occupational health and safety management system</h3>
+                <h3>OH&S management system</h3>
+                <p>management system (3.10) or part of a management system used to achieve the OH&S policy (3.15)</p>
+                <p><strong>Note 1 to entry:</strong> The intended outcomes of the OH&S management system are to prevent injury and ill health (3.18) to workers (3.3) and to provide safe and healthy workplaces (3.6).</p>
+                <p><strong>Note 2 to entry:</strong> The terms “occupational health and safety” (OH&S) and “occupational safety and health” (OSH) have the same meaning.</p>
+
+                <h3>3.12 top management</h3>
+                <p>person or group of people who directs and controls an organization (3.1) at the highest level</p>
+                <p><strong>Note 1 to entry:</strong> Top management has the power to delegate authority and provide resources within the organization, provided ultimate responsibility for the OH&S management system (3.11) is retained.</p>
+                <p><strong>Note 2 to entry:</strong> If the scope of the management system (3.10) covers only part of an organization, then top management refers to those who direct and control that part of the organization.</p>
+                <p><strong>Note 3 to entry:</strong> This constitutes one of the common terms and core definitions for ISO management system standards given in Annex SL of the Consolidated ISO Supplement to the ISO/IEC Directives, Part 1. Note 1 to entry has been modified to clarify the responsibility of top management in relation to an OH&S management system.</p>
+
+                <h3>3.13 effectiveness</h3>
+                <p>extent to which planned activities are realized and planned results achieved</p>
+                <p><strong>Note 1 to entry:</strong> This constitutes one of the common terms and core definitions for ISO management system standards given in Annex SL of the Consolidated ISO Supplement to the ISO/IEC Directives, Part 1.</p>
+
+                <h3>3.14 policy</h3>
+                <p>intentions and direction of an organization (3.1), as formally expressed by its top management (3.12)</p>
+                <p-phrase><strong>Note 1 to entry:</strong> This constitutes one of the common terms and core definitions for ISO management system standards given in Annex SL of the Consolidated ISO Supplement to the ISO/IEC Directives, Part 1.</p>
+
+                <h3>3.15 occupational health and safety policy</h3>
+                <h3>OH&S policy</h3>
+                <p>policy (3.14) to prevent work-related injury and ill health (3.18) to workers (3.3) and to provide safe and healthy workplaces (3.6)</p>
+
+                <h3>3.16 objective</h3>
+                <p>result to be achieved</p>
+                <p><strong>Note 1 to entry:</strong> An objective can be strategic, tactical, or operational.</p>
+                <p><strong>Note 2 to entry:</strong> Objectives can relate to different disciplines (such as financial, health and safety, and environmental goals) and can apply at different levels (such as strategic, organization-wide, project, product and process (3.25)).</p>
+                <p><strong>Note 3 to entry:</strong> An objective can be expressed in other ways, e.g. as an intended outcome, a purpose, an operational criterion, as an OH&S objective (3.17), or by the use of other words with similar meaning (e.g. aim, goal, or target).</p>
+                <p><strong>Note 4 to entry:</strong> This constitutes one of the common terms and core definitions for ISO management system standards given in Annex SL of the Consolidated ISO Supplement to the ISO/IEC Directives, Part 1. The original Note 4 to entry has been deleted as the term “OH&S objective” has been defined separately in 3.17.</p>
+
+                <h3>3.17 occupational health and safety objective</h3>
+                <h3>OH&S objective</h3>
+                <p>objective (3.16) set by the organization (3.1) to achieve specific results consistent with the OH&S policy (3.15)</p>
+
+                <h3>3.18 injury and ill health</h3>
+                <p>adverse effect on the physical, mental or cognitive condition of a person</p>
+                <p><strong>Note 1 to entry:</strong> These adverse effects include occupational disease, illness and death.</p>
+                <p><strong>Note 2 to entry:</strong> The term “injury and ill health” implies the presence of injury or ill health, either on their own or in combination.</p>
+
+                <h3>3.19 hazard</h3>
+                <p>source with a potential to cause injury and ill health (3.18)</p>
+                <p><strong>Note 1 to entry:</strong> Hazards can include sources with the potential to cause harm or hazardous situations, or circumstances with the potential for exposure leading to injury and ill health.</p>
+
+                <h3>3.20 risk</h3>
+                <p>effect of uncertainty</p>
+                <p><strong>Note 1 to entry:</strong> An effect is a deviation from the expected — positive or negative.</p>
+                <p><strong>Note 2 to entry:</strong> Uncertainty is the state, even partial, of deficiency of information related to, understanding or knowledge of, an event, its consequence, or likelihood.</p>
+                <p><strong>Note 3 to entry:</strong> Risk is often characterized by reference to potential “events” (as defined in ISO Guide 73:2009, 3.5.1.3) and “consequences” (as defined in ISO Guide 73:2009, 3.6.1.3), or a combination of these.</p>
+                <p><strong>Note 4 to entry:</strong> Risk is often expressed in terms of a combination of the consequences of an event (including changes in circumstances) and the associated “likelihood” (as defined in ISO Guide 73:2009, 3.6.1.1) of occurrence.</p>
+                <p><strong>Note 5 to entry:</strong> In this document, where the term “risks and opportunities” is used this means OH&S risks (3.21), OH&S opportunities (3.22) and other risks and other opportunities for the management system.</p>
+                <p><strong>Note 6 to entry:</strong> This constitutes one of the common terms and core definitions for ISO management system standards given in Annex SL of the Consolidated ISO Supplement to the ISO/IEC Directives, Part 1. Note 5 to entry has been added to clarify the term “risks and opportunities” for its use within this document.</p>
+
+                <h3>3.21 occupational health and safety risk</h3>
+                <h3>OH&S risk</h3>
+                <p>combination of the likelihood of occurrence of a work-related hazardous event(s) or exposure(s) and the severity of injury and ill health (3.18) that can be caused by the event(s) or exposure(s)</p>
+
+                <h3>3.22 occupational health and safety opportunity</h3>
+                <h3>OH&S opportunity</h3>
+                <p>circumstance or set of circumstances that can lead to improvement of OH&S performance (3.28)</p>
+
+                <h3>3.23 competence</h3>
+                <p>ability to apply knowledge and skills to achieve intended results</p>
+                <p><strong>Note 1 to entry:</strong> This constitutes one of the common terms and core definitions for ISO management system standards given in Annex SL of the Consolidated ISO Supplement to the ISO/IEC Directives, Part 1.</p>
+
+                <h3>3.24 documented information</h3>
+                <p>information required to be controlled and maintained by an organization (3.1) and the medium on which it is contained</p>
+                <p><strong>Note 1 to entry:</strong> Documented information can be in any format and media, and from any source.</p>
+                <p><strong>Note 2 to entry:</strong> Documented information can refer to:</p>
+                <ul>
+                    <li>the management system (3.10), including related processes (3.25);</li>
+                    <li>information created in order for the organization to operate (documentation);</li>
+                    <li>evidence of results achieved (records).</li>
+                </ul>
+                <p><strong>Note 3 to entry:</strong> This constitutes one of the common terms and core definitions for ISO management system standards given in Annex SL of the Consolidated ISO Supplement to the ISO/IEC Directives, Part 1.</p>
+
+                <h3>3.25 process</h3>
+                <p>set of interrelated or interacting activities which transforms inputs into outputs</p>
+                <p><strong>Note 1 to entry:</strong> This constitutes one of the common terms and core definitions for ISO management system standards given in Annex SL of the Consolidated ISO Supplement to the ISO/IEC Directives, Part 1.</p>
+
+                <h3>3.26 procedure</h3>
+                <p>specified way to carry out an activity or a process (3.25)</p>
+                <p><strong>Note 1 to entry:</strong> Procedures may be documented or not.</p>
+                <p>[SOURCE: ISO 9000:2015, 3.4.5, modified — Note 1 to entry has been modified.]</p>
+
+                <h3>3.27 performance</h3>
+                <p>measurable result</p>
+                <p><strong>Note 1 to entry:</strong> Performance can relate either to quantitative or qualitative findings. Results can be determined and evaluated by qualitative or quantitative methods.</p>
+                <p><strong>Note 2 to entry:</strong> Performance can relate to the management of activities, processes (3.25), products (including services), systems or organizations (3.1).</p>
+                <p><strong>Note 3 to entry:</strong> This constitutes one of the common terms and core definitions for ISO management system standards given in Annex SL of the Consolidated ISO Supplement to the ISO/IEC Directives, Part 1. Note 1 to entry has been modified to clarify the types of methods that may be used for determining and evaluating results.</p>
+
+                <h3>3.28 occupational health and safety performance</h3>
+                <h3>OH&S performance</h3>
+                <p>performance (3.27) related to the effectiveness (3.13) of the prevention of injury and ill health (3.18) to workers (3.3) and the provision of safe and healthy workplaces (3.6)</p>
+
+                <h3>3.29 outsource, verb</h3>
+                <p>make an arrangement where an external organization (3.1) performs part of an organization’s function or process (3.25)</p>
+                <p><strong>Note 1 to entry:</strong> An external organization is outside the scope of the management system (3.10), although the outsourced function or process is within the scope.</p>
+                <p><strong>Note 2 to entry:</strong> This constitutes one of the common terms and core definitions for ISO management system standards given in Annex SL of the Consolidated ISO Supplement to the ISO/IEC Directives, Part 1.</p>
+
+                <h3>3.30 monitoring</h3>
+                <p>determining the status of a system, a process (3.25) or an activity</p>
+                <p><strong>Note 1 to entry:</strong> To determine the status, there may be a need to check, supervise or critically observe.</p>
+                <p><strong>Note 2 to entry:</strong> This constitutes one of the common terms and core definitions for ISO management system standards given in Annex SL of the Consolidated ISO Supplement to the ISO/IEC Directives, Part 1.</p>
+
+                <h3>3.31 measurement</h3>
+                <p>process (3.25) to determine a value</p>
+                <p><strong>Note 1 to entry:</strong> This constitutes one of the common terms and core definitions for ISO management system standards given in Annex SL of the Consolidated ISO Supplement to the ISO/IEC Directives, Part 1.</p>
+
+                <h3>3.32 audit</h3>
+                <p>systematic, independent and documented process (3.25) for obtaining audit evidence and evaluating it objectively to determine the extent to which the audit criteria are fulfilled</p>
+                <p><strong>Note 1 to entry:</strong> An audit can be an internal audit (first party) or an external audit (second party or third party), and it can be a combined audit (combining two or more disciplines).</p>
+                <p><strong>Note 2 to entry:</strong> An internal audit is conducted by the organization (3.1) itself, or by an external party on its behalf.</p>
+                <p><strong>Note 3 to entry:</strong> “Audit evidence” and “audit criteria” are defined in ISO 19011.</p>
+                <p><strong>Note 4 to entry:</strong> This constitutes one of the common terms and core definitions for ISO management system standards given in Annex SL of the Consolidated ISO Supplement to the ISO/IEC Directives, Part 1.</p>
+
+                <h3>3.33 conformity</h3>
+                <p>fulfilment of a requirement (3.8)</p>
+                <p><strong>Note 1 to entry:</strong> This constitutes one of the common terms and core definitions for ISO management system standards given in Annex SL of the Consolidated ISO Supplement to the ISO/IEC Directives, Part 1.</p>
+
+                <h3>3.34 nonconformity</h3>
+                <p>non-fulfilment of a requirement (3.8)</p>
+                <p><strong>Note 1 to entry:</strong> Nonconformity relates to requirements in this document and additional OH&S management system (3.11) requirements that an organization (3.1) establishes for itself.</p>
+                <p><strong>Note 2 to entry:</strong> This constitutes one of the common terms and core definitions for ISO management system standards given in Annex SL of the Consolidated ISO Supplement to the ISO/IEC Directives, Part 1. Note 1 to entry has been added to clarify the relationship of nonconformities to the requirements of this document and to the organization’s own requirements for its OH&S management system.</p>
+
+                <h3>3.35 incident</h3>
+                <p>occurrence arising out of, or in the course of, work that could or does result in injury and ill health (3.18)</p>
+                <p><strong>Note 1 to entry:</strong> An incident where injury and ill health occurs is sometimes referred to as an “accident”.</p>
+                <p><strong>Note 2 to entry:</strong> An incident where no injury and ill health occurs, but has the potential to do so, may be referred to as a “near-miss”, “near-hit” or “close call”.</p>
+                <p><strong>Note 3 to entry:</strong> Although there can be one or more nonconformities (3.34) related to an incident, an incident can also occur where there is no nonconformity.</p>
+
+                <h3>3.36 corrective action</h3>
+                <p>action to eliminate the cause(s) of a nonconformity (3.34) or an incident (3.35) and to prevent recurrence</p>
+                <p><strong>Note 1 to entry:</strong> This constitutes one of the common terms and core definitions for ISO management system standards given in Annex SL of the Consolidated ISO Supplement to the ISO/IEC Directives, Part 1. The definition has been modified to include reference to “incident”, as incidents are a key factor in occupational health and safety, yet the activities needed for resolving them are the same as for nonconformities, through corrective action.</p>
+
+                <h3>3.37 continual improvement</h3>
+                <p>recurring activity to enhance performance (3.27)</p>
+                <p><strong>Note 1 to entry:</strong> Enhancing performance relates to the use of the OH&S management system (3.11) in order to achieve improvement in overall OH&S performance (3.28) consistent with the OH&S policy (3.15) and OH&S objectives (3.17).</p>
+                <p><strong>Note 2 to entry:</strong> Continual does not mean continuous, so the activity does not need to take place in all areas simultaneously.</p>
+                <p><strong>Note 3 to entry:</strong> This constitutes one of the common terms and core definitions for ISO management system standards given in Annex SL of the Consolidated ISO Supplement to the ISO/IEC Directives, Part 1. Note 1 to entry has been added to clarify the meaning of “performance” in the context of an OH&S management system; Note 2 to entry has been added to clarify the meaning of “continual”.</p>
+
+                <h2>4 Context of the organization</h2>
+                <h3>4.1 Understanding the organization and its context</h3>
+                <p>The organization shall determine external and internal issues that are relevant to its purpose and that affect its ability to achieve the intended outcome(s) of its OH&S management system.</p>
+
+                <h3>4.2 Understanding the needs and expectations of workers and other interested parties</h3>
+                <p>The organization shall determine:</p>
+                <ul>
+                    <li>the other interested parties, in addition to workers, that are relevant to the OH&S management system;</li>
+                    <li>the relevant needs and expectations (i.e. requirements) of workers and other interested parties;</li>
+                    <li>which of these needs and expectations are, or could become, legal requirements and other requirements.</li>
+                </ul>
+
+                <h3>4.3 Determining the scope of the OH&S management system</h3>
+                <p>The organization shall determine the boundaries and applicability of the OH&S management system to establish its scope.</p>
+                <p>When determining this scope, the organization shall:</p>
+                <ul>
+                    <li>consider the external and internal issues referred to in 4.1;</li>
+                    <li>take into account the requirements referred to in 4.2;</li>
+                    <li>take into account the planned or performed work-related activities.</li>
+                </ul>
+                <p>The OH&S management system shall include the activities, products and services within the organization’s control or influence that can impact the organization’s OH&S performance.</p>
+                <p>The scope shall be available as documented information.</p>
+
+                <h3>4.4 OH&S management system</h3>
+                <p>The organization shall establish, implement, maintain and continually improve an OH&S management system, including the processes needed and their interactions, in accordance with the requirements of this document.</p>
+
+                <h2>5 Leadership and worker participation</h2>
+                <h3>5.1 Leadership and commitment</h3>
+                <p>Top management shall demonstrate leadership and commitment with respect to the OH&S management system by:</p>
+                <ul>
+                    <li>taking overall responsibility and accountability for the prevention of work-related injury and ill health, as well as the provision of safe and healthy workplaces and activities;</li>
+                    <li>ensuring that the OH&S policy and related OH&S objectives are established and are compatible with the strategic direction of the organization;</li>
+                    <li>ensuring the integration of the OH&S management system requirements into the organization’s business processes;</li>
+                    <li>ensuring that the resources needed to establish, implement, maintain and improve the OH&S management system are available;</li>
+                    <li>communicating the importance of effective OH&S management and of conforming to the OH&S management system requirements;</li>
+                    <li>ensuring that the OH&S management system achieves its intended outcome(s);</li>
+                    <li>directing and supporting persons to contribute to the effectiveness of the OH&S management system;</li>
+                    <li>ensuring and promoting continual improvement;</li>
+                    <li>supporting other relevant management roles to demonstrate their leadership as it applies to their areas of responsibility;</li>
+                    <li>developing, leading and promoting a culture in the organization that supports the intended outcomes of the OH&S management system;</li>
+                    <li>protecting workers from reprisals when reporting incidents, hazards, risks and opportunities;</li>
+                    <li>ensuring the organization establishes and implements a process(es) for consultation and participation of workers (see 5.4);</li>
+                    <li>supporting the establishment and functioning of health and safety committees, [see 5.4 e) 1)].</li>
+                </ul>
+                <p><strong>NOTE</strong> Reference to “business” in this document can be interpreted broadly to mean those activities that are core to the purposes of the organization’s existence.</p>
+
+                <h3>5.2 OH&S policy</h3>
+                <p>Top management shall establish, implement and maintain an OH&S policy that:</p>
+                <ul>
+                    <li>includes a commitment to provide safe and healthy working conditions for the prevention of work-related injury and ill health and is appropriate to the purpose, size and context of the organization and to the specific nature of its OH&S risks and OH&S opportunities;</li>
+                    <li>provides a framework for setting the OH&S objectives;</li>
+                    <li>includes a commitment to fulfil legal requirements and other requirements;</li>
+                    <li>includes a commitment to eliminate hazards and reduce OH&S risks (see 8.1.2);</li>
+                    <li>includes a commitment to continual improvement of the OH&S management system;</li>
+                    <li>includes a commitment to consultation and participation of workers, and, where they exist, workers’ representatives.</li>
+                </ul>
+                <p>The OH&S policy shall:</p>
+                <ul>
+                    <li>be available as documented information;</li>
+                    <li>be communicated within the organization;</li>
+                    <li>be available to interested parties, as appropriate;</li>
+                    <li>be relevant and appropriate.</li>
+                </ul>
+
+                <h3>5.3 Organizational roles, responsibilities and authorities</h3>
+                <p>Top management shall ensure that the responsibilities and authorities for relevant roles within the OH&S management system are assigned and communicated at all levels within the organization and maintained as documented information. Workers at each level of the organization shall assume responsibility for those aspects of the OH&S management system over which they have control.</p>
+                <p><strong>NOTE</strong> While responsibility and authority can be assigned, ultimately top management is still accountable for the functioning of the OH&S management system.</p>
+                <p>Top management shall assign the responsibility and authority for:</p>
+                <ul>
+                    <li>ensuring that the OH&S management system conforms to the requirements of this document;</li>
+                    <li>reporting on the performance of the OH&S management system to top management.</li>
+                </ul>
+
+                <h3>5.4 Consultation and participation of workers</h3>
+                <p>The organization shall establish, implement and maintain a process(es) for consultation and participation of workers at all applicable levels and functions, and, where they exist, workers’ representatives, in the development, planning, implementation, performance evaluation and actions for improvement of the OH&S management system.</p>
+                <p>The organization shall:</p>
+                <ul>
+                    <li>provide mechanisms, time, training and resources necessary for consultation and participation;</li>
+                    <li><strong>NOTE 1</strong> Worker representation can be a mechanism for consultation and participation.</li>
+                    <li>provide timely access to clear, understandable and relevant information about the OH&S management system;</li>
+                    <li>determine and remove obstacles or barriers to participation and minimize those that cannot be removed;</li>
+                    <li><strong>NOTE 2</strong> Obstacles and barriers can include failure to respond to worker inputs or suggestions, language or literacy barriers, reprisals or threats of reprisals and policies or practices that discourage or penalize worker participation.</li>
+                    <li>emphasize the consultation of non-managerial workers on the following:</li>
+                    <ul>
+                        <li>determining the needs and expectations of interested parties (see 4.2);</li>
+                        <li>establishing the OH&S policy (see 5.2);</li>
+                        <li>assigning organizational roles, responsibilities and authorities, as applicable (see 5.3);</li>
+                        <li>determining how to fulfil legal requirements and other requirements (see 6.1.3);</li>
+                        <li>establishing OH&S objectives and planning to achieve them (see 6.2);</li>
+                        <li>determining applicable controls for outsourcing, procurement and contractors (see 8.1.4);</li>
+                        <li>determining what needs to be monitored, measured and evaluated (see 9.1);</li>
+                        <li>planning, establishing, implementing and maintaining an audit programme(s) (see 9.2.2);</li>
+                        <li>ensuring continual improvement (see 10.3);</li>
+                    </ul>
+                    <li>emphasize the participation of non-managerial workers in the following:</li>
+                    <ul>
+                        <li>determining the mechanisms for their consultation and participation;</li>
+                        <li>identifying hazards and assessing risks and opportunities (see 6.1.1 and 6.1.2);</li>
+                        <li>determining actions to eliminate hazards and reduce OH&S risks (see 6.1.4);</li>
+                        <li>determining competence requirements, training needs, training and evaluating training (see 7.2);</li>
+                        <li>determining what needs to be communicated and how this will be done (see 7.4);</li>
+                        <li>determining control measures and their effective implementation and use (see 8.1, 8.1.3 and 8.2);</li>
+                        <li>investigating incidents and nonconformities and determining corrective actions (see 10.2).</li>
+                    </ul>
+                </ul>
+                <p><strong>NOTE 3</strong> Emphasizing the consultation and participation of non-managerial workers is intended to apply to persons carrying out the work activities, but is not intended to exclude, for example, managers who are impacted by work activities or other factors in the organization.</p>
+                <p><strong>NOTE 4</strong> It is recognized that the provision of training at no cost to workers and the provision of training during working hours, where possible, can remove significant barriers to worker participation.</p>
+
+                <h2>6 Planning</h2>
+                <h3>6.1 Actions to address risks and opportunities</h3>
+                <h4>6.1.1 General</h4>
+                <p>When planning for the OH&S management system, the organization shall consider the issues referred to in 4.1 (context), the requirements referred to in 4.2 (interested parties) and 4.3 (the scope of its OH&S management system) and determine the risks and opportunities that need to be addressed to:</p>
+                <ul>
+                    <li>give assurance that the OH&S management system can achieve its intended outcome(s);</li>
+                    <li>prevent, or reduce, undesired effects;</li>
+                    <li>achieve continual improvement.</li>
+                </ul>
+                <p>When determining the risks and opportunities for the OH&S management system and its intended outcomes that need to be addressed, the organization shall take into account:</p>
+                <ul>
+                    <li>hazards (see 6.1.2.1);</li>
+                    <li>OH&S risks and other risks (see 6.1.2.2);</li>
+                    <li>OH&S opportunities and other opportunities (see 6.1.2.3);</li>
+                    <li>legal requirements and other requirements (see 6.1.3).</li>
+                </ul>
+                <p>The organization, in its planning process(es), shall determine and assess the risks and opportunities that are relevant to the intended outcomes of the OH&S management system associated with changes in the organization, its processes or the OH&S management system. In the case of planned changes, permanent or temporary, this assessment shall be undertaken before the change is implemented (see 8.1.3).</p>
+                <p>The organization shall maintain documented information on:</p>
+                <ul>
+                    <li>risks and opportunities;</li>
+                    <li>the process(es) and actions needed to determine and address its risks and opportunities (see 6.1.2 to 6.1.4) to the extent necessary to have confidence that they are carried out as planned.</li>
+                </ul>
+
+                <h4>6.1.2 Hazard identification and assessment of risks and opportunities</h4>
+                <h5>6.1.2.1 Hazard identification</h5>
+                <p>The organization shall establish, implement and maintain a process(es) for hazard identification that is ongoing and proactive. The process(es) shall take into account, but not be limited to:</p>
+                <ul>
+                    <li>how work is organized, social factors (including workload, work hours, victimization, harassment and bullying), leadership and the culture in the organization;</li>
+                    <li>routine and non-routine activities and situations, including hazards arising from:</li>
+                    <ul>
+                        <li>infrastructure, equipment, materials, substances and the physical conditions of the workplace;</li>
+                        <li>product and service design, research, development, testing, production, assembly, construction, service delivery, maintenance and disposal;</li>
+                        <li>human factors;</li>
+                        <li>how the work is performed;</li>
+                    </ul>
+                    <li>past relevant incidents, internal or external to the organization, including emergencies, and their causes;</li>
+                    <li>potential emergency situations;</li>
+                    <li>people, including consideration of:</li>
+                    <ul>
+                        <li>those with access to the workplace and their activities, including workers, contractors, visitors and other persons;</li>
+                        <li>those in the vicinity of the workplace who can be affected by the activities of the organization;</li>
+                        <li>workers at a location not under the direct control of the organization;</li>
+                    </ul>
+                    <li>other issues, including consideration of:</li>
+                    <ul>
+                        <li>the design of work areas, processes, installations, machinery/equipment, operating procedures and work organization, including their adaptation to the needs and capabilities of the workers involved;</li>
+                        <li>situations occurring in the vicinity of the workplace caused by work-related activities under the control of the organization;</li>
+                        <li>situations not controlled by the organization and occurring in the vicinity of the workplace that can cause injury and ill health to persons in the workplace;</li>
+                    </ul>
+                    <li>actual or proposed changes in organization, operations, processes, activities and the OH&S management system (see 8.1.3);</li>
+                    <li>changes in knowledge of, and information about, hazards.</li>
+                </ul>
+
+                <h5>6.1.2.2 Assessment of OH&S risks and other risks to the OH&S management system</h5>
+                <p>The organization shall establish, implement and maintain a process(es) to:</p>
+                <ul>
+                    <li>assess OH&S risks from the identified hazards, while taking into account the effectiveness of existing controls;</li>
+                    <li>determine and assess the other risks related to the establishment, implementation, operation and maintenance of the OH&S management system.</li>
+                </ul>
+                <p>The organization’s methodology(ies) and criteria for the assessment of OH&S risks shall be defined with respect to their scope, nature and timing to ensure they are proactive rather than reactive and are used in a systematic way. Documented information shall be maintained and retained on the methodology(ies) and criteria.</p>
+
+                <h5>6.1.2.3 Assessment of OH&S opportunities and other opportunities for the OH&S management system</h5>
+                <p>The organization shall establish, implement and maintain a process(es) to assess:</p>
+                <ul>
+                    <li>OH&S opportunities to enhance OH&S performance, while taking into account planned changes to the organization, its policies, its processes or its activities and:</li>
+                    <ul>
+                        <li>opportunities to adapt work, work organization and work environment to workers;</li>
+                        <li>opportunities to eliminate hazards and reduce OH&S risks;</li>
+                    </ul>
+                    <li>other opportunities for improving the OH&S management system.</li>
+                </ul>
+                <p><strong>NOTE</strong> OH&S risks and OH&S opportunities can result in other risks and other opportunities for the organization.</p>
+
+                <h4>6.1.3 Determination of legal requirements and other requirements</h4>
+                <p>The organization shall establish, implement and maintain a process(es) to:</p>
+                <ul>
+                    <li>determine and have access to up-to-date legal requirements and other requirements that are applicable to its hazards, OH&S risks and OH&S management system;</li>
+                    <li>determine how these legal requirements and other requirements apply to the organization and what needs to be communicated;</li>
+                    <li>take these legal requirements and other requirements into account when establishing, implementing, maintaining and continually improving its OH&S management system.</li>
+                </ul>
+                <p>The organization shall maintain and retain documented information on its legal requirements and other requirements and shall ensure that it is updated to reflect any changes.</p>
+                <p><strong>NOTE</strong> Legal requirements and other requirements can result in risks and opportunities for the organization.</p>
+
+                <h4>6.1.4 Planning action</h4>
+                <p>The organization shall plan:</p>
+                <ul>
+                    <li>actions to:</li>
+                    <ul>
+                        <li>address these risks and opportunities (see 6.1.2.2 and 6.1.2.3);</li>
+                        <li>address legal requirements and other requirements (see 6.1.3);</li>
+                        <li>prepare for and respond to emergency situations (see 8.2);</li>
+                    </ul>
+                    <li>how to:</li>
+                    <ul>
+                        <li>integrate and implement the actions into its OH&S management system processes or other business processes;</li>
+                        <li>evaluate the effectiveness of these actions.</li>
+                    </ul>
+                </ul>
+                <p>The organization shall take into account the hierarchy of controls (see 8.1.2) and outputs from the OH&S management system when planning to take action.</p>
+                <p>When planning its actions, the organization shall consider best practices, technological options and financial, operational and business requirements.</p>
+
+                <h3>6.2 OH&S objectives and planning to achieve them</h3>
+                <h4>6.2.1 OH&S objectives</h4>
+                <p>The organization shall establish OH&S objectives at relevant functions and levels in order to maintain and continually improve the OH&S management system and OH&S performance (see 10.3).</p>
+                <p>The OH&S objectives shall:</p>
+                <ul>
+                    <li>be consistent with the OH&S policy;</li>
+                    <li>be measurable (if practicable) or capable of performance evaluation;</li>
+                    <li>take into account:</li>
+                    <ul>
+                        <li>applicable requirements;</li>
+                        <li>the results of the assessment of risks and opportunities (see 6.1.2.2 and 6.1.2.3);</li>
+                        <li>the results of consultation with workers (see 5.4) and, where they exist, workers’ representatives;</li>
+                    </ul>
+                    <li>be monitored;</li>
+                    <li>be communicated;</li>
+                    <li>be updated as appropriate.</li>
+                </ul>
+
+                <h4>6.2.2 Planning to achieve OH&S objectives</h4>
+                <p>When planning how to achieve its OH&S objectives, the organization shall determine:</p>
+                <ul>
+                    <li>what will be done;</li>
+                    <li>what resources will be required;</li>
+                    <li>who will be responsible;</li>
+                    <li>when it will be completed;</li>
+                    <li>how the results will be evaluated, including indicators for monitoring;</li>
+                    <li>how the actions to achieve OH&S objectives will be integrated into the organization’s business processes.</li>
+                </ul>
+                <p>The organization shall maintain and retain documented information on the OH&S objectives and plans to achieve them.</p>
+
+                <h2>7 Support</h2>
+                <h3>7.1 Resources</h3>
+                <p>The organization shall determine and provide the resources needed for the establishment, implementation, maintenance and continual improvement of the OH&S management system.</p>
+
+                <h3>7.2 Competence</h3>
+                <p>The organization shall:</p>
+                <ul>
+                    <li>determine the necessary competence of workers that affects or can affect its OH&S performance;</li>
+                    <li>ensure that workers are competent (including the ability to identify hazards) on the basis of appropriate education, training or experience;</li>
+                    <li>where applicable, take actions to acquire and maintain the necessary competence, and evaluate the effectiveness of the actions taken;</li>
+                    <li>retain appropriate documented information as evidence of competence.</li>
+                </ul>
+                <p><strong>NOTE</strong> Applicable actions can include, for example, the provision of training to, the mentoring of, or the re-assignment of currently employed persons, or the hiring or contracting of competent persons.</p>
+
+                <h3>7.3 Awareness</h3>
+                <p>Workers shall be made aware of:</p>
+                <ul>
+                    <li>the OH&S policy and OH&S objectives;</li>
+                    <li>their contribution to the effectiveness of the OH&S management system, including the benefits of improved OH&S performance;</li>
+                    <li>the implications and potential consequences of not conforming to the OH&S management system requirements;</li>
+                    <li>incidents and the outcomes of investigations that are relevant to them;</li>
+                    <li>hazards, OH&S risks and actions determined that are relevant to them;</li>
+                    <li>the ability to remove themselves from work situations that they consider present an imminent and serious danger to their life or health, as well as the arrangements for protecting them from undue consequences for doing so.</li>
+                </ul>
+
+                <h3>7.4 Communication</h3>
+                <h4>7.4.1 General</h4>
+                <p>The organization shall establish, implement and maintain the process(es) needed for the internal and external communications relevant to the OH&S management system, including determining:</p>
+                <ul>
+                    <li>on what it will communicate;</li>
+                    <li>when to communicate;</li>
+                    <li>with whom to communicate:</li>
+                    <ul>
+                        <li>internally among the various levels and functions of the organization;</li>
+                        <li>among contractors and visitors to the workplace;</li>
+                        <li>among other interested parties;</li>
+                    </ul>
+                    <li>how to communicate.</li>
+                </ul>
+                <p>The organization shall take into account diversity aspects (e.g. gender, language, culture, literacy, disability) when considering its communication needs.</p>
+                <p>The organization shall ensure that the views of external interested parties are considered in establishing its communication process(es).</p>
+                <p>When establishing its communication process(es), the organization shall:</p>
+                <ul>
+                    <li>take into account its legal requirements and other requirements;</li>
+                    <li>ensure that OH&S information to be communicated is consistent with information generated within the OH&S management system, and is reliable.</li>
+                </ul>
+                <p>The organization shall respond to relevant communications on its OH&S management system.</p>
+                <p>The organization shall retain documented information as evidence of its communications, as appropriate.</p>
+
+                <h4>7.4.2 Internal communication</h4>
+                <p>The organization shall:</p>
+                <ul>
+                    <li>internally communicate information relevant to the OH&S management system among the various levels and functions of the organization, including changes to the OH&S management system, as appropriate;</li>
+                    <li>ensure its communication process(es) enables workers to contribute to continual improvement.</li>
+                </ul>
+
+                <h4>7.4.3 External communication</h4>
+                <p>The organization shall externally communicate information relevant to the OH&S management system, as established by the organization’s communication process(es) and taking into account its legal requirements and other requirements.</p>
+
+                <h3>7.5 Documented information</h3>
+                <h4>7.5.1 General</h4>
+                <p>The organization’s OH&S management system shall include:</p>
+                <ul>
+                    <li>documented information required by this document;</li>
+                    <li>documented information determined by the organization as being necessary for the effectiveness of the OH&S management system.</li>
+                </ul>
+                <p><strong>NOTE</strong> The extent of documented information for an OH&S management system can differ from one organization to another due to:</p>
+                <ul>
+                    <li>the size of organization and its type of activities, processes, products and services;</li>
+                    <li>the need to demonstrate fulfilment of legal requirements and other requirements;</li>
+                    <li>the complexity of processes and their interactions;</li>
+                    <li>the competence of workers.</li>
+                </ul>
+
+                <h4>7.5.2 Creating and updating</h4>
+                <p>When creating and updating documented information, the organization shall ensure appropriate:</p>
+                <ul>
+                    <li>identification and description (e.g. a title, date, author or reference number);</li>
+                    <li>format (e.g. language, software version, graphics) and media (e.g. paper, electronic);</li>
+                    <li>review and approval for suitability and adequacy.</li>
+                </ul>
+
+                <h4>7.5.3 Control of documented information</h4>
+                <p>Documented information required by the OH&S management system and by this document shall be controlled to ensure:</p>
+                <ul>
+                    <li>it is available and suitable for use, where and when it is needed;</li>
+                    <li>it is adequately protected (e.g. from loss of confidentiality, improper use or loss of integrity).</li>
+                </ul>
+                <p>For the control of documented information, the organization shall address the following activities, as applicable:</p>
+                <ul>
+                    <li>distribution, access, retrieval and use;</li>
+                    <li>storage and preservation, including preservation of legibility;</li>
+                    <li>control of changes (e.g. version control);</li>
+                    <li>retention and disposition.</li>
+                </ul>
+                <p>Documented information of external origin determined by the organization to be necessary for the planning and operation of the OH&S management system shall be identified, as appropriate, and controlled.</p>
+                <p><strong>NOTE 1</strong> Access can imply a decision regarding the permission to view the documented information only, or the permission and authority to view and change the documented information.</p>
+                <p><strong>NOTE 2</strong> Access to relevant documented information includes access by workers, and, where they exist, workers’ representatives.</p>
+
+                <h2>8 Operation</h2>
+                <h3>8.1 Operational planning and control</h3>
+                <h4>8.1.1 General</h4>
+                <p>The organization shall plan, implement, control and maintain the processes needed to meet requirements of the OH&S management system, and to implement the actions determined in Clause 6, by:</p>
+                <ul>
+                    <li>establishing criteria for the processes;</li>
+                    <li>implementing control of the processes in accordance with the criteria;</li>
+                    <li>maintaining and retaining documented information to the extent necessary to have confidence that the processes have been carried out as planned;</li>
+                    <li>adapting work to workers.</li>
+                </ul>
+                <p>At multi-employer workplaces, the organization shall coordinate the relevant parts of the OH&S management system with the other organizations.</p>
+
+                <h4>8.1.2 Eliminating hazards and reducing OH&S risks</h4>
+                <p>The organization shall establish, implement and maintain a process(es) for the elimination of hazards and reduction of OH&S risks using the following hierarchy of controls:</p>
+                <ul>
+                    <li>eliminate the hazard;</li>
+                    <li>substitute with less hazardous processes, operations, materials or equipment;</li>
+                    <li>use engineering controls and reorganization of work;</li>
+                    <li>use administrative controls, including training;</li>
+                    <li>use adequate personal protective equipment.</li>
+                </ul>
+                <p><strong>NOTE</strong> In many countries, legal requirements and other requirements include the requirement that personal protective equipment (PPE) is provided at no cost to workers.</p>
+
+                <h4>8.1.3 Management of change</h4>
+                <p>The organization shall establish a process(es) for the implementation and control of planned temporary and permanent changes that impact OH&S performance, including:</p>
+                <ul>
+                    <li>new products, services and processes, or changes to existing products, services and processes, including:</li>
+                    <ul>
+                        <li>workplace locations and surroundings;</li>
+                        <li>work organization;</li>
+                        <li>working conditions;</li>
+                        <li>equipment;</li>
+                        <li>work force;</li>
+                    </ul>
+                    <li>changes to legal requirements and other requirements;</li>
+                    <li>changes in knowledge or information about hazards and OH&S risks;</li>
+                    <li>developments in knowledge and technology.</li>
+                </ul>
+                <p>The organization shall review the consequences of unintended changes, taking action to mitigate any adverse effects, as necessary.</p>
+                <p><strong>NOTE</strong> Changes can result in risks and opportunities.</p>
+
+                <h4>8.1.4 Procurement</h4>
+                <h5>8.1.4.1 General</h5>
+                <p>The organization shall establish, implement and maintain a process(es) to control the procurement of products and services in order to ensure their conformity to its OH&S management system.</p>
+
+                <h5>8.1.4.2 Contractors</h5>
+                <p>The organization shall coordinate its procurement process(es) with its contractors, in order to identify hazards and to assess and control the OH&S risks arising from:</p>
+                <ul>
+                    <li>the contractors’ activities and operations that impact the organization;</li>
+                    <li>the organization’s activities and operations that impact the contractors’ workers;</li>
+                    <li>the contractors’ activities and operations that impact other interested parties in the workplace.</li>
+                </ul>
+                <p>The organization shall ensure that the requirements of its OH&S management system are met by contractors and their workers. The organization’s procurement process(es) shall define and apply occupational health and safety criteria for the selection of contractors.</p>
+                <p><strong>NOTE</strong> It can be helpful to include the occupational health and safety criteria for the selection of contractors in the contractual documents.</p>
+
+                <h5>8.1.4.3 Outsourcing</h5>
+                <p>The organization shall ensure that outsourced functions and processes are controlled. The organization shall ensure that its outsourcing arrangements are consistent with legal requirements and other requirements and with achieving the intended outcomes of the OH&S management system. The type and degree of control to be applied to these functions and processes shall be defined within the OH&S management system.</p>
+                <p><strong>NOTE</strong> Coordination with external providers can assist an organization to address any impact that outsourcing has on its OH&S performance.</p>
+
+                <h3>8.2 Emergency preparedness and response</h3>
+                <p>The organization shall establish, implement and maintain a process(es) needed to prepare for and respond to potential emergency situations, as identified in 6.1.2.1, including:</p>
+                <ul>
+                    <li>establishing a planned response to emergency situations, including the provision of first aid;</li>
+                    <li>providing training for the planned response;</li>
+                    <li>periodically testing and exercising the planned response capability;</li>
+                    <li>evaluating performance and, as necessary, revising the planned response, including after testing and, in particular, after the occurrence of emergency situations;</li>
+                    <li>communicating and providing relevant information to all workers on their duties and responsibilities;</li>
+                    <li>communicating relevant information to contractors, visitors, emergency response services, government authorities and, as appropriate, the local community;</li>
+                    <li>taking into account the needs and capabilities of all relevant interested parties and ensuring their involvement, as appropriate, in the development of the planned response.</li>
+                </ul>
+                <p>The organization shall maintain and retain documented information on the process(es) and on the plans for responding to potential emergency situations.</p>
+
+                <h2>9 Performance evaluation</h2>
+                <h3>9.1 Monitoring, measurement, analysis and performance evaluation</h3>
+                <h4>9.1.1 General</h4>
+                <p>The organization shall establish, implement and maintain a process(es) for monitoring, measurement, analysis and performance evaluation.</p>
+                <p>The organization shall determine:</p>
+                <ul>
+                    <li>what needs to be monitored and measured, including:</li>
+                    <ul>
+                        <li>the extent to which legal requirements and other requirements are fulfilled;</li>
+                        <li>its activities and operations related to identified hazards, risks and opportunities;</li>
+                        <li>progress towards achievement of the organization’s OH&S objectives;</li>
+                        <li>effectiveness of operational and other controls;</li>
+                    </ul>
+                    <li>the methods for monitoring, measurement, analysis and performance evaluation, as applicable, to ensure valid results;</li>
+                    <li>the criteria against which the organization will evaluate its OH&S performance;</li>
+                    <li>when the monitoring and measuring shall be performed;</li>
+                    <li>when the results from monitoring and measurement shall be analysed, evaluated and communicated.</li>
+                </ul>
+                <p>The organization shall evaluate the OH&S performance and determine the effectiveness of the OH&S management system.</p>
+                <p>The organization shall ensure that monitoring and measuring equipment is calibrated or verified as applicable, and is used and maintained as appropriate.</p>
+                <p><strong>NOTE</strong> There can be legal requirements or other requirements (e.g. national or international standards) concerning the calibration or verification of monitoring and measuring equipment.</p>
+                <p>The organization shall retain appropriate documented information:</p>
+                <ul>
+                    <li>as evidence of the results of monitoring, measurement, analysis and performance evaluation;</li>
+                    <li>on the maintenance, calibration or verification of measuring equipment.</li>
+                </ul>
+
+                <h4>9.1.2 Evaluation of compliance</h4>
+                <p>The organization shall establish, implement and maintain a process(es) for evaluating compliance with legal requirements and other requirements (see 6.1.3).</p>
+                <p>The organization shall:</p>
+                <ul>
+                    <li>determine the frequency and method(s) for the evaluation of compliance;</li>
+                    <li>evaluate compliance and take action if needed (see 10.2);</li>
+                    <li>maintain knowledge and understanding of its compliance status with legal requirements and other requirements;</li>
+                    <li>retain documented information of the compliance evaluation result(s).</li>
+                </ul>
+
+                <h3>9.2 Internal audit</h3>
+                <h4>9.2.1 General</h4>
+                <p>The organization shall conduct internal audits at planned intervals to provide information on whether the OH&S management system:</p>
+                <ul>
+                    <li>conforms to:</li>
+                    <ul>
+                        <li>the organization’s own requirements for its OH&S management system, including the OH&S policy and OH&S objectives;</li>
+                        <li>the requirements of this document;</li>
+                    </ul>
+                    <li>is effectively implemented and maintained.</li>
+                </ul>
+
+                <h4>9.2.2 Internal audit programme</h4>
+                <p>The organization shall:</p>
+                <ul>
+                    <li>plan, establish, implement and maintain an audit programme(s) including the frequency, methods, responsibilities, consultation, planning requirements and reporting, which shall take into consideration the importance of the processes concerned and the results of previous audits;</li>
+                    <li>define the audit criteria and scope for each audit;</li>
+                    <li>select auditors and conduct audits to ensure objectivity and the impartiality of the audit process;</li>
+                    <li>ensure that the results of the audits are reported to relevant managers; ensure that relevant audit results are reported to workers, and, where they exist, workers’ representatives, and other relevant interested parties;</li>
+                    <li>take action to address nonconformities and continually improve its OH&S performance (see Clause 10);</li>
+                    <li>retain documented information as evidence of the implementation of the audit programme and the audit results.</li>
+                </ul>
+                <p><strong>NOTE</strong> For more information on auditing and the competence of auditors, see ISO 19011.</p>
+
+                <h3>9.3 Management review</h3>
+                <p>Top management shall review the organization’s OH&S management system, at planned intervals, to ensure its continuing suitability, adequacy and effectiveness.</p>
+                <p>The management review shall include consideration of:</p>
+                <ul>
+                    <li>the status of actions from previous management reviews;</li>
+                    <li>changes in external and internal issues that are relevant to the OH&S management system, including:</li>
+                    <ul>
+                        <li>the needs and expectations of interested parties;</li>
+                        <li>legal requirements and other requirements;</li>
+                        <li>risks and opportunities;</li>
+                    </ul>
+                    <li>the extent to which the OH&S policy and the OH&S objectives have been met;</li>
+                    <li>information on the OH&S performance, including trends in:</li>
+                    <ul>
+                        <li>incidents, nonconformities, corrective actions and continual improvement;</li>
+                        <li>monitoring and measurement results;</li>
+                        <li>results of evaluation of compliance with legal requirements and other requirements;</li>
+                        <li>audit results;</li>
+                        <li>consultation and participation of workers;</li>
+                        <li>risks and opportunities;</li>
+                    </ul>
+                    <li>adequacy of resources for maintaining an effective OH&S management system;</li>
+                    <li>relevant communication(s) with interested parties;</li>
+                    <li>opportunities for continual improvement.</li>
+                </ul>
+                <p>The outputs of the management review shall include decisions related to:</p>
+                <ul>
+                    <li>the continuing suitability, adequacy and effectiveness of the OH&S management system in achieving its intended outcomes;</li>
+                    <li>continual improvement opportunities;</li>
+                    <li>any need for changes to the OH&S management system;</li>
+                    <li>resources needed;</li>
+                    <li>actions, if needed;</li>
+                    <li>opportunities to improve integration of the OH&S management system with other business processes;</li>
+                    <li>any implications for the strategic direction of the organization.</li>
+                </ul>
+                <p>Top management shall communicate the relevant outputs of management reviews to workers, and, where they exist, workers’ representatives (see 7.4).</p>
+                <p>The organization shall retain documented information as evidence of the results of management reviews.</p>
+
+                <h2>10 Improvement</h2>
+                <h3>10.1 General</h3>
+                <p>The organization shall determine opportunities for improvement (see Clause 9) and implement necessary actions to achieve the intended outcomes of its OH&S management system.</p>
+
+                <h3>10.2 Incident, nonconformity and corrective action</h3>
+                <p>The organization shall establish, implement and maintain a process(es), including reporting, investigating and taking action, to determine and manage incidents and nonconformities.</p>
+                <p>When an incident or a nonconformity occurs, the organization shall:</p>
+                <ul>
+                    <li>react in a timely manner to the incident or nonconformity and, as applicable:</li>
+                    <ul>
+                        <li>take action to control and correct it;</li>
+                        <li>deal with the consequences;</li>
+                    </ul>
+                    <li>evaluate, with the participation of workers (see 5.4) and the involvement of other relevant interested parties, the need for corrective action to eliminate the root cause(s) of the incident or nonconformity, in order that it does not recur or occur elsewhere, by:</li>
+                    <ul>
+                        <li>investigating the incident or reviewing the nonconformity;</li>
+                        <li>determining the cause(s) of the incident or nonconformity;</li>
+                        <li>determining if similar incidents have occurred, if nonconformities exist, or if they could potentially occur;</li>
+                    </ul>
+                    <li>review existing assessments of OH&S risks and other risks, as appropriate (see 6.1);</li>
+                    <li>determine and implement any action needed, including corrective action, in accordance with the hierarchy of controls (see 8.1.2) and the management of change (see 8.1.3);</li>
+                    <li>assess OH&S risks that relate to new or changed hazards, prior to taking action;</li>
+                    <li>review the effectiveness of any action taken, including corrective action;</li>
+                    <li>make changes to the OH&S management system, if necessary.</li>
+                </ul>
+                <p>Corrective actions shall be appropriate to the effects or potential effects of the incidents or nonconformities encountered.</p>
+                <p>The organization shall retain documented information as evidence of:</p>
+                <ul>
+                    <li>the nature of the incidents or nonconformities and any subsequent actions taken;</li>
+                    <li>the results of any action and corrective action, including their effectiveness.</li>
+                </ul>
+                <p>The organization shall communicate this documented information to relevant workers, and, where they exist, workers’ representatives, and other relevant interested parties.</p>
+                <p><strong>NOTE</strong> The reporting and investigation of incidents without undue delay can enable hazards to be eliminated and associated OH&S risks to be minimized as soon as possible.</p>
+
+                <h3>10.3 Continual improvement</h3>
+                <p>The organization shall continually improve the suitability, adequacy and effectiveness of the OH&S management system, by:</p>
+                <ul>
+                    <li>enhancing OH&S performance;</li>
+                    <li>promoting a culture that supports an OH&S management system;</li>
+                    <li>promoting the participation of workers in implementing actions for the continual improvement of the OH&S management system;</li>
+                    <li>communicating the relevant results of continual improvement to workers, and, where they exist, workers’ representatives;</li>
+                    <li>maintaining and retaining documented information as evidence of continual improvement.</p>
+                </ul>
+
+                <h2>Annex A (informative)</h2>
+                <h3>Guidance on the use of this document</h3>
+                <h4>A.1 General</h4>
+                <p>The explanatory information given in this annex is intended to prevent misinterpretation of the requirements contained in this document. While this information addresses and is consistent with these requirements, it is not intended to add to, subtract from, or in any way modify them.</p>
+                <p>The requirements in this document need to be viewed from a systems perspective and should not be taken in isolation, i.e. there can be an interrelationship between the requirements in one clause with the requirements in other clauses.</p>
+
+                <h4>A.2 Normative references</h4>
+                <p>There are no normative references in this document. Users can refer to the documents listed in the Bibliography for further information on OH&S guidelines and other ISO management system standards.</p>
+
+                <h4>A.3 Terms and definitions</h4>
+                <p>In addition to the terms and definitions given in Clause 3, and in order to avoid misunderstanding, clarifications of selected concepts are provided below.</p>
+                <ul>
+                    <li>“Continual” indicates duration that occurs over a period of time, but with intervals of interruption (unlike “continuous”, which indicates duration without interruption). “Continual” is therefore the appropriate word to use in the context of improvement.</li>
+                    <li>The word “consider” means it is necessary to think about but can be excluded, whereas “take into account” means it is necessary to think about but cannot be excluded.</li>
+                    <li>The words “appropriate” and “applicable” are not interchangeable. “Appropriate” means suitable (for, to) and implies some degree of freedom, while “applicable” means relevant or possible to apply and implies that if it can be done, it shall be done.</li>
+                    <li>This document uses the term “interested party”; the term “stakeholder” is a synonym as it represents the same concept.</li>
+                    <li>The word “ensure” means the responsibility can be delegated, but not the accountability to make sure that an action is performed.</li>
+                    <li>“Documented information” is used to include both documents and records. This document uses the phrase “retain documented information as evidence of…” to mean records, and “shall be maintained as documented information” to mean documents, including procedures. The phrase “to retain documented information as evidence of…” is not intended to require that the information retained will meet legal evidentiary requirements. Instead, it is intended to define the type of records that need to be retained.</li>
+                    <li>Activities that are “under the shared control of the organization” are activities for which the organization shares control over the means or methods, or shares direction of the work performed with respect to its OH&S performance, consistent with its legal requirements and other requirements.</li>
+                </ul>
+                <p>Organizations can be subject to requirements related to the OH&S management system that mandate the use of specific terms and their meaning. If these other terms are used, conformity to this document is still required.</p>
+
+                <h4>A.4 Context of the organization</h4>
+                <h5>A.4.1 Understanding the organization and its context</h5>
+                <p>An understanding of the context of an organization is used to establish, implement, maintain and continually improve its OH&S management system. Internal and external issues can be positive or negative and include conditions, characteristics or changing circumstances that can affect the OH&S management system, for example:</p>
+                <ul>
+                    <li>external issues, such as:</li>
+                    <ul>
+                        <li>the cultural, social, political, legal, financial, technological, economic and natural surroundings and market competition, whether international, national, regional or local;</li>
+                        <li>introduction of new competitors, contractors, subcontractors, suppliers, partners and providers, new technologies, new laws and the emergence of new occupations;</li>
+                        <li>new knowledge on products and their effect on health and safety;</li>
+                        <li>key drivers and trends relevant to the industry or sector having impact on the organization;</li>
+                        <li>relationships with, as well as perceptions and values of, its external interested parties;</li>
+                        <li>changes in relation to any of the above;</li>
+                    </ul>
+                    <li>internal issues, such as:</li>
+                    <ul>
+                        <li>governance, organizational structure, roles and accountabilities;</li>
+                        <li>policies, objectives and the strategies that are in place to achieve them;</li>
+                        <li>the capabilities, understood in terms of resources, knowledge and competence (e.g. capital, time, human resources, processes, systems and technologies);</li>
+                        <li>information systems, information flows and decision-making processes (both formal and informal);</li>
+                        <li>introduction of new products, materials, services, tools, software, premises and equipment;</li>
+                        <li>relationships with, as well as perceptions and values of, workers;</li>
+                        <li>the culture in the organization;</li>
+                        <li>standards, guidelines and models adopted by the organization;</li>
+                        <li>the form and extent of contractual relationships, including, for example, outsourced activities;</li>
+                        <li>working time arrangements;</li>
+                        <li>working conditions;</li>
+                        <li>changes in relation to any of the above.</li>
+                    </ul>
+                </ul>
+
+                <h5>A.4.2 Understanding the needs and expectations of workers and other interested parties</h5>
+                <p>Interested parties, in addition to workers, can include:</p>
+                <ul>
+                    <li>legal and regulatory authorities (local, regional, state/provincial, national or international);</li>
+                    <li>parent organizations;</li>
+                    <li>suppliers, contractors and subcontractors;</li>
+                    <li>workers’ representatives;</li>
+                    <li>workers’ organizations (trade unions) and employers’ organizations;</li>
+                    <li>owners, shareholders, clients, visitors, local community and neighbours of the organization and the general public;</li>
+                    <li>customers, medical and other community services, media, academia, business associations and non-governmental organizations (NGOs);</li>
+                    <li>occupational health and safety organizations, occupational safety and health-care professionals.</li>
+                </ul>
+                <p>Some needs and expectations are mandatory; for example, because they have been incorporated into laws and regulations. The organization may also decide to voluntarily agree to, or adopt, other needs and expectations (e.g. subscribing to a voluntary initiative). Once the organization adopts them, they are addressed when planning and establishing the OH&S management system.</p>
+
+                <h5>A.4.3 Determining the scope of the OH&S management system</h5>
+                <p>An organization has the freedom and flexibility to define the boundaries and applicability of the OH&S management system. The boundaries and applicability may include the whole organization, or a specific part(s) of the organization, provided that the top management of that part of the organization has its own functions, responsibilities and authorities for establishing an OH&S management system.</p>
+                <p>The credibility of the organization’s OH&S management system will depend upon the choice of the boundaries. The scope should not be used to exclude activities, products and services that have or can impact the organization’s OH&S performance, or to evade its legal requirements and other requirements. The scope is a factual and representative statement of the organization’s operations included within its OH&S management system boundaries that should not mislead interested parties.</p>
+
+                <h5>A.4.4 OH&S management system</h5>
+                <p>The organization retains the authority, accountability and autonomy to decide how it will fulfil the requirements of this document, including the level of detail and extent to which it:</p>
+                <ul>
+                    <li>establishes one or more processes to have confidence that they are controlled, carried out as planned and achieve the intended outcomes of the OH&S management system;</li>
+                    <li>integrates requirements of the OH&S management system into its various business processes (e.g. design and development, procurement, human resources, sales and marketing).</li>
+                </ul>
+                <p>If this document is implemented for a specific part(s) of an organization, the policies and processes developed by other parts of the organization can be used to meet the requirements of this document, provided that they are applicable to the specific part(s) that will be subject to them and that they conform to the requirements of this document. Examples include corporate OH&S policies, education, training and competency programmes, and procurement controls.</p>
+
+                <h4>A.5 Leadership and worker participation</h4>
+                <h5>A.5.1 Leadership and commitment</h5>
+                <p>Leadership and commitment from the organization’s top management, including awareness, responsiveness, active support and feedback, are critical for the success of the OH&S management system and achievement of its intended outcomes; therefore, top management has specific responsibilities for which they need to be personally involved or which they need to direct.</p>
+                <p>A culture that supports an organization’s OH&S management system is largely determined by top management and is the product of individual and group values, attitudes, managerial practices, perceptions, competencies and patterns of activities that determine the commitment to, and the style and proficiency of, its OH&S management system. It is characterized by, but not limited to, active participation of workers, cooperation and communications founded on mutual trust, shared perceptions of the importance of the OH&S management system by active involvement in detection of OH&S opportunities and confidence in the effectiveness of preventive and protective measures. An important way top management demonstrates leadership is by encouraging workers to report incidents, hazards, risks and opportunities and by protecting workers against reprisals, such as the threat of dismissal or disciplinary action, when they do so.</p>
+
+                <h5>A.5.2 OH&S policy</h5>
+                <p>The OH&S policy is a set of principles stated as commitments in which top management outlines the long-term direction of the organization to support and continually improve its OH&S performance. The OH&S policy provides an overall sense of direction, as well as a framework for the organization to set its objectives and take actions to achieve the intended outcomes of the OH&S management system.</p>
+                <p>These commitments are then reflected in the processes an organization establishes to ensure a robust, credible and reliable OH&S management system (including addressing the specific requirements in this document).</p>
+                <p>The term “minimize” is used in relation to OH&S risks to set out the organization’s aspirations for its OH&S management system. The term “reduce” is used to describe the process to achieve this.</p>
+                <p>In developing its OH&S policy, an organization should consider its consistency and coordination with other policies.</p>
+
+                <h5>A.5.3 Organizational roles, responsibilities and authorities</h5>
+                <p>Those involved in the organization’s OH&S management system should have a clear understanding of their role, responsibility(ies) and authority(ies) for achieving the intended outcomes of the OH&S management system.</p>
+                <p>While top management has overall responsibility and authority for the OH&S management system, every person in the workplace needs to take account not only of their own health and safety, but also the health and safety of others.</p>
+                <p>Top management being accountable means being answerable for decisions and activities to the organization’s governing bodies, legal authorities and, more broadly, its interested parties. It means having ultimate responsibility and relates to the person who is held to account if something is not done, is not done properly, does not work or fails to achieve its objective.</p>
+                <p>Workers should be enabled to report about hazardous situations so that action can be taken. They should be able to report concerns to responsible authorities as required, without the threat of dismissal, disciplinary action or other such reprisals.</p>
+                <p>The specific roles and responsibilities identified in 5.3 may be assigned to an individual, shared by several individuals, or assigned to a member of top management.</p>
+
+                <h5>A.5.4 Consultation and participation of workers</h5>
+                <p>The consultation and participation of workers, and, where they exist, workers’ representatives, can be key factors of success for an OH&S management system and should be encouraged through the processes established by the organization.</p>
+                <p>Consultation implies a two-way communication involving dialogue and exchanges. Consultation involves the timely provision of the information necessary for workers, and, where they exist, workers’ representatives, to give informed feedback to be considered by the organization before making a decision.</p>
+                <p>Participation enables workers to contribute to decision-making processes on OH&S performance measures and proposed changes.</p>
+                <p>Feedback on the OH&S management system is dependent upon worker participation. The organization should ensure workers at all levels are encouraged to report hazardous situations, so that preventive measures can be put in place and corrective action taken.</p>
+                <p>The reception of suggestions will be more effective if workers do not fear the threat of dismissal, disciplinary action or other such reprisals when making them.</p>
+
+                <h4>A.6 Planning</h4>
+                <h5>A.6.1 Actions to address risks and opportunities</h5>
+                <h6>A.6.1.1 General</h6>
+                <p>Planning is not a single event, but an ongoing process, anticipating changing circumstances and continually determining risks and opportunities, both for the workers and for the OH&S management system.</p>
+                <p>Undesired effects can include work-related injury and ill health, noncompliance with legal requirements and other requirements, or damage to reputation.</p>
+                <p>Planning considers the relationships and interactions between the activities and requirements for the management system as a whole.</p>
+                <p>OH&S opportunities address the identification of hazards, how they are communicated, and the analysis and mitigation of known hazards. Other opportunities address system improvement strategies.</p>
+                <p>Examples of opportunities to improve OH&S performance:</p>
+                <ul>
+                    <li>inspection and auditing functions;</li>
+                    <li>job hazard analysis (job safety analysis) and task-related assessments;</li>
+                    <li>improving OH&S performance by alleviating monotonous work or work at a potentially hazardous pre-determined work rate;</li>
+                    <li>permit to work and other recognition and control methods;</li>
+                    <li>incident or nonconformity investigations and corrective actions;</li>
+                    <li>ergonomic and other injury prevention-related assessments.</li>
+                </ul>
+                <p>Examples of other opportunities to improve OH&S performance:</p>
+                <ul>
+                    <li>integrating occupational health and safety requirements at the earliest stage in the life cycle of facilities, equipment or process planning for facilities relocation, process re-design or replacement of machinery and plant;</li>
+                    <li>integrating occupational health and safety requirements at the earliest stage of planning for facilities relocation, process re-design or replacement of machinery and plant;</li>
+                    <li>using new technologies to improve OH&S performance;</li>
+                    <li>improving the occupational health and safety culture, such as by extending competence related to occupational health and safety beyond requirements or encouraging workers to report incidents in a timely manner;</li>
+                    <li>improving the visibility of top management’s support for the OH&S management system;</li>
+                    <li>enhancing the incident investigation process(es);</li>
+                    <li>improving the process(es) for worker consultation and participation;</li>
+                    <li>benchmarking, including consideration of both the organization’s own past performance and that of other organizations;</li>
+                    <li>collaborating in forums that focus on topics dealing with occupational health and safety.</li>
+                </ul>
+
+                <h6>A.6.1.2 Hazard identification and assessment of risks and opportunities</h6>
+                <h6>A.6.1.2.1 Hazard identification</h6>
+                <p>The ongoing proactive identification of hazard begins at the conceptual design stage of any new workplace, facility, product or organization. It should continue as the design is detailed and then comes into operation, as well as being ongoing during its full life cycle to reflect current, changing and future activities.</p>
+                <p>While this document does not address product safety (i.e. safety to end-users of products), hazards to workers occurring during manufacture, construction, assembly or testing of products should be considered.</p>
+                <p>Hazard identification helps the organization recognize and understand the hazards in the workplace and to workers, in order to assess, prioritize and eliminate hazards or reduce OH&S risks.</p>
+                <p>Hazards can be physical, chemical, biological, psychosocial, mechanical, electrical or based on movement and energy.</p>
+                <p>The list given in 6.1.2.1 is not exhaustive.</p>
+                <p><strong>NOTE</strong> The numbering of the following list items a) to f) does not correspond exactly to the numbering of the list items given in 6.1.2.1.</p>
+                <p>The organization’s hazard identification process(es) should consider:</p>
+                <ul>
+                    <li>routine and non-routine activities and situations:</li>
+                    <ul>
+                        <li>routine activities and situations create hazards through day-to-day operations and normal work activities;</li>
+                        <li>non-routine activities and situations are occasional or unplanned;</li>
+                        <li>short-term or long-term activities can create different hazards;</li>
+                    </ul>
+                    <li>human factors:</li>
+                    <ul>
+                        <li>relate to human capabilities, limitations and other characteristics;</li>
+                        <li>information should be applied to tools, machines, systems, activities and environment for safe, comfortable human use;</li>
+                        <li>should address three aspects: the activity, the worker and the organization, and how these interact with and impact on occupational health and safety;</li>
+                    </ul>
+                    <li>new or changed hazards:</li>
+                    <ul>
+                        <li>can arise when work processes are deteriorated, modified, adapted or evolved as a result of familiarity or changing circumstances;</li>
+                        <li>understanding how work is actually performed (e.g. observing and discussing hazards with workers) can identify if OH&S risks are increased or reduced;</li>
+                    </ul>
+                    <li>potential emergency situations:</li>
+                    <ul>
+                        <li>unplanned or unscheduled situations that require an immediate response (e.g. a machine catching fire in the workplace, or a natural disaster in the vicinity of the workplace or at another location where workers are performing work-related activities);</li>
+                        <li>include situations such as civil unrest at a location at which workers are performing work-related activities which requires their urgent evacuation;</li>
+                    </ul>
+                    <li>people:</li>
+                    <ul>
+                        <li>those in the vicinity of the workplace who could be affected by the activities of the organization (e.g. passers-by, contractors or immediate neighbours);</li>
+                        <li>workers at a location not under the direct control of the organization, such as mobile workers or workers who travel to perform work-related activities at another location (e.g. postal workers, bus drivers, service personnel travelling to and working at a customer’s site);</li>
+                        <li>home-based workers, or those who work alone;</li>
+                    </ul>
+                    <li>changes in knowledge of, and information about, hazards:</li>
+                    <ul>
+                        <li>sources of knowledge, information and new understanding about hazards can include published literature, research and development, feedback from workers, and review of the organization’s own operational experience;</li>
+                        <li>these sources can provide new information about the hazards and OH&S risks.</li>
+                    </ul>
+                </ul>
+
+                <h6>A.6.1.2.2 Assessment of OH&S risks and other risks to the OH&S management system</h6>
+                <p>An organization can use different methods to assess OH&S risks as part of its overall strategy for addressing different hazards or activities. The method and complexity of assessment does not depend on the size of the organization, but on the hazards associated with the activities of the organization.</p>
+                <p>Other risks to the OH&S management system should also be assessed using appropriate methods.</p>
+                <p>Processes for the assessment of risk to the OH&S management system should consider day-to-day operations and decisions (e.g. peaks in work flow, restructuring) as well as external issues (e.g. economic change). Methodologies can include ongoing consultation of workers affected by day-to-day activities (e.g. changes in work load), monitoring and communication of new legal requirements and other requirements (e.g. regulatory reform, revisions to collective agreements regarding occupational health and safety), and ensuring resources meet existing and changing needs (e.g. training on, or procurement of, new improved equipment or supplies).</p>
+
+                <h6>A.6.1.2.3 Assessment of OH&S opportunities and other opportunities for the OH&S management system</h6>
+                <p>The process for assessment should consider the OH&S opportunities and other opportunities determined, their benefits and potential to improve OH&S performance.</p>
+
+                <h6>A.6.1.3 Determination of legal requirements and other requirements</h6>
+                <p>Legal requirements can include:</p>
+                <ul>
+                    <li>legislation (national, regional or international), including statutes and regulations;</li>
+                    <li>decrees and directives;</li>
+                    <li>orders issued by regulators;</li>
+                    <li>permits, licences or other forms of authorization;</li>
+                    <li>judgments of courts or administrative tribunals;</li>
+                    <li>treaties, conventions, protocols;</li>
+                    <li>collective bargaining agreements.</li>
+                </ul>
+                <p>Other requirements can include:</p>
+                <ul>
+                    <li>the organization’s requirements;</li>
+                    <li>contractual conditions;</li>
+                    <li>employment agreements;</li>
+                    <li>agreements with interested parties;</li>
+                    <li>agreements with health authorities;</li>
+                    <li>non-regulatory standards, consensus standards and guidelines;</li>
+                    <li>voluntary principles, codes of practice, technical specifications, charters;</li>
+                    <li>public commitments of the organization or its parent organization.</li>
+                </ul>
+
+                <h6>A.6.1.4 Planning action</h6>
+                <p>The actions planned should primarily be managed through the OH&S management system and should involve integration with other business processes, such as those established for the management of the environment, quality, business continuity, risk, financial or human resources. The implementation of the actions taken is expected to achieve the intended outcomes of the OH&S management system.</p>
+                <p>When the assessment of OH&S risks and other risks has identified the need for controls, the planning activity determines how these are implemented in operation (see Clause 8); for example, determining whether to incorporate these controls into work instructions or into actions to improve competence. Other controls can take the form of measuring or monitoring (see Clause 9).</p>
+                <p>Actions to address risks and opportunities should also be considered under the management of change (see 8.1.3) to ensure there are no resulting unintended consequences.</p>
+
+                <h5>A.6.2 OH&S objectives and planning to achieve them</h5>
+                <h6>A.6.2.1 OH&S objectives</h6>
+                <p>Objectives are established to maintain and improve OH&S performance. The objectives should be linked to risks and opportunities and performance criteria which the organization has identified as being necessary for the achievement of the intended outcomes of the OH&S management system.</p>
+                <p>OH&S objectives can be integrated with other business objectives and should be set at relevant functions and levels. Objectives can be strategic, tactical or operational:</p>
+                <ul>
+                    <li>strategic objectives can be set to improve the overall performance of the OH&S management system (e.g. to eliminate noise exposure);</li>
+                    <li>tactical objectives can be set at facility, project or process level (e.g. to reduce noise at source);</li>
+                    <li>operational objectives can be set at the activity level (e.g. the enclosure of individual machines to reduce noise).</li>
+                </ul>
+                <p>The measurement of OH&S objectives can be qualitative or quantitative. Qualitative measures can be approximations, such as those obtained from surveys, interviews and observations. The organization is not required to establish OH&S objectives for every risk and opportunity it determines.</p>
+
+                <h6>A.6.2.2 Planning to achieve OH&S objectives</h6>
+                <p>The organization can plan to achieve objectives individually or collectively. Plans can be developed for multiple objectives where necessary.</p>
+                <p>The organization should examine the resources required (e.g. financial, human, equipment, infrastructure) to achieve its objectives.</p>
+                <p>When practicable, each objective should be associated with an indicator which can be strategic, tactical or operational.</p>
+
+                <h4>A.7 Support</h4>
+                <h5>A.7.1 Resources</h5>
+                <p>Examples of resources include human, natural, infrastructure, technology and financial.</p>
+                <p>Examples of infrastructure include the organization’s buildings, plant, equipment, utilities, information technology and communications systems, and emergency containment systems.</p>
+
+                <h5>A.7.2 Competence</h5>
+                <p>The competence of workers should include the knowledge and skills needed to appropriately identify the hazards and deal with the OH&S risks associated with their work and workplace.</p>
+                <p>In determining the competence for each role, the organization should take into account things such as:</p>
+                <ul>
+                    <li>the education, training, qualification and experience necessary to undertake the role and the re-training necessary to maintain competence;</li>
+                    <li>the work environment;</li>
+                    <li>the preventive and control measures resulting from the risk assessment process(es);</li>
+                    <li>the requirements applicable to the OH&S management system;</li>
+                    <li>legal requirements and other requirements;</li>
+                    <li>the OH&S policy;</li>
+                    <li>the potential consequences of compliance and noncompliance, including the impact on the worker’s health and safety;</li>
+                    <li>the value of participation of workers in the OH&S management system based on their knowledge and skill;</li>
+                    <li>the duties and responsibilities associated with the roles;</li>
+                    <li>individual capabilities, including experience, language skills, literacy and diversity;</li>
+                    <li>the relevant updating of the competence made necessary by context or work changes.</li>
+                </ul>
+                <p>Workers can assist the organization in determining the competence needed for roles.</p>
+                <p>Workers should have the necessary competence to remove themselves from situations of imminent and serious danger. For this purpose, it is important that workers are provided with sufficient training on hazards and risks associated with their work.</p>
+                <p>As appropriate, workers should receive the training required to enable them to carry out their representative functions for occupational health and safety effectively.</p>
+                <p>In many countries, it is a legal requirement to provide training at no cost to workers.</p>
+
+                <h5>A.7.3 Awareness</h5>
+                <p>In addition to workers (especially temporary workers), contractors, visitors and any other parties should be aware of the OH&S risks to which they are exposed.</p>
+
+                <h5>A.7.4 Communication</h5>
+                <p>The communication process(es) established by the organization should provide for the gathering, updating and dissemination of information. It should ensure that relevant information is provided, is received and is understandable to all relevant workers and interested parties.</p>
+
+                <h5>A.7.5 Documented information</h5>
+                <p>It is important to keep the complexity of the documented information at the minimum level possible to ensure effectiveness, efficiency and simplicity at the same time.</p>
+                <p>This should include documented information regarding planning to address legal requirements and other requirements and on evaluations of the effectiveness of these actions.</p>
+                <p>The actions described in 7.5.3 are particularly aimed at preventing unintended use of obsolete documented information.</p>
+                <p>Examples of confidential information include personal and medical information.</p>
+
+                <h4>A.8 Operation</h4>
+                <h5>A.8.1 Operational planning and control</h5>
+                <h6>A.8.1.1 General</h6>
+                <p>Operational planning and control of the processes need to be established and implemented as necessary to enhance occupational health and safety, by eliminating hazards or, if not practicable, by reducing the OH&S risks to levels as low as reasonably practicable for operational areas and activities.</p>
+                <p>Examples of operational control of the processes include:</p>
+                <ul>
+                    <li>the use of procedures and systems of work;</li>
+                    <li>ensuring the competence of workers;</li>
+                    <li>establishing preventive or predictive maintenance and inspection programmes;</li>
+                    <li>specifications for the procurement of goods and services;</li>
+                    <li>application of legal requirements and other requirements, or manufacturers’ instructions for equipment;</li>
+                    <li>engineering and administrative controls;</li>
+                    <li>adapting work to workers; for example, by:</li>
+                    <ul>
+                        <li>defining, or redefining, how the work is organized;</li>
+                        <li>the induction of new workers;</li>
+                        <li>defining, or redefining, processes and working environments;</li>
+                        <li>using ergonomic approaches when designing new, or modifying, workplaces, equipment, etc.</li>
+                    </ul>
+                </ul>
+
+                <h6>A.8.1.2 Eliminating hazards and reducing OH&S risks</h6>
+                <p>The hierarchy of controls is intended to provide a systematic approach to enhance occupational health and safety, eliminate hazards, and reduce or control OH&S risks. Each control is considered less effective than the one before it. It is usual to combine several controls in order to succeed in reducing the OH&S risks to a level that is as low as reasonably practicable.</p>
+                <p>The following examples are given to illustrate measures that can be implemented at each level.</p>
+                <ul>
+                    <li><strong>Elimination:</strong> removing the hazard; stopping using hazardous chemicals; applying ergonomics approaches when planning new workplaces; eliminating monotonous work or work that causes negative stress; removing fork-lift trucks from an area.</li>
+                    <li><strong>Substitution:</strong> replacing the hazardous with less hazardous; changing to answering customer complaints with online guidance; combating OH&S risks at source; adapting to technical progress (e.g. replacing solvent-based paint by water-based paint; changing slippery floor material; lowering voltage requirements for equipment).</li>
+                    <li><strong>Engineering controls, reorganization of work, or both:</strong> isolating people from hazard; implementing collective protective measures (e.g. isolation, machine guarding, ventilation systems); addressing mechanical handling; reducing noise; protecting against falls from height by using guard rails; reorganizing work to avoid people working alone, unhealthy work hours and workload, or to prevent victimization.</li>
+                    <li><strong>Administrative controls including training:</strong> conducting periodic safety equipment inspections; conducting training to prevent bullying and harassment; managing health and safety coordination with subcontractors’ activities; conducting induction training; administrating forklift driving licences; providing instructions on how to report incidents, nonconformities and victimization without fear of retribution; changing the work patterns (e.g. shifts) of workers; managing a health or medical surveillance programme for workers who have been identified as at risk (e.g. related to hearing, hand-arm vibration, respiratory disorders, skin disorders or exposure); giving appropriate instructions to workers (e.g. entry control processes).</li>
+                    <li><strong>Personal protective equipment (PPE):</strong> providing adequate PPE, including clothing and instructions for PPE utilization and maintenance (e.g. safety shoes, safety glasses, hearing protection, gloves).</li>
+                </ul>
+
+                <h6>A.8.1.3 Management of change</h6>
+                <p>The objective of a management of change process is to enhance occupational health and safety at work, by minimizing the introduction of new hazards and OH&S risks into the work environment as changes occur (e.g. with technology, equipment, facilities, work practices and procedures, design specifications, raw materials, staffing, standards or regulations). Depending on the nature of an expected change, the organization can use an appropriate methodology(ies) (e.g. design review) for assessing the OH&S risks and the OH&S opportunities of the change. The need to manage change can be an outcome of planning (see 6.1.4).</p>
+
+                <h5>A.8.1.4 Procurement</h5>
+                <h6>A.8.1.4.1 General</h6>
+                <p>The procurement process(es) should be used to determine, assess and eliminate hazards, and to reduce OH&S risks associated with, for example, products, hazardous materials or substances, raw materials, equipment, or services before their introduction into the workplace.</p>
+                <p>The organization’s procurement process(es) should address requirements including, for example, supplies, equipment, raw materials, and other goods and related services purchased by the organization to conform to the organization’s OH&S management system. The process should also address any needs for consultation (see 5.4) and communication (see 7.4).</p>
+                <p>The organization should verify that equipment, installations and materials are safe for use by workers by ensuring:</p>
+                <ul>
+                    <li>equipment is delivered according to specification and is tested to ensure it works as intended;</li>
+                    <li>installations are commissioned to ensure they function as designed;</li>
+                    <li>materials are delivered according to their specifications;</li>
+                    <li>any usage requirements, precautions or other protective measures are communicated and made available.</li>
+                </ul>
+
+                <h6>A.8.1.4.2 Contractors</h6>
+                <p>The need for coordination recognizes that some contractors (i.e. external providers) possess specialized knowledge, skills, methods and means.</p>
+                <p>Examples of contractor activities and operations include maintenance, construction, operations, security, cleaning and a number of other functions. Contractors can also include consultants or specialists in administrative, accounting and other functions. Assignment of activities to contractors does not eliminate the organization’s responsibility for the occupational health and safety of workers.</p>
+                <p>An organization can achieve coordination of its contractors’ activities through the use of contracts that clearly define the responsibilities of the parties involved. An organization can use a variety of tools for ensuring contractors’ OH&S performance in the workplace (e.g. contract award mechanisms or pre-qualification criteria which consider past health and safety performance, safety training, or health and safety capabilities, as well as direct contract requirements).</p>
+                <p>When coordinating with contractors, the organization should give consideration to the reporting of hazards between itself and its contractors, controlling worker access to hazardous areas, and procedures to follow in emergencies. The organization should specify how the contractor will coordinate its activities with the organization’s own OH&S management system processes (e.g. those used for controlling entry, for confined space entry, exposure assessment and process safety management) and for the reporting of incidents.</p>
+                <p>The organization should verify that contractors are capable of performing their tasks before being allowed to proceed with their work; for example, by verifying that:</p>
+                <ul>
+                    <li>OH&S performance records are satisfactory;</li>
+                    <li>qualification, experience and competence criteria for workers are specified and have been met (e.g. through training);</li>
+                    <li>resources, equipment and work preparations are adequate and ready for the work to proceed.</li>
+                </ul>
+
+                <h6>A.8.1.4.3 Outsourcing</h6>
+                <p>When outsourcing, the organization needs to have control of the outsourced functions and process(es) to achieve the intended outcome(s) of the OH&S management system. In the outsourced functions and process(es), the responsibility for conforming to the requirements of this document is retained by the organization.</p>
+                <p>The organization should establish the extent of control over outsourced function(s) or process(es) based upon factors such as:</p>
+                <ul>
+                    <li>the ability of the external organization to meet the organization’s OH&S management system requirements;</li>
+                    <li>the technical competence of the organization to define appropriate controls or assess the adequacy of controls;</li>
+                    <li>the potential effect the outsourced process or function will have on the organization’s ability to achieve the intended outcome of its OH&S management system;</li>
+                    <li>the extent to which the outsourced process or function is shared;</li>
+                    <li>the capability of the organization to achieve the necessary control through the application of its procurement process;</li>
+                    <li>opportunities for improvement.</li>
+                </ul>
+                <p>In some countries, legal requirements address outsourced functions or processes.</p>
+
+                <h5>A.8.2 Emergency preparedness and response</h5>
+                    <p>Emergency preparedness plans can include natural, technical and man-made events that occur inside and outside normal working hours.</p>
+
+                    <h5>A.9 Performance evaluation</h5>
+                    <h6>A.9.1 Monitoring, measurement, analysis and performance evaluation</h6>
+                    <h6>A.9.1.1 General</h6>
+                    <p>In order to achieve the intended outcomes of the OH&S management system, the processes should be monitored, measured and analysed.</p>
+                    <ul>
+                        <li>Examples of what could be monitored and measured can include, but are not limited to:
+                            <ul>
+                                <li>occupational health complaints, health of workers (through surveillance) and work environment;</li>
+                                <li>work-related incidents, injuries and ill health, and complaints, including trends;</li>
+                                <li>the effectiveness of operational controls and emergency exercises, or the need to modify or introduce new controls;</li>
+                                <li>competence.</li>
+                            </ul>
+                        </li>
+                        <li>Examples of what could be monitored and measured to evaluate the fulfilment of legal requirements can include, but are not limited to:
+                            <ul>
+                                <li>identified legal requirements (e.g. whether all legal requirements have been determined, and whether the organization’s documented information of them is kept up-to-date);</li>
+                                <li>collective agreements (when legally binding);</li>
+                                <li>the status of identified gaps in compliance.</li>
+                            </ul>
+                        </li>
+                        <li>Examples of what could be monitored and measured to evaluate the fulfilment of other requirements can include, but are not limited to:
+                            <ul>
+                                <li>collective agreements (when not legally binding);</li>
+                                <li>standards and codes;</li>
+                                <li>corporate and other policies, rules and regulations;</li>
+                                <li>insurance requirements.</li>
+                            </ul>
+                        </li>
+                        <li>Criteria are what the organization can use to compare its performance against.
+                            <ul>
+                                <li>Examples are benchmarks against:
+                                    <ul>
+                                        <li>other organizations;</li>
+                                        <li>standards and codes;</li>
+                                        <li>the organization’s own codes and objectives;</li>
+                                        <li>OH&S statistics.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>To measure criteria, indicators are typically used; for example:
+                            <ul>
+                                <li>if the criterion is a comparison of incidents, the organization may choose to look at frequency, type, severity or number of incidents; then the indicator could be the determined rate within each one of these criteria;</li>
+                                <li>if the criterion is a comparison of completions of corrective actions, then the indicator could be the percentage completed on time.</li>
+                            </ul>
+                        </li>
+                        <li>Monitoring can involve continual checking, supervising, critically observing or determining the status in order to identify change from the performance level required or expected. Monitoring can be applied to the OH&S management system, to processes or to controls. Examples include the use of interviews, reviews of documented information and observations of work being performed.</li>
+                        <li>Measurement generally involves the assignment of numbers to objects or events. It is the basis for quantitative data and is generally associated with the performance evaluation of safety programmes and health surveillance. Examples include the use of calibrated or verified equipment to measure exposure to a hazardous substance or the calculation of the safe distance from a hazard.</li>
+                        <li>Analysis is the process of examining data to reveal relationships, patterns and trends. This can mean the use of statistical operations, including information from other similar organizations, to help draw conclusions from the data. This process is most often associated with measurement activities.</li>
+                        <li>Performance evaluation is an activity undertaken to determine the suitability, adequacy and effectiveness of the subject matter to achieve the established objectives of the OH&S management system.</li>
+                    </ul>
+
+                    <h6>A.9.1.2 Evaluation of compliance</h6>
+                    <p>The frequency and timing of compliance evaluations can vary depending on the importance of the requirement, variations in operating conditions, changes in legal requirements and other requirements and the organization’s past performance. An organization can use a variety of methods to maintain its knowledge and understanding of its compliance status.</p>
+
+                    <h6>A.9.2 Internal audit</h6>
+                    <p>The extent of the audit programme should be based on the complexity and level of maturity of the OH&S management system.</p>
+                    <p>An organization can establish objectivity and impartiality of the internal audit by creating a process(es) that separates auditors’ roles as internal auditors from their normal assigned duties, or the organization can also use external people for this function.</p>
+
+                    <h6>A.9.3 Management review</h6>
+                    <p>The terms used in relation to management review should be understood as follows:</p>
+                    <ul>
+                        <li>“suitability” refers to how the OH&S management system fits the organization, its operation, its culture and business systems;</li>
+                        <li>“adequacy” refers to whether the OH&S management system is implemented appropriately;</li>
+                        <li>“effectiveness” refers to whether the OH&S management system is achieving the intended outcome.</li>
+                    </ul>
+                    <p>The management review topics listed in 9.3 a) to g) need not be addressed all at once; the organization should determine when and how the management review topics are addressed.</p>
+
+                    <h5>A.10 Improvement</h5>
+                    <h6>A.10.1 General</h6>
+                    <p>The organization should consider the results from analysis and evaluation of OH&S performance, evaluation of compliance, internal audits and management review when taking action to improve.</p>
+                    <p>Examples of improvement include corrective action, continual improvement, breakthrough change, innovation and re-organization.</p>
+
+                    <h6>A.10.2 Incident, nonconformity and corrective action</h6>
+                    <p>Separate processes may exist for incident investigations and nonconformities reviews, or these may be combined as a single process, depending on the organization’s requirements.</p>
+                    <p>Examples of incidents, nonconformities and corrective actions can include, but are not limited to:</p>
+                    <ul>
+                        <li>incidents: same level fall with or without injury; broken leg; asbestosis; hearing loss; damage to buildings or vehicles where they can lead to OH&S risks;</li>
+                        <li>nonconformities: protective equipment not functioning properly; failure to fulfil legal requirements and other requirements; prescribed procedures not being followed;</li>
+                        <li>corrective actions (as indicated by the hierarchy of controls; see 8.1.2): eliminating hazards; substituting with less hazardous materials; redesigning or modifying equipment or tools; developing procedures; improving the competence of affected workers; changing the frequency of use; using personal protective equipment.</li>
+                    </ul>
+                    <p>Root cause analysis refers to the practice of exploring all the possible factors associated with an incident or nonconformity by asking what happened, how it happened and why it happened, to provide the input for what can be done to prevent it from happening again.</p>
+                    <p>When determining the root cause of an incident or nonconformity, the organization should use methods appropriate to the nature of the incident or nonconformity being analysed. The focus of root cause analysis is prevention. This analysis can identify multiple contributory failures, including factors related to communication, competence, fatigue, equipment or procedures.</p>
+                    <p>Reviewing the effectiveness of corrective actions [see 10.2 f)] refers to the extent to which the implemented corrective actions adequately control the root cause(s).</p>
+
+                    <h6>A.10.3 Continual improvement</h6>
+                    <p>Examples of continual improvement issues include, but are not limited to:</p>
+                    <ul>
+                        <li>new technology;</li>
+                        <li>good practices, both internal and external to the organization;</li>
+                        <li>suggestions and recommendations from interested parties;</li>
+                        <li>new knowledge and understanding of occupational health and safety-related issues;</li>
+                        <li>new or improved materials;</li>
+                        <li>changes in worker capabilities or competence;</li>
+                        <li>achieving improved performance with fewer resources (i.e. simplification, streamlining, etc.).</li>
+                    </ul>
+
+                    <h5>Bibliography</h5>
+                    <ol>
+                        <li>ISO 9000:2015, <em>Quality management systems — Fundamentals and vocabulary</em></li>
+                        <li>ISO 9001, <em>Quality management systems — Requirements</em></li>
+                        <li>ISO 14001, <em>Environmental management systems — Requirements with guidance for use</em></li>
+                        <li>ISO 19011, <em>Guidelines for auditing management systems</em></li>
+                        <li>ISO 20400, <em>Sustainable procurement — Guidance</em></li>
+                        <li>ISO 26000, <em>Guidance on social responsibility</em></li>
+                        <li>ISO 31000, <em>Risk management — Guidelines</em></li>
+                        <li>ISO 37500, <em>Guidance on outsourcing</em></li>
+                        <li>ISO 39001, <em>Road traffic safety (RTS) management systems — Requirements with guidance for use</em></li>
+                        <li>ISO Guide 73:2009, <em>Risk management — Vocabulary</em></li>
+                        <li>IEC 31010, <em>Risk management — Risk assessment techniques</em></li>
+                        <li>ILO. <em>Guidelines on occupational safety and health management systems, ILO-OSH 2001.</em> 2nd ed. International Labour Office, Geneva, 2009. Available at: <a href="http://www.ilo.org/safework/info/standards-and-instruments/WCMS_107727/lang--en/index.htm">http://www.ilo.org/safework/info/standards-and-instruments/WCMS_107727/lang--en/index.htm</a></li>
+                        <li>ILO. <em>International Labour Standards (including those on occupational safety and health).</em> International Labour Office, Geneva. Available at: <a href="http://www.ilo.org/normlex">http://www.ilo.org/normlex</a> (click on “instruments”, then “Conventions and Recommendations by subject”)</li>
+                        <li>OHSAS 18001. <em>Occupational health and safety management systems — Requirements.</em> 2nd ed. OHSAS Project Group, London, July 2007, ISBN 978 0 580 50802 8</li>
+                        <li>OHSAS 18002. <em>Occupational health and safety management systems — Guidelines for the implementation of OHSAS 18001:2007.</em> 2nd ed. OHSAS Project Group, London, Nov 2008, ISBN 978 0 580 61674 7</li>
+                    </ol>
+
+                    <h5>Alphabetical index of terms</h5>
+                    <ul>
+                        <li>audit 3.32</li>
+                        <li>competence 3.23</li>
+                        <li>conformity 3.33</li>
+                        <li>consultation 3.5</li>
+                        <li>continual improvement 3.37</li>
+                        <li>contractor 3.7</li>
+                        <li>corrective action 3.36</li>
+                        <li>documented information 3.24</li>
+                        <li>effectiveness 3.13</li>
+                        <li>hazard 3.19</li>
+                        <li>incident 3.35</li>
+                        <li>injury and ill health 3.18</li>
+                        <li>interested party 3.2</li>
+                        <li>legal requirements and other requirements 3.9</li>
+                        <li>management system 3.10</li>
+                        <li>measurement 3.31</li>
+                        <li>monitoring 3.30</li>
+                        <li>nonconformity 3.34</li>
+                        <li>objective 3.16</li>
+                        <li>occupational health and safety management system 3.11</li>
+                        <li>OH&S management system 3.11</li>
+                        <li>occupational health and safety objective 3.17</li>
+                        <li>OH&S objective 3.17</li>
+                        <li>occupational health and safety opportunity 3.22</li>
+                        <li>OH&S opportunity 3.22</li>
+                        <li>occupational health and safety performance 3.28</li>
+                        <li>OH&S performance 3.28</li>
+                        <li>occupational health and safety policy 3.15</li>
+                        <li>OH&S policy 3.15</li>
+                        <li>occupational health and safety risk 3.21</li>
+                        <li>OH&S risk 3.21</li>
+                    </ul>
+            ]]>
+        </field>
+    </record>
+</odoo>

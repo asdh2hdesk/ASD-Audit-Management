@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_mgmtsystem_procedure_format_number_form_inherit" model="ir.ui.view">
+        <field name="name">mgmtsystem.procedure.format.number.form.inherit</field>
+        <field name="model">mgmtsystem.procedure.format.number</field>
+        <field name="inherit_id" ref="mgmtstem_modify.view_mgmtsystem_procedure_format_number_form"/>
+        <field name="arch" type="xml">
+            
+            <xpath expr="//form" position="replace">
+            <form>
+                <header>
+                    <button name="action_request_approval" string="Request Approval" type="object" class="btn-info" states="draft"/>
+                    <button name="action_approve" string="Approve" type="object" class="btn-success" states="pending_approval"/>
+                    <button name="action_release" string="Release" type="object" class="oe_highlight" states="approved"/>
+                    <button name="action_add_revision" string="Add Revision" type="object" class="oe_highlight" states="released"/>
+                    <field name="state" widget="statusbar"/>
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="format_number"/>
+                            <field name="format_name"/>
+                            <field name="procedure_ids" widget="many2many_tags" readonly="1" />
+                            <field name="create_date" readonly="0"/>
+                            <field name="create_uid" readonly="0"/>
+                            <field name="to_be_approved_by" widget="many2many_tags" groups="proc_format_enhance.group_procedure_format_manager"/>
+                        </group>
+                        <group>
+                            <field name="released_date" readonly="0"/>
+                            <field name="released_by" readonly="0"/>
+                            <field name="revision_details" />
+                            <field name="attachment"/>
+                            <field name="approved_by" widget="many2many_tags" readonly="1"/>
+                            <field name="current_revision_id" readonly="1" invisible="1"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Revisions">
+                            <field name="revision_ids">
+                                <tree editable="bottom" create="false" delete="false">
+                                    <field name="format_id" readonly="1"/>
+                                    <field name="revision_number"/>
+                                    <field name="revision_html"/>
+                                    <field name="revision_date"/>
+                                    <field name="revised_by"/>
+                                    <field name="previous_revision_ids" widget="many2many_tags" domain="[('format_id', '=', format_id)]"/>
+                                    <field name="description"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+            </xpath>
+        </field>
+    </record>
+
+
+    <record id="view_mgmtsystem_procedure_format_number_tree_inherit" model="ir.ui.view">
+        <field name="name">mgmtsystem.procedure.format.number.tree.inherit</field>
+        <field name="model">mgmtsystem.procedure.format.number</field>
+        <field name="inherit_id" ref="mgmtstem_modify.view_mgmtsystem_procedure_format_number_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//tree" position="replace">
+                <tree decoration-success="state == 'approved'" decoration-info="state in ['released', 'draft']" decoration-warning="state == 'pending_approval'" decoration-danger="state == 'canceled'">
+                    <field name="format_number"/>
+                    <field name="format_name"/>
+                    <field name="procedure_ids" widget="many2many_tags"/>
+                    <field name="create_date" readonly="0"/>
+                    <field name="create_uid" readonly="0"/>
+                    <field name="released_date" readonly="0"/>
+                    <field name="released_by" readonly="0"/>
+                    <field name="revision_details" />
+                    <field name="state" widget="badge" 
+                    decoration-success="state == 'approved'" decoration-info="state in ['released', 'draft']" decoration-warning="state == 'pending_approval'" decoration-danger="state == 'canceled'"/>
+                </tree>
+            </xpath>
+                
+        </field>
+    </record>
+
+</odoo>

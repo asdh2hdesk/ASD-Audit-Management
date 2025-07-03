@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <menuitem
+        id="mgmtsystem.menu_mgmtsystem_root"
+        name="Smart Audit System"
+        web_icon="mgmtsystem,static/description/icon.png"
+        sequence="150"
+        groups="mgmtsystem.group_mgmtsystem_manager,mgmtsystem.group_mgmtsystem_viewer,mgmtsystem.group_mgmtsystem_auditor"
+    />
+    <menuitem
+            id="menu_smart_audit_root"
+            name="Audit"
+            parent="mgmtsystem.menu_mgmtsystem_root"
+            sequence="-1"
+            groups="mgmtsystem.group_mgmtsystem_manager,mgmtsystem.group_mgmtsystem_auditor"
+
+        />
+
+    <menuitem
+        id="mgmtsystem_audit.menu_open_audit"
+        action="mgmtsystem_audit.open_mgmtsystem_audit_list"
+        name="Audit Plan"
+        parent="menu_smart_audit_root"
+        sequence="1"
+        groups="mgmtsystem.group_mgmtsystem_manager"
+
+    />
+</odoo>

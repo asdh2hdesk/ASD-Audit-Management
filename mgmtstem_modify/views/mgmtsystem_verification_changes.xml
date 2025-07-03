@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+        <!-- Verification Lines Tree View Inherit -->
+
+       <record id="view_mgmtsystem_verification_line_tree_inherited" model="ir.ui.view">
+            <field name="name">mgmtsystem.verification.line.tree.inherited</field>
+            <field name="model">mgmtsystem.verification.line</field>
+            <field name="inherit_id" ref="mgmtsystem_audit.view_mgmtsystem_verification_line_tree"/>
+            <field name="arch" type="xml">
+                <xpath expr="//tree" position="replace">
+                    <tree delete="true" >
+                        <field name="seq" widget="handle"/>
+                        <field name="name" string="Name"/>
+                        <field name="system_id"/>
+                        <field name="audit_id" />
+                        <field name="clause"/>
+                        <field name="checkpoints"/>
+                        <field name="department_id"/>
+                        <field name="observations"/>
+                        <field name="procedure_id"/>
+                        <field name="available_format_numbers" invisible="1"/>
+                        <field name="format_number_ids"  widget="many2many_tags" domain="[('id', 'in', available_format_numbers)]"/>
+                        <field name="criteria"/>
+                        <field name="objective_evidence"/>
+                        <field name="status"/>
+                    </tree>
+                </xpath>
+               
+            </field>
+        </record>
+
+        <!-- Verification Lines Form View Inherit -->
+
+        <record id="view_mgmtsystem_verification_line_form_inherited" model="ir.ui.view">
+            <field name="name">mgmtsystem.verification.line.form.inherited</field>
+            <field name="model">mgmtsystem.verification.line</field>
+            <field name="inherit_id" ref="mgmtsystem_audit.view_mgmtsystem_verification_line_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//form" position="replace">
+                    <form string="Verification Line">
+                        <group colspan="4" col="4">
+                            <field name="name" string="Name"/>
+                            <field name="seq" />
+                            <field name="clause" />
+                            <field name="system_id"/>
+                            <field name="audit_id"/>
+                            <newline />
+                            <field name="department_id" />
+                            <field name="checkpoints" />
+                            <newline />
+                            <field name="observations"/>
+                            <field name="criteria"/>
+                            <field name="procedure_id"/>
+                            <field name="available_format_numbers" invisible="1"/>
+                            <field name="format_number_ids"  widget="many2many_tags" domain="[('id', 'in', available_format_numbers)]"/>
+                            <field name="objective_evidence"/>
+                            <field name="status"/>
+                            <field name="company_id" groups="base.group_multi_company" />
+                        </group>
+                    </form>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="action_mgmtsystem_verification_line" model="ir.actions.act_window">
+            <field name="name">Mgmt System Verification Line</field>
+            <!-- <field name="type">ir.actions.act_window</field> -->
+            <field name="res_model">mgmtsystem.verification.line</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        
+        <!-- <menuitem
+            id="mgmtsystem_mgmtsystem_verification"
+            action="action_mgmtsystem_verification_line"
+            name="Mgmt System Verification"
+            parent="menu_smart_audit_root"
+            sequence="4"
+            groups="mgmtsystem.group_mgmtsystem_manager,mgmtsystem.group_mgmtsystem_auditor"
+        /> -->
+
+        <!-- Mgmtsystem Audite Form View Inherit -->
+
+        <record id="view_mgmtsystem_audit_form_view_inherited" model="ir.ui.view">
+            <field name="name">mgmtsystem.audit.form.view.inherited</field>
+            <field name="model">mgmtsystem.audit</field>
+            <field name="inherit_id" ref="mgmtsystem_audit.view_mgmtsystem_audit_form"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//field[@name='date']" position="attributes">
+                    <attribute name="string">Planned date</attribute>
+                </xpath>
+                <xpath expr="//field[@name='line_ids']" position="replace">
+                    <field 
+                        name="line_ids" 
+                        nolabel="1" 
+                        mode="tree" 
+                        editable="bottom" 
+                        context="{'tree_view_ref': 'mgmtstem_modify.view_mgmtsystem_verification_line_tree_inherited'}"
+                    >
+                        <tree editable="bottom">
+                            <field name="seq" widget="handle"/>
+                            <field name="clause"/>
+                            <field name="checkpoints"/>
+                            <field name="department_id"/>
+                            <field name="procedure_id"/>
+                            <field name="available_format_numbers" invisible="1"/>
+                            <field name="format_number_ids"  widget="many2many_tags" domain="[('id', 'in', available_format_numbers)]"/>
+                            <field name="observations"/>
+                            <field name="criteria"/>
+                            <field name="objective_evidence"/>
+                            <field name="evidence_images_ids" widget="many2many_binary" options="{'accepted_file_extensions': 'image/*'}"/>
+                            <field name="status"/>
+                        </tree>
+                    </field>
+                </xpath>
+
+            </field>
+        </record>
+
+
+        <record id="view_strong_point_line_tree" model="ir.ui.view">
+            <field name="name">strong.point.line.tree</field>
+            <field name="model">strong.point.line</field>
+            <field name="arch" type="xml">
+                    <tree create="true" edit="true" delete="true" editable="top" position="inside" >
+                        <field name="seq" widget="handle"/>
+                        <field name="clause"/>
+                        <field name="checkpoints"/>
+                        <field name="observations"/>
+                    </tree>               
+            </field>
+        </record>
+
+        <record id="view_to_improve_point_line_tree" model="ir.ui.view">
+            <field name="name">to.improve.point.line.tree</field>
+            <field name="model">to.improve.point.line</field>
+            <field name="arch" type="xml">
+                    <tree create="true" edit="true" delete="true" editable="top" position="inside" >
+                        <field name="seq" widget="handle"/>
+                        <field name="clause"/>
+                        <field name="checkpoints"/>
+                        <field name="observations"/>
+                        <field name="status"/>
+                    </tree>               
+            </field>
+        </record>
+
+
+
+        <record id="mgmtsystem_audit_tree_view_inherited" model="ir.ui.view">
+            <field name="name">mgmtsystem.audit.tree.view.inherited</field>
+            <field name="model">mgmtsystem.audit</field>
+            <field name="inherit_id" ref="mgmtsystem_audit.view_mgmtsystem_audit_tree"/>
+            <field name="arch" type="xml">
+                <xpath expr="//tree" position="replace">
+                    <tree>
+                        <field name="reference" />
+                        <field name="name" attrs="{'readonly':[('state','=','done')]}" />
+                        <field name="date" attrs="{'readonly':[('state','=','done')]}" string="Planned date" />
+                        <field name="create_date" invisible="1"/>
+                        <field name="system_id" />
+                        <field name="company_id" groups="base.group_multi_company" />
+                        <field name="company_state" readonly="1"/>
+                        <field name="plant_name" readonly="1"/>
+                        <field name="state" />
+                    </tree>
+                </xpath>
+            </field>
+        </record>
+
+</odoo>

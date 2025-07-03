@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_audit_form_view_inherited" model="ir.ui.view">
+        <field name="name">audit.form.view.inherited</field>
+        <field name="model">mgmtsystem.audit</field>
+        <field name="inherit_id" ref="mgmtsystem_audit.view_mgmtsystem_audit_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='strong_points']" position="replace">
+                <field
+                    name="strong_points_ids"
+                    attrs="{'readonly':[('state','=','done')]}"
+                    mode="tree" 
+                    editable="bottom" 
+                    context="{'tree_view_ref': 'mgmtstem_modify.view_strong_point_line_tree_inherited'}"
+                >
+                <tree editable="bottom">
+                    <field name="seq" widget="handle"/>
+                    <field name="clause"/>
+                    <field name="checkpoints"/>
+                    <field name="observations"/>
+                </tree>
+                </field>
+            </xpath>
+
+            <xpath expr="//field[@name='to_improve_points']" position="replace">
+                <field
+                    name="to_improve_points_ids"
+                    attrs="{'readonly':[('state','=','done')]}"
+                    mode="tree" 
+                    editable="bottom" 
+                    context="{'tree_view_ref': 'mgmtstem_modify.view_to_improve_point_line_tree'}"
+                >
+                    <tree editable="bottom">
+                        <field name="seq" widget="handle"/>
+                        <field name="clause"/>
+                        <field name="checkpoints"/>
+                        <field name="observations"/>
+                        <field name="status"/>
+                    </tree>
+                </field>
+            </xpath>
+
+
+        </field>
+    </record>
+</odoo>

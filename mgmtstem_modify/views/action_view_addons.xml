@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record id="mgmtsystem_action.open_mgmtsystem_action_list" model="ir.actions.act_window">
+        <field name="name">Improvement Points</field>
+    </record>
+
+    <record id="mgmtsystem_action.menu_open_action" model="ir.ui.menu">
+        <field name="name">Improvement Points</field>
+    </record>
+
+    <record id="view_audit_auditor_form_inherit_addons" model="ir.ui.view">
+        <field name="name">mgmtsystem.action.form.view.inherit.for.addition</field>
+        <field name="model">mgmtsystem.action</field>
+        <field name="inherit_id" ref="mgmtsystem_action.view_mgmtsystem_action_form"/>
+        <field name="arch" type="xml">
+        <xpath expr="//field[@name='user_id']" position="after">
+            <field name="department_id" readonly="1" />  
+            <field name="audit_id" />
+        </xpath>
+        <xpath expr="//field[@name='create_date']" position="after">
+            <field name="target_date" />
+        </xpath>
+
+        <xpath expr="//field[@name='date_closed']" position="attributes">
+            <attribute name="string">Actual Closed Date</attribute>
+        </xpath>
+
+        <xpath expr="//field[@name='date_closed']" position="after">
+            <field name="number_of_days_to_open" readonly="1" />
+            <field name="number_of_days_to_close" readonly="1" />
+            <field name="audited_department_id" invisible="0" />
+        </xpath>
+
+        </field>
+    </record>
+
+
+</odoo>

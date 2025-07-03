@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <!-- ____________________===================== Audit form view below ____________________===================== -->
+
+    <record id="view_mgmtsystem_audit_form_inherit_for_states" model="ir.ui.view">
+        <field name="name">mgmtsystem.audit.form.inherit.for.states</field>
+        <field name="model">mgmtsystem.audit</field>
+        <field name="inherit_id" ref="mgmtsystem_audit.view_mgmtsystem_audit_form"/>
+        <field name="arch" type="xml">
+            <!-- Replace the existing header -->
+            <xpath expr="//header" position="replace">
+                <header>
+                    <button 
+                        name="action_start" 
+                        string="Start" 
+                        type="object" 
+                        class="btn btn-primary"
+                        attrs="{'invisible': [('state', '!=', 'open')]}"
+                    />
+                    <!-- button - class="oe_highlight" -->
+                    <button 
+                        name="action_back_to_start" 
+                        string="Back To Start" 
+                        type="object"
+                        class="btn btn-sm btn-info"
+                        attrs="{'invisible': [('state', '!=', 'in_progress')]}"
+                    />
+                    <button 
+                        name="action_approve" 
+                        string="Approve" 
+                        type="object" 
+                        class="btn btn-success"
+                        confirm="Are you sure you want to approve this audit?"
+                        groups="mgmtsystem.group_mgmtsystem_manager,mgmtsystem.group_mgmtsystem_user_manager"
+                        attrs="{'invisible': [('state', '!=', 'waiting_approval')]}"
+                    />
+                    <button 
+                        name="button_close" 
+                        string="Close" 
+                        type="object"
+                        confirm="Are you sure you want to close this audit?"
+                        attrs="{'invisible': [('state', 'not in', ['open', 'in_progress','waiting_approval','done'])]}"
+                    />
+                    <button 
+                        name="action_undo" 
+                        string="Undo" 
+                        type="object"
+                        attrs="{'invisible': [('state', 'not in', ['waiting_approval','approved','done'])]}"
+                        groups="mgmtsystem.group_mgmtsystem_manager,mgmtsystem.group_mgmtsystem_user_manager"
+                    />
+                    <button name="action_cancel" 
+                        string="Cancel" 
+                        type="object"
+                        class="btn btn-sm btn-danger"
+                        confirm="Are you sure you want to cancel this audit?"
+                        groups="mgmtsystem.group_mgmtsystem_manager,mgmtsystem.group_mgmtsystem_user_manager"
+                        attrs="{'invisible': [('state', 'in', ['done','cancel'])]}"/>
+                    <field 
+                        name="state" 
+                        widget="statusbar"
+                        options="{'classes': {'open': 'default', 'approved': 'success', 'cancel':'danger'}}"
+                        statusbar_visible="open,in_progress,waiting_approval,approved,done,cancel"
+                    />
+                </header>
+            </xpath>
+
+            <!-- Modify the readonly attributes of fields -->
+            <xpath expr="//field[@name='name']" position="attributes">
+                <attribute name="attrs">{'readonly': [('state', 'not in', ['open', 'in_progress','waiting_approval'])]}</attribute>
+            </xpath>
+
+            <!-- <xpath expr="//field[@name='reference']" position="attributes">
+                <attribute name="attrs">{'readonly': [('state', 'not in', ['open', 'in_progress','waiting_approval'])]}</attribute>
+            </xpath> -->
+
+            <xpath expr="//field[@name='date']" position="attributes">
+                <attribute name="attrs">{'readonly': [('state', 'not in', ['open', 'in_progress','waiting_approval'])]}</attribute>
+            </xpath>
+
+            <xpath expr="//field[@name='user_id']" position="attributes">
+                <attribute name="attrs">{'readonly': [('state', 'not in', ['open', 'in_progress','waiting_approval'])]}</attribute>
+            </xpath>
+
+            <xpath expr="//field[@name='system_id']" position="attributes">
+                <attribute name="attrs">{'readonly': [('state', 'not in', ['open', 'in_progress','waiting_approval'])]}</attribute>
+            </xpath>
+
+            <xpath expr="//page[6]" position="attributes">
+                <attribute name="string">Improvement Closure Point</attribute>            
+            </xpath>
+
+            <xpath expr="//field[@name='imp_opp_ids']" position="attributes">
+                <attribute name="attrs">{'readonly': [('state', 'not in', ['open', 'in_progress','waiting_approval'])]}</attribute>
+            </xpath>
+
+            <xpath expr="//field[@name='nonconformity_ids']" position="attributes">
+                <attribute name="attrs">{'readonly': [('state', 'not in', ['open', 'in_progress','waiting_approval'])]}</attribute>
+            </xpath>
+
+        </field>
+    </record>
+
+    <record id="view_mgmtsystem_audit_form_inherit_for_states_one" model="ir.ui.view">
+        <field name="name">mgmtsystem.audit.form.inherit.for.states.one</field>
+        <field name="model">mgmtsystem.audit</field>
+        <field name="inherit_id" ref="mgmtstem_modify.view_mgmtsystem_auditee_page_view_inherited"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='auditees_user_ids']" position="attributes">
+                <attribute name="attrs">{'readonly': [('state', 'not in', ['open', 'in_progress','waiting_approval'])]}</attribute>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_mgmtsystem_audit_form_inherit_for_states_two" model="ir.ui.view">
+        <field name="name">mgmtsystem.audit.form.inherit.for.states.two</field>
+        <field name="model">mgmtsystem.audit</field>
+        <field name="inherit_id" ref="mgmtstem_modify.view_mgmtsystem_audit_form_view_inherited"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='line_ids']" position="attributes">
+                <attribute name="attrs">{'readonly': [('state', 'not in', ['open', 'in_progress','waiting_approval'])]}</attribute>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_mgmtsystem_audit_form_inherit_for_states_three" model="ir.ui.view">
+        <field name="name">mgmtsystem.audit.form.inherit.for.states.three</field>
+        <field name="model">mgmtsystem.audit</field>
+        <field name="inherit_id" ref="mgmtstem_modify.view_mgmtsystem_auditors_page_view_inherited"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='auditors_user_ids']" position="attributes">
+                <attribute name="attrs">{'readonly': [('state', 'not in', ['open', 'in_progress','waiting_approval'])]}</attribute>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_mgmtsystem_audit_form_inherit_for_states_four" model="ir.ui.view">
+        <field name="name">mgmtsystem.audit.form.inherit.for.states.four</field>
+        <field name="model">mgmtsystem.audit</field>
+        <field name="inherit_id" ref="mgmtstem_modify.view_audit_form_view_inherited"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='strong_points_ids']" position="attributes">
+                <attribute name="attrs">{'readonly': [('state', 'not in', ['open', 'in_progress','waiting_approval'])]}</attribute>
+            </xpath>
+            <xpath expr="//field[@name='to_improve_points_ids']" position="attributes">
+                <attribute name="attrs">{'readonly': [('state', 'not in', ['open', 'in_progress','waiting_approval'])]}</attribute>
+            </xpath>
+
+        </field>
+    </record>
+
+    <!-- =====================____________________ Auditor form view below ____________________===================== -->
+
+    <record id="view_mgmtsystem_audit_auditor_form_inherit_for_stages" model="ir.ui.view">
+    <field name="name">mgmtsystem.audit.auditor.form.inherit.for.stages</field>
+    <field name="model">mgmtsystem.audit.auditor</field>
+    <field name="inherit_id" ref="mgmtstem_modify.view_mgmtsystem_audit_auditor_form"/>
+    <field name="arch" type="xml">
+        <xpath expr="//sheet" position="before">
+            <header>
+                <button 
+                    name="action_start" 
+                    string="Start" 
+                    type="object" 
+                    class="btn btn-sm btn-primary"
+                    attrs="{'invisible': [('state', '!=', 'draft')]}"
+                />
+                <button 
+                    name="action_send_approval" 
+                    string="Send for Approval" 
+                    type="object" 
+                    class="btn btn-info"
+                    confirm="Are you sure you want to send this audit for approval?"
+                    attrs="{'invisible': [('state', '!=', 'in_progress')]}"
+                />
+                <button 
+                    name="action_undo" 
+                    string="Undo" 
+                    type="object"
+                    attrs="{'invisible': [('state', '!=', 'sent_approval')]}"
+                />
+                <field 
+                    name="state"
+                    widget="statusbar"
+                    statusbar_visible="draft,in_progress,sent_approval,completed,cancel"
+                />
+            </header>
+        </xpath>
+
+        <xpath expr="//button[@name='action_filter_department_lines']" position="attributes">
+            <attribute name="attrs">{'invisible': [('state', '!=', 'in_progress')]}</attribute>
+        </xpath>
+
+        <xpath expr="//field[@name='selected_user_ids']" position="attributes">
+            <attribute name="attrs">{'readonly': [('state', 'not in', ['draft','in_progress'])]}</attribute>
+        </xpath>
+
+        <xpath expr="//field[@name='deprtmnt_id']" position="attributes">
+            <attribute name="attrs">{'readonly': [('state', 'not in', ['draft','in_progress'])]}</attribute>
+        </xpath>
+
+        <xpath expr="//field[@name='filtered_line_ids']" position="attributes">
+            <attribute name="attrs">{'readonly': [('state', 'not in', ['in_progress'])]}</attribute>
+        </xpath>
+
+        <xpath expr="//field[@name='last_tuv_audit_obs']" position="attributes">
+            <attribute name="attrs">{'readonly': [('state', 'not in', ['in_progress'])]}</attribute>
+        </xpath>
+        <xpath expr="//field[@name='last_customer_audit_obs']" position="attributes">
+            <attribute name="attrs">{'readonly': [('state', 'not in', ['in_progress'])]}</attribute>
+        </xpath>
+        <xpath expr="//field[@name='last_internal_ims_audit_obs']" position="attributes">
+            <attribute name="attrs">{'readonly': [('state', 'not in', ['in_progress'])]}</attribute>
+        </xpath>
+
+    </field>
+</record>
+
+    <record id="view_mgmtsystem_audit_filter_extend" model="ir.ui.view">
+        <field name="name">mgmtsystem.audit.filter.extend</field>
+        <field name="model">mgmtsystem.audit</field>
+        <field name="inherit_id" ref="mgmtsystem_audit.view_mgmtsystem_audit_filter"/>
+        <field name="arch" type="xml">
+            <filter name="current" position="replace">
+                <filter
+                    name="current"
+                    icon="terp-document-new"
+                    domain="[('state','=','in_progress')]"
+                    string="In Progress"
+                    help="Audits In Progress"
+                />
+                <filter
+                    name="open"
+                    icon="terp-document-new"
+                    domain="[('state','=','open')]"
+                    string="To Be Started"
+                    help="Audits To Be Started"
+                />
+                <filter
+                    name="waiting_approval"
+                    icon="terp-document-new"
+                    domain="[('state','=','waiting_approval')]"
+                    string="Waiting for Approval"
+                    help="Audits Waiting for Approval"
+                />
+                <filter
+                    name="approved"
+                    icon="terp-camera_test"
+                    domain="[('state','=','approved')]"
+                    string="Approved"
+                    help="Approved Audits"
+                />
+            </filter>
+        </field>
+    </record>
+
+</odoo>

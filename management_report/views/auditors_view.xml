@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Form View -->
+    <record id="view_mgmtsystem_audit_IATF_auditor_report" model="ir.ui.view">
+        <field name="name">mgmtsystem.audit.auditor.form.view.inherited</field>
+        <field name="model">mgmtsystem.audit.auditor</field>
+        <field name="inherit_id" ref="mgmtstem_modify.view_mgmtsystem_audit_auditor_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//sheet" position="before">
+                <header>
+                    <button name="action_generate_audit_excel_report" string="Download Report"
+                            type="object" class="oe_highlight"/>
+                </header>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

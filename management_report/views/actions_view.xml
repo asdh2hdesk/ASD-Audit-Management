@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Add a button to the mgmtsystem.audit.auditor form view -->
+    <record id="view_audit_auditor_form_inherit" model="ir.ui.view">
+        <field name="name">mgmtsystem.action.form.view.inherit</field>
+        <field name="model">mgmtsystem.action</field>
+        <field name="inherit_id" ref="mgmtsystem_action.view_mgmtsystem_action_form"/>
+        <field name="arch" type="xml">
+            <!-- Add the button to the form view -->
+          <xpath expr="//header" position="inside">
+
+                    <button name="action_generate_audit_report" string="Download Report"
+                            type="object" class="oe_highlight"/>
+            </xpath>
+
+
+
+
+
+        </field>
+    </record>
+
+
+
+</odoo>

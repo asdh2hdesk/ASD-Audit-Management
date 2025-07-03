@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_procedure_format_approval_config_form" model="ir.ui.view">
+        <field name="name">procedure.format.approval.config.form</field>
+        <field name="model">procedure.format.approval.config</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="approver_ids" widget="many2many_tags"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_procedure_format_approval_config_tree" model="ir.ui.view">
+        <field name="name">procedure.format.approval.config.tree</field>
+        <field name="model">procedure.format.approval.config</field>
+        <field name="arch" type="xml">
+            <tree string="Approval Configuration" editable="bottom">
+                <field name="approver_ids" widget="many2many_tags"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_procedure_format_approval_config" model="ir.actions.act_window">
+        <field name="name">Procedure Format Approval Configuration</field>
+        <field name="res_model">procedure.format.approval.config</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_procedure_format_approval_config"
+              name="Approval Configuration"
+              parent="mgmtsystem.menu_mgmtsystem_configuration"
+              action="action_procedure_format_approval_config"
+              groups="proc_format_enhance.group_procedure_format_manager"
+              sequence="13"/>
+</odoo>

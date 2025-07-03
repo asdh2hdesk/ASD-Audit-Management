@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- Tree View for Department Audit Summary -->
+    <record id="view_department_audit_summary_tree" model="ir.ui.view">
+        <field name="name">department.audit.summary.tree</field>
+        <field name="model">department.audit.summary</field>
+        <field name="arch" type="xml">
+            <tree editable="bottom" string="Department wise Audit Summary" default_order="major_nc_count desc, minor_nc_count desc, action_count desc" >
+                <field name="department_id"/>
+                <field name="major_nc_count"/>
+                <field name="minor_nc_count"/>
+                <field name="action_count" string="Improvement Points"/>
+                <field name="last_update" invisible="1" widget="date_time" />
+            </tree>
+        </field>
+    </record>
+
+    <!-- Form View for Department Audit Summary -->
+    <record id="view_department_audit_summary_form" model="ir.ui.view">
+        <field name="name">department.audit.summary.form</field>
+        <field name="model">department.audit.summary</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <field name="department_id"/>
+                    <field name="major_nc_count"/>
+                    <field name="minor_nc_count"/>
+                    <field name="action_count" string="Improvement Points"/>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <!-- Action for Department Audit Summary -->
+    <record id="action_department_audit_summary" model="ir.actions.act_window">
+        <field name="name">Department Audit Summary</field>
+        <field name="res_model">department.audit.summary</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Menu Item for Department Audit Summary -->
+    <menuitem id="menu_department_audit_summary"
+              name="Department Audit Summary"
+              parent="mgmtsystem.menu_mgmtsystem_configuration"
+              action="action_department_audit_summary"
+              sequence="4"/>
+</odoo>

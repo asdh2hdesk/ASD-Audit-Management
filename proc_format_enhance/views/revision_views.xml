@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_mgmtsystem_procedure_format_revision_form" model="ir.ui.view">
+        <field name="name">mgmtsystem.procedure.format.revision.form</field>
+        <field name="model">mgmtsystem.procedure.format.revision</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="format_id" readonly="1"/>
+                        <field name="revision_number"/>
+                        <field name="revision_date"/>
+                        <field name="revised_by" readonly="0"/>
+                        <field name="revision_html"/>
+                        <field name="attachment"/>
+                        <field name="previous_revision_ids" readonly="1" widget="many2many_tags" domain="[('format_id', '=', format_id)]"/>
+                        <field name="description"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_mgmtsystem_procedure_format_revision_tree" model="ir.ui.view">
+        <field name="name">mgmtsystem.procedure.format.revision.tree</field>
+        <field name="model">mgmtsystem.procedure.format.revision</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="format_id" readonly="1"/>
+                <field name="revision_number"/>
+                <field name="revision_date"/>
+                <field name="revised_by"/>
+                <field name="revision_html"/>
+                <field name="previous_revision_ids" widget="many2many_tags" domain="[('format_id', '=', format_id)]"/>
+
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_mgmtsystem_procedure_format_revision" model="ir.actions.act_window">
+        <field name="name">Procedure Format Revisions</field>
+        <field name="res_model">mgmtsystem.procedure.format.revision</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_mgmtsystem_procedure_format_revision"
+              name="Revisions"
+              parent="mgmtsystem.menu_mgmtsystem_manuals"
+              action="action_mgmtsystem_procedure_format_revision"
+              groups="proc_format_enhance.group_procedure_format_manager"
+              sequence="12" />
+
+</odoo>

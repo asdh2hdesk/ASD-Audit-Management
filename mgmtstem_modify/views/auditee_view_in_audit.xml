@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_mgmtsystem_auditee_page_view_inherited" model="ir.ui.view">
+            <field name="name">mgmtsystem.auditee.page.view.inherited</field>
+            <field name="model">mgmtsystem.audit</field>
+            <field name="inherit_id" ref="mgmtsystem_audit.view_mgmtsystem_audit_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='auditee_user_ids']" position="replace">
+                    <field name="auditees_user_ids" attrs="{'readonly':[('state','=','done')]}">
+                        <tree editable="bottom">
+                            <field name="user_id" readonly="0" string="Auditee Name"/>
+                            <!-- <field name="login" readonly="0"/> -->
+                            <field name="department_id" readonly="1" string="Auditee Department"/>
+                            <!-- <field name="department_ids" widget="many2many_tags"/> -->
+                            <!-- <field name="login_date" readonly="1"/> -->
+                        </tree>
+                    </field>
+                </xpath>
+            </field>
+        </record>
+</odoo>

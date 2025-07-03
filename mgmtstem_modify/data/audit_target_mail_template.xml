@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>  
+
+    <data>
+        <record id="audit_initial_notification_template" model="mail.template">
+            <field name="name">Audit Initial Notification</field>
+            <field name="model_id" ref="model_audit_target_notification"/>
+            <field name="subject">Initial Notification for Audit: {{ object.audit_id.name }}</field>
+            <field name="body_html" type="html">
+                <!-- <![CDATA[ -->
+                <div>
+                    <p>Dear Team,</p>
+                    <p>An initial notification for the audit has been created:</p>
+                    <p>Audit Name: <t t-out="object.audit_id.name or ''"/></p>
+                    <p>Audit Ref.: <t t-out="object.audit_id.reference or ''"/></p>
+                    <p>Audit Planned Date: <t t-out="object.audit_id.date or ''"/></p>
+                    <p>State: <t t-out="object.audit_id.company_state or ''"/></p>
+                    <p>Plant Code: <t t-out="object.audit_id.plant_name or ''"/></p>
+                    <p>System: <t t-out="object.audit_id.system_id.name or ''"/></p>
+                    <p>Auditor: <t t-out="object.auditor_id.user_id.name or ''"/></p>
+                    <p>Auditor Department: <t t-out="object.auditor_id.department_id.name or ''"/></p>
+                    <p>Department To Audit: <t t-out="object.auditor_id.department_ids.name or ''"/></p>
+                    <p>Auditees: <t t-out="object.auditor_id.selected_user_ids.name or ''"/></p>
+                    <p>Target Date: <t t-out="object.target_date or ''"/></p>
+                    <p>Please prepare for the upcoming audit.</p>
+                </div>
+                <!-- ]]> -->
+            </field>
+        </record>
+    </data>
+
+    <data>
+        <record id="audit_reminder_notification_template" model="mail.template">
+            <field name="name">Audit Reminder Notification</field>
+            <field name="model_id" ref="model_audit_target_notification"/>
+            <field name="subject">Reminder: Audit {{ object.audit_id.name }} in {{ object.days_before }} Days</field>
+            <field name="body_html" type="html">
+                <!-- <![CDATA[ -->
+                <div>
+                    <p>Dear Team,</p>
+                    <p>Reminder: Audit is approaching in <t t-out="object.days_before or ''"/> days</p>
+                    <p>Audit Name: <t t-out="object.audit_id.name or ''"/></p>
+                    <p>Audit Ref.: <t t-out="object.audit_id.reference or ''"/></p>
+                    <p>Audit Planned Date: <t t-out="object.audit_id.date or ''"/></p>
+                    <p>State: <t t-out="object.audit_id.company_state or ''"/></p>
+                    <p>Plant Code: <t t-out="object.audit_id.plant_name or ''"/></p>
+                    <p>System: <t t-out="object.audit_id.system_id.name or ''"/></p>
+                    <p>Auditor: <t t-out="object.auditor_id.user_id.name or ''"/></p>
+                    <p>Auditor Department: <t t-out="object.auditor_id.department_id.name or ''"/></p>
+                    <p>Department To Audit: <t t-out="object.auditor_id.department_ids.name or ''"/></p>
+                    <p>Auditees: <t t-out="object.auditor_id.selected_user_ids.name or ''"/></p>
+                    <p>Target Date: <t t-out="object.target_date or ''"/></p>
+                    <p>Please ensure all preparations are complete.</p>
+                </div>
+                <!-- ]]> -->
+            </field>
+        </record>
+    </data>
+
+    <data>
+        <record id="audit_completion_notification_template" model="mail.template">
+            <field name="name">Audit Completion Notification</field>
+            <field name="model_id" ref="model_mgmtsystem_audit"/>
+            <field name="subject">Audit Successfully Completed - {{ object.reference }}</field>
+            <field name="body_html" type="html">
+            <!-- <![CDATA[ -->
+                <div>
+                    <p>Dear Team,</p>
+                    <p>We are pleased to inform you that the audit has been successfully completed.</p>
+                    <p><strong>Audit Details:</strong></p>
+                    <ul>
+                        <li>Audit Reference: <t t-out="object.reference or ''"/></li>
+                        <li>Audit Name: <t t-out="object.name or ''"/></li>
+                        <li>Audit Planned date: <t t-out="object.date or ''"/></li>
+                        <li>System: <t t-out="object.system_id.name or ''"/></li>
+                        <li>State: Approved</li>
+                    </ul>
+                    <p>Congratulations on successfully completing all audit activities.</p>
+                    <p>Best regards,<br/>Management System Team</p>
+                </div>
+                <!-- ]]> -->
+            </field>
+            <!-- <field name="email_from" eval="record.company_id.email or user.email"/> -->
+        </record>
+    </data>
+
+
+    <!-- <data noupdate="1">
+        <record id="mail_template_audit_target" model="mail.template">
+            <field name="name">Audit Target Notification</field>
+            <field name="model_id" ref="model_audit_target_notification"/>
+            <field name="subject">Reminder: Upcoming Audit - ${object.audit_id.name}</field>
+            <field name="use_default_to" eval="True"/>
+            <field name="email_from">${(object.env.company.email and '%s &lt;%s&gt;' % (object.env.company.name, object.env.company.email)) or ''}</field>
+            <field name="reply_to">${object.env.company.email}</field>
+            <field name="auto_delete" eval="False"/>
+            <field name="lang">${object.env.context.get('lang')}</field>
+            <field name="body_html" type="html">
+                <div style="margin: 0px; padding: 0px; font-size: 13px;">
+                    <p>Hello ${ctx.get('recipient_user').name},</p>
+                    <p>This is a reminder for the upcoming audit:</p>
+                    <table style="width: 100%; border-collapse: collapse;">
+                        <tr>
+                            <td style="padding: 5px;"><strong>Audit:</strong></td>
+                            <td style="padding: 5px;">${object.audit_id.name}</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 5px;"><strong>Target Date:</strong></td>
+                            <td style="padding: 5px;">${format_date(object.target_date)}</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 5px;"><strong>Auditor:</strong></td>
+                            <td style="padding: 5px;">${object.auditor_id.display_name}</td>
+                        </tr>
+                    </table>
+                    <p style="margin-top: 20px;">Please ensure all necessary preparations are completed before the target date.</p>
+                    <p style="margin-top: 20px;">
+                        Best regards,<br/>
+                        ${object.env.company.name}
+                    </p>
+                </div>
+            </field>
+        </record>
+    </data> -->
+
+    <!-- <data noupdate="1">
+        <record id="mail_template_audit_target" model="mail.template">
+            <field name="name">Audit Target Notification</field>
+            <field name="model_id" ref="model_audit_target_notification"/>
+            <field name="subject">Reminder: Upcoming Audit - ${object.audit_id.name}</field>
+            <field name="body_html" type="html">
+                <div style="margin: 0px; padding: 0px;">
+                    <p>Hello,</p>
+                    <p>This is a reminder for the upcoming audit:</p>
+                    <ul>
+                        <li>Audit: ${object.audit_id.name}</li>
+                        <li>Target Date: ${format_date(object.target_date)}</li>
+                    </ul>
+                    <p>Please make necessary preparations.</p>
+                    <p>Best regards,<br/>${user.company_id.name}</p>
+                </div>
+            </field>
+        </record>
+    </data> -->
+
+</odoo>

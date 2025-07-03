@@ -1,0 +1,1093 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo noupdate="1">
+    <record id="document_page_iatf_16949" model="document.page">
+        <field name="name">IATF 16949</field>
+        <field name="type">category</field>
+        <field name="template">
+            <![CDATA[
+<h1>Foreword – Automotive QMS Standard</h1>
+<p>This Automotive Quality Management System Standard, herein referred to as “Automotive QMS Standard” or “IATF 16949,” along with applicable automotive customer-specific requirements, ISO 9001:2015 requirements, and ISO 9000:2015 defines the fundamental quality management system requirements for automotive production and relevant service parts organizations. As such, this Automotive QMS Standard cannot be considered a stand-alone QMS Standard but has to be comprehended as a supplement to and used in conjunction with ISO 9001:2015. ISO 9001:2015 is published as a separate ISO Standard.</p>
+<p>IATF 16949:2016 (1st edition) represents an innovative document, given the strong orientation to the customer, with inclusion of a number of consolidated previous customer specific requirements.</p>
+<p>Annex B is provided for guidance to implement the IATF 16949 requirements unless otherwise specified by customer specific requirements.</p>
+
+<h2>History</h2>
+<p>ISO/TS 16949 (1st edition) was originally created in 1999 by the International Automotive Task Force (IATF) with the aim of harmonizing the different assessment and certification systems worldwide in the supply chain for the automotive sector. Other revisions were created (2nd edition in 2002, and 3rd edition in 2009) as necessary for either automotive sector enhancements or ISO 9001 revisions. ISO/TS 16949 (along with supporting technical publications developed by original equipment manufacturers [herein referred to as OEMs] and the national automotive trade associations) introduced a common set of techniques and methods for common product and process development for automotive manufacturing worldwide.</p>
+<p>In preparation for migrating from ISO/TS 16949:2009 (3rd edition) to this Automotive QMS Standard, IATF 16949, feedback was solicited from certification bodies, auditors, suppliers, and OEMs to create IATF 16949:2016 (1st edition), which cancels and replaces ISO/TS 16949:2009 (3rd edition).</p>
+<p>The IATF maintains strong cooperation with ISO by continuing liaison committee status ensuring continued alignment with ISO 9001.</p>
+
+<h2>Goal</h2>
+<p>The goal of this Automotive QMS standard is the development of a quality management system that provides for continual improvement, emphasizing defect prevention and the reduction of variation and waste in the supply chain.</p>
+
+<h2>Remarks for certification</h2>
+<p>Requirements for certification to this Automotive QMS Standard are defined in the Rules for achieving and maintaining IATF recognition.</p>
+<p>Details can be obtained from the local Oversight Offices of the IATF cited below:</p>
+<p>Associazione Nazionale Filiera Industrie Automobilistiche (ANFIA)<br>Web site: www.anfia.it e-mail: anfia@anfia.it</p>
+<p>International Automotive Oversight Bureau (IAOB)<br>Web site: www.iaob.org e-mail: iatf16949feedback@iaob.org</p>
+<p>IATF France<br>Web site: www.iatf-france.com e-mail: iatf@iatf-france.com</p>
+<p>Society of Motor Manufacturers and Traders Ltd. (SMMT Ltd.)<br>Web site: www.smmtoversight.co.uk e-mail: iatf16949@smmt.co.uk</p>
+<p>Verband der Automobilindustrie – Qualitäts Management Center (VDA QMC)<br>Web site: www.vda-qmc.de e-mail: info@vda-qmc.de</p>
+<p>All public information about the IATF can be found at the IATF website: www.iatfglobaloversight.org</p>
+
+<h1>Introduction</h1>
+
+<h2>General</h2>
+<p>See ISO 9001:2015 requirements.</p>
+
+<h2>Quality management principles</h2>
+<p>See ISO 9001:2015 requirements.</p>
+
+<h2>Process approach</h2>
+
+<h3>General</h3>
+<p>See ISO 9001:2015 requirements.</p>
+
+<h3>Plan-Do-Check-Act cycle</h3>
+<p>See ISO 9001:2015 requirements.</p>
+
+<h3>Risk-based thinking</h3>
+<p>See ISO 9001:2015 requirements.</p>
+
+<h2>Relationship with other management system standards</h2>
+<p>See ISO 9001:2015 requirements.</p>
+
+<h1>Scope</h1>
+<p>See ISO 9001:2015 requirements.</p>
+
+<h2>Scope – automotive supplemental to ISO 9001:2015</h2>
+<p>This Automotive QMS Standard defines the quality management system requirements for the design and development, production and, when relevant, assembly, installation, and services of automotive-related products, including products with embedded software.</p>
+<p>This Automotive QMS Standard is applicable to sites of the organization where manufacturing of customer-specified production parts, service parts, and/or accessory parts occur.</p>
+<p>This Automotive QMS Standard should be applied throughout the automotive supply chain.</p>
+
+<h1>Normative references</h1>
+<p>See ISO 9001:2015 requirements.</p>
+
+<h2>Normative and informative references</h2>
+<p>Annex A (Control Plan) is a normative part of this Automotive QMS standard.</p>
+<p>Annex B (Bibliography – automotive supplemental) is informative, which provides additional information intended to assist the understanding or use of this Automotive QMS standard.</p>
+
+<h1>Terms and definitions</h1>
+<p>See ISO 9001:2015 requirements.</p>
+
+<h2>Terms and definitions for the automotive industry</h2>
+<p><strong>accessory part</strong><br>customer-specified additional component(s) that are either mechanically or electronically connected to the vehicle or powertrain before (or after) delivery to the final customer (e.g., custom floor mats, truck bed liners, wheel covers, sound system enhancements, sunroofs, spoilers, super-chargers, etc.)</p>
+<p><strong>advanced product quality planning (APQP)</strong><br>product quality planning process that supports development of a product or service that will satisfy customer requirements; APQP serves as a guide in the development process and also a standard way to share results between organizations and their customers; APQP covers design robustness, design testing and specification compliance, production process design, quality inspection standards, process capability, production capacity, product packaging, product testing and operator training plan, among other items</p>
+<p><strong>aftermarket part</strong><br>replacement part(s) not procured or released by an OEM for service part applications, which may or may not be produced to original equipment specifications</p>
+<p><strong>authorization</strong><br>documented permission for a person(s) specifying rights and responsibilities related to giving or denying permissions or sanctions within an organization</p>
+<p><strong>challenge (master) part</strong><br>part(s) of known specification, calibrated and traceable to standards, with expected results (pass or fail) that are used to validate the functionality of an error-proofing device or check fixtures (e.g., go / no-go gauging)</p>
+<p><strong>control plan</strong><br>documented description of the systems and processes required for controlling the manufacturing of product (see Annex A)</p>
+<p><strong>customer requirements</strong><br>all requirements specified by the customer (e.g., technical, commercial, product and manufacturing process-related requirements, general terms and conditions, customer-specific requirements, etc.)</p>
+<p><strong>customer-specific requirements (CSRs)</strong><br>interpretations of or supplemental requirements linked to a specific clause(s) of this Automotive QMS Standard</p>
+<p><strong>design for assembly (DFA)</strong><br>process by which products are designed with ease of assembly considerations. (e.g., if a product contains fewer parts it will take less time to assemble, thereby reducing assembly costs)</p>
+<p><strong>design for manufacturing (DFM)</strong><br>integration of product design and process planning to design a product that is easily and economically manufactured</p>
+<p><strong>design for manufacturing and assembly (DFMA)</strong><br>combination of two methodologies: Design for Manufacture (DFM), which is the process of optimizing the design to be easier to produce, have higher throughput, and improved quality; and Design for Assembly (DFA), which is the optimization of the design to reduce risk of error, lowering costs, and making it easier to assemble</p>
+<p><strong>design for six sigma (DFSS)</strong><br>systematic methodology, tools, and techniques with the aim of being a robust design of products or processes that meets customer expectations and can be produced at a six sigma quality level</p>
+<p><strong>design-responsible organization</strong><br>organization with authority to establish a new, or change an existing, product specification<br>NOTE This responsibility includes testing and verification of design performance within the customer's specified application.</p>
+<p><strong>error proofing</strong><br>product and manufacturing process design and development to prevent manufacture of nonconforming products</p>
+<p><strong>escalation process</strong><br>process used to highlight or flag certain issues within an organization so that the appropriate personnel can respond to these situations and monitor the resolutions</p>
+<p><strong>fault tree analysis (FTA)</strong><br>deductive failure analysis methodology in which an undesired state of a system is analysed; fault tree analysis maps the relationship between faults, subsystems, and redundant design elements by creating a logic diagram of the overall system</p>
+<p><strong>laboratory</strong><br>facility for inspection, test, or calibration that may include but is not limited to the following: chemical, metallurgical, dimensional, physical, electrical, or reliability testing</p>
+<p><strong>laboratory scope</strong><br>controlled document containing<br>specific tests, evaluations, and calibrations that a laboratory is qualified to perform;<br>a list of the equipment that the laboratory uses to perform the above; and<br>a list of methods and standards to which the laboratory performs the above</p>
+<p><strong>manufacturing</strong><br>process of making or fabricating<br>production materials;<br>production parts or service parts;<br>assemblies; or<br>heat treating, welding, painting, plating, or other finishing services</p>
+<p><strong>manufacturing feasibility</strong><br>an analysis and evaluation of a proposed project to determine if it is technically feasible to manufacture the product to meet customer requirements. This includes but is not limited to the following (as applicable): within the estimated costs, and if the necessary resources, facilities, tooling, capacity, software, and personnel with required skills, including support functions, are or are planned to be available</p>
+<p><strong>manufacturing services</strong><br>companies that test, manufacture, distribute, and provide repair services for components and assemblies</p>
+<p><strong>multi-disciplinary approach</strong><br>method to capture input from all interested parties who may influence how a process is administered by a team whose members include personnel from the organization and may include customer and supplier representatives; team members may be internal or external to the organization; either existing teams or ad hoc teams may be used as circumstances warrant; input to the team may include both organization and customer inputs</p>
+<p><strong>no trouble found (NTF)</strong><br>designation applied to a part replaced during a service event that, when analysed by the vehicle or parts manufacturer, meets all the requirements of a “good part” (also referred to as “No Fault Found” or “Trouble Not Found”)</p>
+<p><strong>outsourced process</strong><br>portion of an organization’s function (or processes) that is performed by an external organization</p>
+<p><strong>periodic overhaul</strong><br>maintenance methodology to prevent a major unplanned breakdown where, based on fault or interruption history, a piece of equipment, or subsystem of the equipment, is proactively taken out of service and disassembled, repaired, parts replaced, reassembled, and then returned to service</p>
+<p><strong>predictive maintenance</strong><br>an approach and set of techniques to evaluate the condition of in-service equipment by performing periodic or continuous monitoring of equipment conditions, in order to predict when maintenance should be performed</p>
+<p><strong>premium freight</strong><br>extra costs or charges incurred in addition to contracted delivery<br>NOTE This can be caused by method, quantity, unscheduled or late deliveries, etc.</p>
+<p><strong>preventive maintenance</strong><br>planned activities at regular intervals (time-based, periodic inspection, and overhaul) to eliminate causes of equipment failure and unscheduled interruptions to production, as an output of the manufacturing process design</p>
+<p><strong>product</strong><br>applies to any intended output resulting from the product realization process</p>
+<p><strong>product safety</strong><br>standards relating to the design and manufacturing of products to ensure they do not represent harm or hazards to customers</p>
+<p><strong>production shutdown</strong><br>condition where manufacturing processes are idle; time span may be a few hours to a few months</p>
+<p><strong>reaction plan</strong><br>action or series of steps prescribed in a control plan in the event abnormal or nonconforming events are detected</p>
+<p><strong>remote location</strong><br>location that supports manufacturing sites and at which non-production processes occur</p>
+<p><strong>service part</strong><br>replacement part(s) manufactured to OEM specifications that are procured or released by the OEM for service part applications, including remanufactured parts</p>
+<p><strong>site</strong><br>location at which value-added manufacturing processes occur</p>
+<p><strong>special characteristic</strong><br>classification of a product characteristic or manufacturing process parameter that can affect safety or compliance with regulations, fit, function, performance, requirements, or subsequent processing of product</p>
+<p><strong>special status</strong><br>notification of a customer-identified classification assigned to an organization where one or more customer requirements are not being satisfied due to a significant quality or delivery issue</p>
+<p><strong>support function</strong><br>non-production activity (conducted on site or at a remote location) that supports one (or more) manufacturing sites of the same organization</p>
+<p><strong>total productive maintenance</strong><br>a system of maintaining and improving the integrity of production and quality systems through machines, equipment, processes, and employees that add value to the organization</p>
+<p><strong>trade-off curves</strong><br>tool to understand and communicate the relationship of various design characteristics of a product to each other; a product’s performance on one characteristic is mapped on the Y-axis and another on the x-axis, then a curve is plotted to illustrate product performance relative to the two characteristics</p>
+<p><strong>trade-off process</strong><br>methodology of developing and using trade-off curves for products and their performance characteristics that establish the customer, technical, and economic relationship between design alternatives</p>
+
+<h1>Context of the organization</h1>
+
+<h2>Understanding the organization and its context</h2>
+<p>See ISO 9001:2015 requirements.</p>
+
+<h2>Understanding the needs and expectations of interested parties</h2>
+<p>See ISO 9001:2015 requirements.</p>
+
+<h2>Determining the scope of the quality management system</h2>
+<p>See ISO 9001:2015 requirements.</p>
+
+<h3>Determining the scope of the quality management system — supplemental</h3>
+<p>Supporting functions, whether on-site or remote (such as design centres, corporate headquarters, and distribution centres), shall be included in the scope of the Quality Management System (QMS).</p>
+<p>The only permitted exclusion for this Automotive QMS Standard relates to the product design and development requirements within ISO 9001, Section 8.3. The exclusion shall be justified and maintained as documented information (see ISO 9001, Section 7.5).</p>
+<p>Permitted exclusions do not include manufacturing process design.</p>
+
+<h3>Customer-specific requirements</h3>
+<p>Customer-specific requirements shall be evaluated and included in the scope of the organization’s quality management system.</p>
+
+<h2>Quality management system and its processes</h2>
+<p><strong>4.4.1</strong><br>See ISO 9001:2015 requirements</p>
+<h3>Conformance of products and processes</h3>
+<p>The organization shall ensure conformance of all products and processes, including service parts and those that are outsourced, to all applicable customer, statutory, and regulatory requirements (see Section 8.4.2.2).</p>
+<h3>Product safety</h3>
+<p>The organization shall have documented processes for the management of product-safety related products and manufacturing processes, which shall include but not be limited to the following, where applicable:</p>
+<p>a) identification by the organization of statutory and regulatory product-safety requirements;</p>
+<p>b) customer notification of requirements in item a);</p>
+<p>c) special approvals for design FMEA;</p>
+<p>d) identification of product safety-related characteristics;</p>
+<p>e) identification and controls of safety-related characteristics of product and at the point of manufacture;</p>
+<p>f) special approval of control plans and process FMEAs;</p>
+<p>g) reaction plans (see Section 9.1.1.1);</p>
+<p>h) defined responsibilities, definition of escalation process and flow of information, including top management, and customer notification;</p>
+<p>i) training identified by the organization or customer for personnel involved in product-safety related products and associated manufacturing processes;</p>
+<p>j) changes of product or process shall be approved prior to implementation, including evaluation of potential effects on product safety from process and product changes (see ISO 9001, Section 8.3.6);</p>
+<p>k) transfer of requirements with regard to product safety throughout the supply chain, including customer-designated sources (see Section 8.4.3.1);</p>
+<p>l) product traceability by manufactured lot (at a minimum) throughout the supply chain (see Section 8.5.2.1);</p>
+<p>m) lessons learned for new product introduction.</p>
+<p>NOTE: Special approval is an additional approval by the function (typically the customer) that is responsible to approve such documents with safety-related content.</p>
+<p><strong>4.4.2</strong><br>See ISO 9001:2015 requirements.</p>
+
+<h1>Leadership</h1>
+
+<h2>Leadership and commitment</h2>
+
+<h3>General</h3>
+<p>See ISO 9001:2015 requirements.</p>
+
+<h3>Corporate responsibility</h3>
+<p>The organization shall define and implement corporate responsibility policies, including at a minimum an anti-bribery policy, an employee code of conduct, and an ethics escalation policy (“whistle-blowing policy”).</p>
+
+<h3>Process effectiveness and efficiency</h3>
+<p>Top management shall review the product realization processes and support processes to evaluate and improve their effectiveness and efficiency. The results of the process review activities shall be included as input to the management review (see Section 9.3.2.1.).</p>
+
+<h3>Process owners</h3>
+<p>Top management shall identify process owners who are responsible for managing the organization’s processes and related outputs. Process owners shall understand their roles and be competent to perform those roles (see ISO 9001, Section 7.2).</p>
+
+<h2>Customer focus</h2>
+<p>See ISO 9001:2015 requirements.</p>
+
+<h2>Policy</h2>
+
+<h3>Establishing the quality policy</h3>
+<p>See ISO 9001:2015 requirements.</p>
+
+<h3>Communicating the quality policy</h3>
+<p>See ISO 9001:2015 requirements.</p>
+
+<h2>Organizational roles, responsibilities and authorities</h2>
+<p>See ISO 9001:2015 requirements.</p>
+
+<h3>Organizational roles, responsibilities, and authorities — supplemental</h3>
+<p>Top management shall assign personnel with the responsibility and authority to ensure that customer requirements are met. These assignments shall be documented. This includes but is not limited to the selection of special characteristics, setting quality objectives and related training, corrective and preventive actions, product design and development, capacity analysis, logistics information, customer scorecards, and customer portals.</p>
+
+<h3>Responsibility and authority for product requirements and corrective actions</h3>
+<p>Top management shall ensure that:</p>
+<p>a) personnel responsible for conformity to product requirements have the authority to stop shipment and stop production to correct quality problems;</p>
+<p>NOTE Due to the process design in some industries, it might not always be possible to stop production immediately. In this case, the affected batch must be contained and shipment to the customer prevented.</p>
+<p>b) personnel with authority and responsibility for corrective action are promptly informed of products or processes that do not conform to requirements to ensure that nonconforming product is not shipped to the customer and that all potential nonconforming product is identified and contained;</p>
+<p>c) production operations across all shifts are staffed with personnel in charge of, or delegated responsibility for, ensuring conformity to product requirements.</p>
+
+<h1>Planning</h1>
+
+<h2>Actions to address risks and opportunities</h2>
+<p><strong>and 6.1.2</strong><br>See ISO 9001:2015 requirements.</p>
+
+<h3>Risk analysis</h3>
+<p>The organization shall include in its risk analysis, at a minimum, lessons learned from product recalls, product audits, field returns and repairs, complaints, scrap, and rework.</p>
+<p>The organization shall retain documented information as evidence of the results of risk analysis.</p>
+
+<h3>Preventive action</h3>
+<p>The organization shall determine and implement action(s) to eliminate the causes of potential nonconformities in order to prevent their occurrence. Preventive actions shall be appropriate to the severity of the potential issues.</p>
+<p>The organization shall establish a process to lessen the impact of negative effects of risk including the following:</p>
+<p>a) determining potential nonconformities and their causes;</p>
+<p>b) evaluating the need for action to prevent occurrence of nonconformities;</p>
+<p>c) determining and implementing action needed;</p>
+<p>d) documented information of action taken;</p>
+<p>e) reviewing the effectiveness of the preventive action taken;</p>
+<p>f) utilizing lessons learned to prevent recurrence in similar processes (see ISO 9001, Section 7.1.6).</p>
+
+<h3>Contingency plans</h3>
+<p>The organization shall:</p>
+<p>a) identify and evaluate internal and external risks to all manufacturing processes and infrastructure equipment essential to maintain production output and to ensure that customer requirements are met;</p>
+<p>b) define contingency plans according to risk and impact to the customer;</p>
+<p>c) prepare contingency plans for continuity of supply in the event of any of the following: key equipment failures (also see Section 8.5.6.1.1); interruption from externally provided products, processes, and services; recurring natural disasters; fire; utility interruptions; labour shortages; or infrastructure disruptions;</p>
+<p>d) include, as a supplement to the contingency plans, a notification process to the customer and other interested parties for the extent and duration of any situation impacting customer operations;</p>
+<p>e) periodically test the contingency plans for effectiveness (e.g., simulations, as appropriate);</p>
+<p>f) conduct contingency plan reviews (at a minimum annually) using a multidisciplinary team including top management, and update as required;</p>
+<p>g) document the contingency plans and retain documented information describing any revision(s), including the person(s) who authorized the change(s).</p>
+<p>The contingency plans shall include provisions to validate that the manufactured product continues to meet customer specifications after the re-start of production following an emergency in which production was stopped and if the regular shutdown processes were not followed.</p>
+
+<h2>Quality objectives and planning to achieve them</h2>
+<p><strong>and 6.2.2</strong><br>See ISO 9001:2015 requirements.</p>
+
+<h3>6.2.2.1 Quality objectives and planning to achieve them — supplemental</h3>
+<p>Top management shall ensure that quality objectives to meet customer requirements are defined, established, and maintained for relevant functions, processes, and levels throughout the organization.</p>
+<p>The results of the organization’s review regarding interested parties and their relevant requirements shall be considered when the organization establishes its annual (at a minimum) quality objectives and related performance targets (internal and external).</p>
+
+<h2>Planning of changes</h2>
+<p>See ISO 9001:2015 requirements.</p>
+
+<h1>Support</h1>
+
+<h2>Resources</h2>
+
+<h3>General</h3>
+<p>See ISO 9001:2015 requirements.</p>
+
+<h3>People</h3>
+<p>See ISO 9001:2015 requirements.</p>
+
+<h3>Infrastructure</h3>
+<p>See ISO 9001:2015 requirements.</p>
+
+<h4>Plant, facility, and equipment planning</h4>
+<p>The organization shall use a multidisciplinary approach including risk identification and risk mitigation methods for developing and improving plant, facility, and equipment plans. In designing plant layouts, the organization shall:</p>
+<p>a) optimize material flow, material handling, and value-added use of floor space including control of nonconforming product, and</p>
+<p>b) facilitate synchronous material flow, as applicable.</p>
+<p>Methods shall be developed and implemented to evaluate manufacturing feasibility for new product or new operations. Manufacturing feasibility assessments shall include capacity planning. These methods shall also be applicable for evaluating proposed changes to existing operations.</p>
+<p>The organization shall maintain process effectiveness, including periodic re-evaluation relative to risk, to incorporate any changes made during process approval, control plan maintenance (see Section 8.5.1.1), and verification of job set-ups (see Section 8.5.1.3).</p>
+<p>Assessments of manufacturing feasibility and evaluation of capacity planning shall be inputs to management reviews (see ISO 9001, Section 9.3).</p>
+<p>NOTE 1 These requirements should include the application of lean manufacturing principles.</p>
+<p>NOTE 2 These requirements should apply to on-site supplier activities, as applicable.</p>
+
+<h3>Environment for the operation of processes</h3>
+<p>See ISO 9001:2015 requirements.</p>
+<p>NOTE Where third-party certification to ISO 45001 (or equivalent) is recognized, it may be used to demonstrate the organization's conformity to the personnel safety aspects of this requirement.</p>
+
+<h4>Environment for the operation of processes — supplemental</h4>
+<p>The organization shall maintain its premises in a state of order, cleanliness, and repair that is consistent with the product and manufacturing process needs.</p>
+
+<h3>Monitoring and measuring resources</h3>
+
+<h4>General</h4>
+<p>See ISO 9001:2015 requirements.</p>
+
+<h4>Measurement systems analysis</h4>
+<p>Statistical studies shall be conducted to analyse the variation present in the results of each type of inspection, measurement, and test equipment system identified in the control plan. The analytical methods and acceptance criteria used shall conform to those in reference manuals on measurement systems analysis. Other analytical methods and acceptance criteria may be used if approved by the customer.</p>
+<p>Records of customer acceptance of alternative methods shall be retained along with results from alternative measurement systems analysis (see Section 9.1.1.1).</p>
+<p>NOTE Prioritization of MSA studies should focus on critical or special product or process characteristics.</p>
+
+<h4>Measurement traceability</h4>
+<p>See ISO 9001:2015 requirements.</p>
+<p>NOTE A number or another identifier traceable to the device calibration record meets the intent of the requirements in ISO 9001:2015.</p>
+
+<h5>Calibration/verification records</h5>
+<p>The organization shall have a documented process for managing calibration/verification records. Records of the calibration/verification activity for all gauges and measuring and test equipment (including employee-owned equipment relevant for measuring, customer-owned equipment, or on-site supplier-owned equipment) needed to provide evidence of conformity to internal requirements, legislative and regulatory requirements, and customer-defined requirements shall be retained.</p>
+<p>The organization shall ensure that calibration/verification activities and records shall include the following details:</p>
+<p>a) revisions following engineering changes that impact measurement systems;</p>
+<p>b) any out-of-specification readings as received for calibration/verification;</p>
+<p>c) an assessment of the risk of the intended use of the product caused by the out-of-specification condition;</p>
+<p>d) when a piece of inspection measurement and test equipment is found to be out of calibration or defective during its planned verification or calibration or during its use, documented information on the validity of previous measurement results obtained with this piece of inspection measurement and test equipment shall be retained, including the associated standard's last calibration date and the next due date on the calibration report;</p>
+<p>e) notification to the customer if suspect product or material has been shipped;</p>
+<p>f) statements of conformity to specification after calibration/verification;</p>
+<p>g) verification that the software version used for product and process control is as specified;</p>
+<p>h) records of the calibration and maintenance activities for all gauging (including employee-owned equipment, customer-owned equipment, or on-site supplier-owned equipment);</p>
+<p>i) production-related software verification used for product and process control (including software installed on employee-owned equipment, customer-owned equipment, or on-site supplier-owned equipment).</p>
+
+<h4>Laboratory requirements</h4>
+
+<h5>Internal laboratory</h5>
+<p>An organization's internal laboratory facility shall have a defined scope that includes its capability to perform the required inspection, test, or calibration services. This laboratory scope shall be included in the quality management system documentation. The laboratory shall specify and implement, as a minimum, requirements for:</p>
+<p>a) adequacy of the laboratory technical procedures;</p>
+<p>b) competency of the laboratory personnel;</p>
+<p>c) testing of the product;</p>
+<p>d) capability to perform these services correctly, traceable to the relevant process standard (such as ASTM, EN, etc.); when no national or international standard(s) is available, the organization shall define and implement a methodology to verify measurement system capability;</p>
+<p>e) customer requirements, if any;</p>
+<p>f) review of the related records.</p>
+<p>NOTE Third-party accreditation to ISO/IEC 17025 (or equivalent) may be used to demonstrate the organization's in-house laboratory conformity to this requirement.</p>
+
+<h5>External laboratory</h5>
+<p>External/commercial/independent laboratory facilities used for inspection, test, or calibration services by the organization shall have a defined laboratory scope that includes the capability to perform the required inspection, test, or calibration, and either:</p>
+<p>a) the laboratory shall be accredited to ISO/IEC 17025 or national equivalent and include the relevant inspection, test, or calibration service in the scope of the accreditation (certificate); the certificate of calibration or test report shall include the mark of a national accreditation body; or</p>
+<p>b) there shall be evidence that the external laboratory is acceptable to the customer.</p>
+<p>NOTE Such evidence may be demonstrated by customer assessment, for example, or by customer-approved second-party assessment that the laboratory meets the intent of ISO/IEC 17025 or national equivalent. The second-party assessment may be performed by the organization assessing the laboratory using a customer-approved method of assessment.</p>
+<p>Calibration services may be performed by the equipment manufacturer when a qualified laboratory is not available for a given piece of equipment. In such cases, the organization shall ensure that the requirements listed in Section 7.1.5.3.1 have been met.</p>
+<p>Use of calibration services, other than by qualified (or customer accepted) laboratories, may be subject to government regulatory confirmation, if required.</p>
+
+<h3>Organizational knowledge</h3>
+<p>See ISO 9001:2015 requirements.</p>
+
+<h2>Competence</h2>
+<p>See ISO 9001:2015 requirements.</p>
+
+<h3>Competence — supplemental</h3>
+<p>The organization shall establish and maintain a documented process(es) for identifying training needs including awareness (see Section 7.3.1) and achieving competence of all personnel performing activities affecting conformity to product and process requirements. Personnel performing specific assigned tasks shall be qualified, as required, with particular attention to the satisfaction of customer requirements.</p>
+
+<h3>Competence — on-the-job training</h3>
+<p>The organization shall provide on-the-job training (which shall include customer requirements training) for personnel in any new or modified responsibilities affecting conformity to quality requirements, internal requirements, regulatory or legislative requirements; this shall include contract or agency personnel. The level of detail required for on-the-job training shall be commensurate with the level of education the personnel possess and the complexity of the task(s) they are required to perform for their daily work. Persons whose work can affect quality shall be informed about the consequences of nonconformity to customer requirements.</p>
+
+<h3>Internal auditor competency</h3>
+<p>The organization shall have a documented process(es) to verify that internal auditors are competent, taking into account any customer-specific requirements. For additional guidance on auditor competencies, refer to ISO 19011. The organization shall maintain a list of qualified internal auditors.</p>
+<p>Quality management system auditors, manufacturing process auditors, and product auditors shall all be able to demonstrate the following minimum competencies:</p>
+<p>a) understanding of the automotive process approach for auditing, including risk-based thinking;</p>
+<p>b) understanding of applicable customer-specific requirements;</p>
+<p>c) understanding of applicable ISO 9001 and IATF 16949 requirements related to the scope of the audit;</p>
+<p>d) understanding of applicable core tool requirements related to the scope of the audit;</p>
+<p>e) understanding how to plan, conduct, report, and close out audit findings.</p>
+<p>Additionally, manufacturing process auditors shall demonstrate technical understanding of the relevant manufacturing process(es) to be audited, including process risk analysis (such as PFMEA) and control plan. Product auditors shall demonstrate competence in understanding product requirements and use of relevant measuring and test equipment to verify product conformity.</p>
+<p>Where training is provided to achieve competency, documented information shall be retained to demonstrate the trainer’s competency with the above requirements.</p>
+<p>Maintenance of and improvement in internal auditor competence shall be demonstrated through:</p>
+<p>f) executing a minimum number of audits per year, as defined by the organization; and</p>
+<p>g) maintaining knowledge of relevant requirements based on internal changes (e.g., process technology, product technology) and external changes (e.g., ISO 9001, IATF 16949, core tools, and customer specific requirements).</p>
+
+<h3>Second-party auditor competency</h3>
+<p>The organization shall demonstrate the competence of the auditors undertaking the second-party audits. Second-party auditors shall meet customer specific requirements for auditor qualification and demonstrate the minimum following core competencies, including understanding of:</p>
+<p>a) the automotive process approach to auditing, including risk based thinking;</p>
+<p>b) applicable customer and organization specific requirements;</p>
+<p>c) applicable ISO 9001 and IATF 16949 requirements related to the scope of the audit;</p>
+<p>d) applicable manufacturing process(es) to be audited, including PFMEA and control Mineral;</p>
+<p>e) applicable core tool requirements related to the scope of the audit;</p>
+<p>f) how to plan, conduct, prepare audit reports, and close out audit findings.</p>
+
+<h2>Awareness</h2>
+<p>See ISO 9001:2015 requirements.</p>
+
+<h3>Awareness — supplemental</h3>
+<p>The organization shall maintain documented information that demonstrates that all employees are aware of their impact on product quality and the importance of their activities in achieving, maintaining, and improving quality, including customer requirements and the risks involved for the customer with non-conforming product.</p>
+
+<h3>Employee motivation and empowerment</h3>
+<p>The organization shall maintain a documented process(es) to motivate employees to achieve quality objectives, to make continual improvements, and to create an environment that promotes innovation. The process shall include the promotion of quality and technological awareness throughout the whole organization.</p>
+
+<h2>Communication</h2>
+<p>See ISO 9001:2015 requirements.</p>
+
+<h2>Documented information</h2>
+
+<h3>General</h3>
+<p>See ISO 9001:2015 requirements.</p>
+
+<h3>Quality management system documentation</h3>
+<p>The organization’s quality management system shall be documented and include a quality manual, which can be a series of documents (electronic or hard copy).</p>
+<p>The format and structure of the quality manual is at the discretion of the organization and will depend on the organization’s size, culture, and complexity. If a series of documents is used, then a list shall be retained of the documents that comprise the quality manual for the organization.</p>
+<p>The quality manual shall include, at a minimum, the following:</p>
+<p>a) the scope of the quality management system, including details of and justification for any exclusions;</p>
+<p>b) documented processes established for the quality management system, or reference to them;</p>
+<p>c) the organization’s processes and their sequence and interactions (inputs and outputs), including type and extent of control of any outsourced processes;</p>
+<p>d) a document (i.e., matrix) indicating where within the organization’s quality management system their customer-specific requirements are addressed.</p>
+<p>NOTE A matrix of how the requirements of this Automotive QMS standard are addressed by the organization’s processes may be used to assist with linkages of the organization’s processes and this Automotive QMS.</p>
+
+<h3>Creating and updating</h3>
+<p>See ISO 9001:2015 requirements.</p>
+
+<h3>Control of documented information</h3>
+<p><strong>and 7.5.3.2</strong><br>See ISO 9001:2015 requirements.</p>
+
+<h4>Record retention</h4>
+<p>The organization shall define, document, and implement a record retention policy. The control of records shall satisfy statutory, regulatory, organizational, and customer requirements.</p>
+<p>Production part approvals, tooling records (including maintenance and ownership), product and process design records, purchase orders (if applicable), or contracts and amendments shall be retained for the length of time that the product is active for production and service requirements, plus one calendar year, unless otherwise specified by the customer or regulatory agency.</p>
+<p>NOTE Production part approval documented information may include approved product, applicable test equipment records, or approved test data.</p>
+
+<h4>Engineering specifications</h4>
+<p>The organization shall have a documented process describing the review, distribution, and implementation of all customer engineering standards/specifications and related revisions based on customer schedules, as required.</p>
+<p>When an engineering standard/specification change results in a product design change, refer to the requirements in ISO 9001, Section 8.3.6. When an engineering standard/specification change results in a product realization process change, refer to the requirements in Section 8.5.6.1. The organization shall retain a record of the date on which each change is implemented in production. Implementation shall include updated documents.</p>
+<p>Review should be completed within 10 working days of receipt of notification of engineering standards/specifications changes.</p>
+<p>NOTE A change in these standards/specifications may require an updated record of customer production part approval when these specifications are referenced on the design record or if they affect documents of the production part approval process, such as control plan, risk analysis (such as FMEAs), etc.</p>
+
+<h1>Operation</h1>
+
+<h2>Operational planning and control</h2>
+<p>See ISO 9001:2015 requirements.</p>
+
+<h3>Operational planning and control — supplemental</h3>
+<p>When planning for product realization, the following topics shall be included:</p>
+<p>a) customer product requirements and technical specifications;</p>
+<p>b) logistics requirements;</p>
+<p>c) manufacturing feasibility;</p>
+<p>d) project planning (refer to ISO 9001, Section 8.3.2);</p>
+<p>e) acceptance criteria.</p>
+<p>The resources identified in ISO 9001, Section 8.1 c), refer to the required verification, validation, monitoring, measurement, inspection, and test activities specific to the product and the criteria for product acceptance.</p>
+
+<h3>Confidentiality</h3>
+<p>The organization shall ensure the confidentiality of customer-contracted products and projects under development, including related product information.</p>
+
+<h2>Requirements for products and services</h2>
+
+<h3>Customer communication</h3>
+<p>See ISO 9001:2015 requirements.</p>
+
+<h4>Customer communication — supplemental</h4>
+<p>Written or verbal communication shall be in the language agreed with the customer. The organization shall have the ability to communicate necessary information, including data in a customer-specified computer language and format (e.g., computer-aided design data, electronic data interchange).</p>
+
+<h3>Determining the requirements for products and services</h3>
+<p>See ISO 9001:2015 requirements.</p>
+
+<h4>Determining the requirements for products and services — supplemental</h4>
+<p>These requirements shall include recycling, environmental impact, and characteristics identified as a result of the organization's knowledge of the product and manufacturing processes.</p>
+<p>Compliance to ISO 9001, Section 8.2.2 item a) 1), shall include but not be limited to the following: all applicable government, safety, and environmental regulations related to acquisition, storage, handling, recycling, elimination, or disposal of material.</p>
+
+<h3>Review of the requirements for products and services</h3>
+<p><strong>8.2.3.1</strong><br>See ISO 9001:2015 requirements.</p>
+
+<h4>Review of the requirements for products and services — supplemental</h4>
+<p>The organization shall retain documented evidence of a customer-authorized waiver for the requirements stated in ISO 9001, Section 8.2.3.1, for a formal review.</p>
+
+<h4>Customer-designated special characteristics</h4>
+<p>The organization shall conform to customer requirements for designation, approval documentation, and control of special characteristics.</p>
+
+<h4>Organization manufacturing feasibility</h4>
+<p>The organization shall utilize a multidisciplinary approach to conduct an analysis to determine if it is feasible that the organization’s manufacturing processes are capable of consistently producing product that meets all of the engineering and capacity requirements specified by the customer. The organization shall conduct this feasibility analysis for any manufacturing or product technology new to the organization and for any changed manufacturing process or product design.</p>
+<p>Additionally, the organization should validate through production runs, benchmarking studies, or other appropriate methods, their ability to make product to specifications at the required rate.</p>
+
+<p><strong>8.2.3.2</strong><br>See ISO 9001:2015 requirements.</p>
+
+<h3>Changes to requirements for products and services</h3>
+<p>See ISO 9001:2015 requirements.</p>
+
+<h2>Design and development of products and services</h2>
+
+<h3>General</h3>
+<p>See ISO 9001:2015 requirements.</p>
+
+<h4>Design and development of products and services — supplemental</h4>
+<p>The requirements of ISO 9001, Section 8.3.1, shall apply to product and manufacturing process design and development and shall focus on error prevention rather than detection.</p>
+<p>The organization shall document the design and development process.</p>
+
+<h3>Design and development planning</h3>
+<p>See ISO 9001:2015 requirements.</p>
+
+<h4>Design and development planning — supplemental</h4>
+<p>The organization shall ensure that design and development planning includes all affected stakeholders within the organization and, as appropriate, its supply chain. Examples of areas for using such a multidisciplinary approach include but are not limited to the following:</p>
+<p>a) project management (for example, APQP or VDA-RGA);</p>
+<p>b) product and manufacturing process design activities (for example, DFM and DFA), such as consideration of the use of alternative designs and manufacturing processes;</p>
+<p>c) development and review of product design risk analysis (FMEAs), including actions to reduce potential risks;</p>
+<p>d) development and review of manufacturing process risk analysis (for example, FMEAs, process flows, control plans, and standard work instructions).</p>
+<p>NOTE A multidisciplinary approach typically includes the organization’s design, manufacturing, engineering, quality, production, purchasing, supplier, maintenance, and other appropriate functions.</p>
+
+<h4>Product design skills</h4>
+<p>The organization shall ensure that personnel with product design responsibility are competent to achieve design requirements and are skilled in applicable product design tools and techniques. Applicable tools and techniques shall be identified by the organization.</p>
+<p>NOTE An example of product design skills is the application of digitized mathematically based data.</p>
+
+<h4>Development of products with embedded software</h4>
+<p>The organization shall use a process for quality assurance for their products with internally developed embedded software. A software development assessment methodology shall be utilized to assess the organization’s software development process. Using prioritization based on risk and potential impact to the customer, the organization shall retain documented information of a software development capability self-assessment.</p>
+<p>The organization shall include software development within the scope of their internal audit programme (see Section 9.2.2.1).</p>
+
+<h3>Design and development inputs</h3>
+<p>See ISO 9001:2015 requirements.</p>
+
+<h4>Product design input</h4>
+<p>The organization shall identify, document, and review product design input requirements as a result of contract review. Product design input requirements include but are not limited to the following:</p>
+<p>a) product specifications including but not limited to special characteristics (see Section 8.3.3.3);</p>
+<p>b) boundary and interface requirements;</p>
+<p>c) identification, traceability, and packaging;</p>
+<p>d) consideration of design alternatives;</p>
+<p>e) assessment of risks with the input requirements and the organization’s ability to mitigate/manage the risks, including from the feasibility analysis;</p>
+<p>f) targets for conformity to product requirements including preservation, reliability, durability, serviceability, health, safety, environmental, development timing, and cost;</p>
+<p>g) applicable statutory and regulatory requirements of the customer-identified country of destination, if provided;</p>
+<p>h) embedded software requirements.</p>
+<p>The organization shall have a process to deploy information gained from previous design projects, competitive product analysis (benchmarking), supplier feedback, internal input, field data, and other relevant sources for current and future projects of a similar nature.</p>
+<p>NOTE One approach for considering design alternatives is the use of trade-off curves.</p>
+
+<h4>Manufacturing process design input</h4>
+<p>The organization shall identify, document, and review manufacturing process design input requirements including but not limited to the following:</p>
+<p>a) product design output data including special characteristics;</p>
+<p>b) targets for productivity, process capability, timing, and cost;</p>
+<p>c) manufacturing technology alternatives;</p>
+<p>d) customer requirements, if any;</p>
+<p>e) experience from previous developments;</p>
+<p>f) new materials;</p>
+<p>g) product handling and ergonomic requirements; and</p>
+<p>h) design for manufacturing and design for assembly.</p>
+<p>The manufacturing process design shall include the use of error-proofing methods to a degree appropriate to the magnitude of the problem(s) and commensurate with the risks encountered.</p>
+
+<h4>Special characteristics</h4>
+<p>The organization shall use a multidisciplinary approach to establish, document, and implement its process(es) to identify special characteristics, including those determined by the customer and the risk analysis performed by the organization, and shall include the following:</p>
+<p>a) documentation of all special characteristics in the drawings (as required), risk analysis (such as FMEA), control plans, and standard work/operator instructions; special characteristics are identified with specific markings and are cascaded through each of these documents;</p>
+<p>b) development of control and monitoring strategies for special characteristics of products and production processes;</p>
+<p>c) customer-specified approvals, when required;</p>
+<p>d) compliance with customer-specified definitions and symbols or the organization’s equivalent symbols or notations, as defined in a symbol conversion table. The symbol conversion table shall be submitted to the customer, if required.</p>
+
+<h3>Design and development controls</h3>
+<p>See ISO 9001:2015 requirements.</p>
+
+<h4>Monitoring</h4>
+<p>Measurements at specified stages during the design and development of products and processes shall be defined, analysed, and reported with summary results as an input to management review (see Section 9.3.2.1).</p>
+<p>When required by the customer, measurements of the product and process development activity shall be reported to the customer at stages specified, or agreed to, by the customer.</p>
+<p>NOTE When appropriate, these measurements may include quality risks, costs, lead times, critical paths, and other measurements.</p>
+
+<h4>Design and development validation</h4>
+<p>Design and development validation shall be performed in accordance with customer requirements, including any applicable industry and governmental agency-issued regulatory standards. The timing of design and development validation shall be planned in alignment with customer-specified timing, as applicable.</p>
+<p>Where contractually agreed with the customer, this shall include evaluation of the interaction of the organization’s product, including embedded software, within the system of the final customer’s product.</p>
+
+<h4>Prototype programme</h4>
+<p>When required by the customer, the organization shall have a prototype programme and control plan. The organization shall use, whenever possible, the same suppliers, tooling, and manufacturing processes as will be used in production.</p>
+<p>All performance-testing activities shall be monitored for timely completion and conformity to requirements.</p>
+<p>When services are outsourced, the organization shall include the type and extent of control in the scope of its quality management system to ensure that outsourced services conform to requirements (see ISO 9001, Section 8.4).</p>
+
+<h4>Product approval process</h4>
+<p>The organization shall establish, implement, and maintain a product and manufacturing approval process conforming to requirements defined by the customer(s).</p>
+<p>The organization shall approve externally provided products and services per ISO 9001, Section 8.4.3, prior to submission of their part approval to the customer.</p>
+<p>The organization shall obtain documented product approval prior to shipment, if required by the customer. Records of such approval shall be retained.</p>
+<p>NOTE Product approval should be subsequent to the verification of the manufacturing process.</p>
+
+<h3>Design and development outputs</h3>
+<p>See ISO 9001:2015 requirements.</p>
+
+<h4>Design and development outputs — supplemental</h4>
+<p>The product design output shall be expressed in terms that can be verified and validated against product design input requirements. The product design output shall include but is not limited to the following, as applicable:</p>
+<p>a) design risk analysis (FMEA);</p>
+<p>b) reliability study results;</p>
+<p>c) product special characteristics;</p>
+<p>d) results of product design error-proofing, such as DFSS, DFMA, and FTA;</p>
+<p>e) product definition including 3D models, technical data packages, product manufacturing information, and geometric dimensioning &amp; tolerancing (GD&amp;T);</p>
+<p>f) 2D drawings, product manufacturing information, and geometric dimensioning &amp; tolerancing (GD&amp;T);</p>
+<p>g) product design review results;</p>
+<p>h) service diagnostic guidelines and repair and serviceability instructions;</p>
+<p>i) service part requirements;</p>
+<p>j) packaging and labeling requirements for shipping.</p>
+<p>NOTE Interim design outputs should include any engineering problems being resolved through a trade-off process.</p>
+
+<h4>Manufacturing process design output</h4>
+<p>The organization shall document the manufacturing process design output in a manner that enables verification against the manufacturing process design inputs. The organization shall verify the outputs against manufacturing process design input requirements. The manufacturing process design output shall include but is not limited to the following:</p>
+<p>a) specifications and drawings;</p>
+<p>b) special characteristics for product and manufacturing process;</p>
+<p>c) identification of process input variables that impact characteristics;</p>
+<p>d) tooling and equipment for production and control, including capability studies of equipment and process(es);</p>
+<p>e) manufacturing process flow charts/layout, including linkage of product, process, and tooling;</p>
+<p>f) capacity analysis;</p>
+<p>g) manufacturing process FMEA;</p>
+<p>h) maintenance plans and instructions;</p>
+<p>i) control plan (see Annex A);</p>
+<p>j) standard work and work instructions;</p>
+<p>k) process approval acceptance criteria;</p>
+<p>l) data for quality, reliability, maintainability, and measurability;</p>
+<p>m) results of error-proofing identification and verification, as appropriate;</p>
+<p>n) methods of rapid detection, feedback, and correction of product/manufacturing process nonconformities.</p>
+
+<h3>Design and development changes</h3>
+<p>See ISO 9001:2015 requirements.</p>
+
+<h4>Design and development changes — supplemental</h4>
+<p>The organization shall evaluate all design changes after initial product approval, including those proposed by the organization or its suppliers, for potential impact on fit, form, function, performance, and/or durability. These changes shall be validated against customer requirements and approved internally, prior to production implementation.</p>
+<p>If required by the customer, the organization shall obtain documented approval, or a documented waiver, from the customer prior to production implementation.</p>
+<p>For products with embedded software, the organization shall document the revision level of software and hardware as part of the change record.</p>
+
+<h2>Control of externally provided processes, products and services</h2>
+
+<h3>General</h3>
+<p>See ISO 9001:2015 requirements.</p>
+
+<h4>General — supplemental</h4>
+<p>The organization shall include all products and services that affect customer requirements such as sub-assembly, sequencing, sorting, rework, and calibration services in the scope of their definition of externally provided products, processes, and services.</p>
+
+<h4>Supplier selection process</h4>
+<p>The organization shall have a documented supplier selection process. The selection process shall include:</p>
+<p>a) an assessment of the selected supplier’s risk to product conformity and uninterrupted supply of the organization’s product to their customers;</p>
+<p>b) relevant quality and delivery performance;</p>
+<p>c) an evaluation of the supplier’s quality management system;</p>
+<p>d) multidisciplinary decision making; and</p>
+<p>e) an assessment of software development capabilities, if applicable.</p>
+<p>Other supplier selection criteria that should be considered include the following:</p>
+<p>- volume of automotive business (absolute and as a percentage of total business);</p>
+<p>- financial stability;</p>
+<p>- purchased product, material, or service complexity;</p>
+<p>- required technology (product or process);</p>
+<p>- adequacy of available resources (e.g., people, infrastructure);</p>
+<p>- design and development capabilities (including project management);</p>
+<p>- manufacturing capability;</p>
+<p>- change management process;</p>
+<p>- business continuity planning (e.g., disaster preparedness, contingency planning);</p>
+<p>- logistics process;</p>
+<p>- customer service.</p>
+
+<h4>Customer-directed sources (also known as “Directed–Buy”)</h4>
+<p>When specified by the customer, the organization shall purchase products, materials, or services from customer-directed sources.</p>
+<p>All requirements of Section 8.4 (except the requirements in IATF 16949, Section 8.4.1.2) are applicable to the organization’s control of customer-directed sources unless specific agreements are otherwise defined by the contract between the organization and the customer.</p>
+
+<h3>Type and extent of control</h3>
+<p>See ISO 9001:2015 requirements.</p>
+
+<h4>Type and extent of control — supplemental</h4>
+<p>The organization shall have a documented process to identify outsourced processes and to select the types and extent of controls used to verify conformity of externally provided products, processes, and services to internal (organizational) and external customer requirements.</p>
+<p>The process shall include the criteria and actions to escalate or reduce the types and extent of controls and development activities based on supplier performance and assessment of product, material, or service risks.</p>
+
+<h4>Statutory and regulatory requirements</h4>
+<p>The organization shall document their process to ensure that purchased products, processes, and services conform to the current applicable statutory and regulatory requirements in the country of receipt, the country of shipment, and the customer-identified country of destination, if provided.</p>
+<p>If the customer defines special controls for certain products with statutory and regulatory requirements, the organization shall ensure they are implemented and maintained as defined, including at suppliers.</p>
+
+<h4>Supplier quality management system development</h4>
+<p>The organization shall require their suppliers of automotive products and services to develop, implement, and improve a quality management system certified to ISO 9001, unless otherwise authorized by the customer [e.g., item a) below], with the ultimate objective of becoming certified to this Automotive QMS Standard. Unless otherwise specified by the customer, the following sequence should be applied to achieve this requirement:</p>
+<p>a) compliance to ISO 9001 through second-party audits;</p>
+<p>b) certification to ISO 9001 through third-party audits; unless otherwise specified by the customer, suppliers to the organization shall demonstrate conformity to ISO 9001 by maintaining a third-party certification issued by a certification body bearing the accreditation mark of a recognized IAF MLA (International Accreditation Forum Multilateral Recognition Arrangement) member and where the accreditation body’s main scope includes management system certification to ISO/IEC 17021;</p>
+<p>c) certification to ISO 9001 with compliance to other customer-defined QMS requirements (such as Minimum Automotive Quality Management System Requirements for Sub-Tier Suppliers [MAQMSR] or equivalent) through second-party audits;</p>
+<p>d) certification to ISO 9001 with compliance to IATF 16949 through second-party audits;</p>
+<p>e) certification to IATF 16949 through third-party audits (valid third-party certification of the supplier to IATF 16949 by an IATF-recognized certification body).</p>
+
+<h4>Automotive product-related software or automotive products with embedded software</h4>
+<p>The organization shall require their suppliers of automotive product-related software, or automotive products with embedded software, to implement and maintain a process for software quality assurance for their products.</p>
+<p>A software development assessment methodology shall be utilized to assess the supplier’s software development process. Using prioritization based on risk and potential impact to the customer, the organization shall require the supplier to retain documented information of a software development capability self-assessment.</p>
+
+<h4>Supplier monitoring</h4>
+<p>The organization shall have a documented process and criteria to evaluate supplier performance in order to ensure conformity of externally provided products, processes, and services to internal and external customer requirements.</p>
+<p>At a minimum, the following supplier performance indicators shall be monitored:</p>
+<p>a) delivered product conformity to requirements;</p>
+<p>b) customer disruptions at the receiving plant, including yard holds and stop ships;</p>
+<p>c) delivery schedule performance;</p>
+<p>d) number of occurrences of premium freight.</p>
+<p>If provided by the customer, the organization shall also include the following, as appropriate, in their supplier performance monitoring:</p>
+<p>e) special status customer notifications related to quality or delivery issues;</p>
+<p>f) dealer returns, warranty, field actions, and recalls.</p>
+
+<h4>Second-party audits</h4>
+<p>The organization shall include a second-party audit process in their supplier management approach. Second-party audits may be used for the following:</p>
+<p>a) supplier risk assessment;</p>
+<p>b) supplier monitoring;</p>
+<p>c) supplier QMS development;</p>
+<p>d) product audits;</p>
+<p>e) process audits.</p>
+<p>Based on a risk analysis, including product safety/regulatory requirements, performance of the supplier, and QMS certification level, at a minimum, the organization shall document the criteria for determining the need, type, frequency, and scope of second-party audits.</p>
+<p>The organization shall retain records of the second-party audit reports.</p>
+<p>If the scope of the second-party audit is to assess the supplier’s quality management system, then the approach shall be consistent with the automotive process approach.</p>
+<p>NOTE Guidance may be found in the IATF Auditor Guide and ISO 19011.</p>
+
+<h4>Supplier development</h4>
+<p>The organization shall determine the priority, type, extent, and timing of required supplier development actions for its active suppliers. Determination inputs shall include but are not limited to the following:</p>
+<p>a) performance issues identified through supplier monitoring (see Section 8.4.2.4);</p>
+<p>b) second-party audit findings (see Section 8.4.2.4.1);</p>
+<p>c) third-party quality management system certification status;</p>
+<p>d) risk analysis.</p>
+<p>The organization shall implement actions necessary to resolve open (unsatisfactory) performance issues and pursue opportunities for continual improvement.</p>
+
+<h3>Information for external providers</h3>
+<p>See ISO 9001:2015 requirements.</p>
+
+<h4>Information for external providers — supplemental</h4>
+<p>The organization shall pass down all applicable statutory and regulatory requirements and special product and process characteristics to their suppliers and require the suppliers to cascade all applicable requirements down the supply chain to the point of manufacture.</p>
+
+<h2>Production and service provision</h2>
+
+<h3>Control of production and service provision</h3>
+<p>See ISO 9001:2015 requirements.</p>
+<p>NOTE Suitable infrastructure includes appropriate manufacturing equipment required to ensure product compliance. Monitoring and measuring resources include appropriate monitoring and measuring equipment required to ensure effective control of manufacturing processes.</p>
+
+<h4>Control plan</h4>
+<p>The organization shall develop control plans (in accordance with Annex A) at the system, subsystem, component, and/or material level for the relevant manufacturing site and all product supplied, including those for processes producing bulk materials as well as parts. Family control plans are acceptable for bulk material and similar parts using a common manufacturing process.</p>
+<p>The organization shall have a control plan for pre-launch and production that shows linkage and incorporates information from the design risk analysis (if provided by the customer), process flow diagram, and manufacturing process risk analysis outputs (such as FMEA).</p>
+<p>The organization shall, if required by the customer, provide measurement and conformity data collected during execution of either the pre-launch or production control plans.</p>
+<p>The organization shall include in the control plan:</p>
+<p>a) controls used for the manufacturing process control, including verification of job set-ups;</p>
+<p>b) first-off/last-off part validation, as applicable;</p>
+<p>c) methods for monitoring of control exercised over special characteristics (see Annex A) defined by both the customer and the organization;</p>
+<p>d) the customer-required information, if any;</p>
+<p>e) specified reaction plan (see Annex A); when nonconforming product is detected, the process becomes statistically unstable or not statistically capable.</p>
+<p>The organization shall review control plans, and update as required, for any of the following:</p>
+<p>f) the organization determines it has shipped nonconforming product to the customer;</p>
+<p>g) when any change occurs affecting product, manufacturing process, measurement, logistics, supply sources, production volume changes, or risk analysis (FMEA) (see Annex A);</p>
+<p>h) after a customer complaint and implementation of the associated corrective action, when applicable;</p>
+<p>i) at a set frequency based on a risk analysis.</p>
+<p>If required by the customer, the organization shall obtain customer approval after review or revision of the control plan.</p>
+
+<h4>Standardised work — operator instructions and visual standards</h4>
+<p>The organization shall ensure that standardised work documents are:</p>
+<p>a) communicated to and understood by the employees who are responsible for performing the work;</p>
+<p>b) legible;</p>
+<p>c) presented in the language(s) understood by the personnel responsible to follow them;</p>
+<p>d) accessible for use at the designated work area(s).</p>
+<p>The standardised work documents shall also include rules for operator safety.</p>
+
+<h4>Verification of job set-ups</h4>
+<p>The organization shall:</p>
+<p>a) verify job set-ups when performed, such as an initial run of a job, material changeover, or job change that requires a new set-up;</p>
+<p>b) maintain documented information for set-up personnel;</p>
+<p>c) use statistical methods of verification, where applicable;</p>
+<p>d) perform first-off/last-off part validation, as applicable; where appropriate, first-off parts should be retained for comparison with the last-off parts; where appropriate, last-off-parts should be retained for comparison with first-off parts in subsequent runs;</p>
+<p>e) retain records of process and product approval following set-up and first-off/last-off part validations.</p>
+
+<h4>Verification after shutdown</h4>
+<p>The organization shall define and implement the necessary actions to ensure product compliance with requirements after a planned or unplanned production shutdown period.</p>
+
+<h4>Total productive maintenance</h4>
+<p>The organization shall develop, implement, and maintain a documented total productive maintenance system.</p>
+<p>At a minimum, the system shall include the following:</p>
+<p>a) identification of process equipment necessary to produce conforming product at the required volume;</p>
+<p>b) availability of replacement parts for the equipment identified in item a);</p>
+<p>c) provision of resource for machine, equipment, and facility maintenance;</p>
+<p>d) packaging and preservation of equipment, tooling, and gauging;</p>
+<p>e) applicable customer-specific requirements;</p>
+<p>f) documented maintenance objectives, for example: OEE (Overall Equipment Effectiveness), MTBF (Mean Time Between Failure), and MTTR (Mean Time To Repair), and Preventive Maintenance compliance metrics. Performance to the maintenance objectives shall form an input into management review (see ISO 9001, Section 9.3);</p>
+<p>g) regular review of maintenance plan and objectives and a documented action plan to address corrective actions where objectives are not achieved;</p>
+<p>h) use of preventive maintenance methods;</p>
+<p>i) use of predictive maintenance methods, as applicable;</p>
+<p>j) periodic overhaul.</p>
+
+<h4>Management of production tooling and manufacturing, test, inspection tooling and equipment</h4>
+<p>The organization shall provide resources for tool and gauge design, fabrication, and verification activities for production and service materials and for bulk materials, as applicable.</p>
+<p>The organization shall establish and implement a system for production tooling management, whether owned by the organization or the customer, including:</p>
+<p>a) maintenance and repair facilities and personnel;</p>
+<p>b) storage and recovery;</p>
+<p>c) set-up;</p>
+<p>d) tool-change programmes for perishable tools;</p>
+<p>e) tool design modification documentation, including engineering change level of the product;</p>
+<p>f) tool modification and revision to documentation;</p>
+<p>g) tool identification, such as serial or asset number; the status, such as production, repair or disposal; ownership; and location.</p>
+<p>The organization shall verify that customer-owned tools, manufacturing equipment, and test/inspection equipment are permanently marked in a visible location so that the ownership and application of each item can be determined.</p>
+<p>The organization shall implement a system to monitor these activities if any work is outsourced.</p>
+
+<h4>Production scheduling</h4>
+<p>The organization shall ensure that production is scheduled in order to meet customer orders/demands such as Just-In-Time (JIT) and is supported by an information system that permits access to production information at key stages of the process and is order driven.</p>
+<p>The organization shall include relevant planning information during production scheduling, e.g., customer orders, supplier on-time delivery performance, capacity, shared loading (multi-part station), lead time, inventory level, preventive maintenance, and calibration.</p>
+
+<h3>Identification and traceability</h3>
+<p>See ISO 9001:2015 requirements.</p>
+<p>NOTE Inspection and test status is not indicated by the location of product in the production flow unless inherently obvious, such as material in an automated production transfer process. Alternatives are permitted if the status is clearly identified, documented, and achieves the designated purpose.</p>
+
+<h4>Identification and traceability — supplemental</h4>
+<p>The purpose of traceability is to support identification of clear start and stop points for product received by the customer or in the field that may contain quality and/or safety-related nonconformities. Therefore, the organization shall implement identification and traceability processes as described below.</p>
+<p>The organization shall conduct an analysis of internal, customer, and regulatory traceability requirements for all automotive products, including developing and documenting traceability plans, based on the levels of risk or failure severity for employees, customers, and consumers. These plans shall define the appropriate traceability systems, processes, and methods by product, process, and manufacturing location that:</p>
+<p>a) enable the organization to identify nonconforming and/or suspect product;</p>
+<p>b) enable the organization to segregate nonconforming and/or suspect product;</p>
+<p>c) ensure the ability to meet the customer and/or regulatory response time requirements;</p>
+<p>d) ensure documented information is retained in the format (electronic, hardcopy, archive) that enables the organization to meet the response time requirements;</p>
+<p>e) ensure serialized identification of individual products, if specified by the customer or regulatory standards;</p>
+<p>f) ensure the identification and traceability requirements are extended to externally provided products with safety/regulatory characteristics.</p>
+
+<h3>Property belonging to customers or external providers</h3>
+<p>See ISO 9001:2015 requirements.</p>
+
+<h3>Preservation</h3>
+<p>See ISO 9001:2015 requirements.</p>
+
+<h4>Preservation — supplemental</h4>
+<p>Preservation shall include identification, handling, contamination control, packaging, storage, transmission or transportation, and protection.</p>
+<p>Preservation shall apply to materials and components from external and/or internal providers from receipt through processing, including shipment and until delivery to/acceptance by the customer.</p>
+<p>In order to detect deterioration, the organization shall assess at appropriate planned intervals the condition of product in stock, the place/type of storage container, and the storage environment.</p>
+<p>The organization shall use an inventory management system to optimize inventory turns over time and ensure stock rotation, such as “first-in-first-out” (FIFO).</p>
+<p>The organization shall ensure that obsolete product is controlled in a manner similar to that of nonconforming product.</p>
+<p>Organizations shall comply with preservation, packaging, shipping, and labeling requirements as provided by their customers.</p>
+
+<h3>Post-delivery activities</h3>
+<p>See ISO 9001:2015 requirements.</p>
+
+<h4>Feedback of information from service</h4>
+<p>The organization shall ensure that a process for communication of information on service concerns to manufacturing, material handling, logistics, engineering, and design activities is established, implemented, and maintained.</p>
+<p>NOTE 1 The intent of the addition of “service concerns” to this sub-clause is to ensure that the organization is aware of nonconforming product(s) and material(s) that may be identified at the customer location or in the field.</p>
+<p>NOTE 2 “Service concerns” should include the results of field failure test analysis (see Section 10.2.6) where applicable.</p>
+
+<h4>Service agreement with customer</h4>
+<p>When there is a service agreement with the customer, the organization shall:</p>
+<p>a) verify that the relevant service centres comply with applicable requirements;</p>
+<p>b) verify the effectiveness of any special purpose tools or measurement equipment;</p>
+<p>c) ensure that all service personnel are trained in applicable requirements.</p>
+
+<h3>Control of changes</h3>
+<p>See ISO 9001:2015 requirements.</p>
+
+<h4>Control of changes — supplemental</h4>
+<p>The organization shall have a documented process to control and react to changes that impact product realization. The effects of any change, including those changes caused by the organization, the customer, or any supplier, shall be assessed.</p>
+<p>The organization shall:</p>
+<p>a) define verification and validation activities to ensure compliance with customer requirements;</p>
+<p>b) validate changes before implementation;</p>
+<p>c) document the evidence of related risk analysis;</p>
+<p>d) retain records of verification and validation.</p>
+<p>Changes, including those made at suppliers, should require a production trial run for verification of changes (such as changes to part design, manufacturing location, or manufacturing process) to validate the impact of any changes on the manufacturing process.</p>
+<p>When required by the customer, the organization shall:</p>
+<p>e) notify the customer of any planned product realization changes after the most recent product approval;</p>
+<p>f) obtain documented approval, prior to implementation of the change;</p>
+<p>g) complete additional verification or identification requirements, such as production trial run and new product validation.</p>
+
+<h4>Temporary change of process controls</h4>
+<p>The organization shall identify, document, and maintain a list of the process controls, including inspection, measuring, test, and error-proofing devices, that includes the primary process control and the approved back-up or alternate methods.</p>
+<p>The organization shall document the process that manages the use of alternate control methods. The organization shall include in this process, based on risk analysis (such as FMEA), severity, and the internal approvals to be obtained prior to production implementation of the alternate control method.</p>
+<p>Before shipping product that was inspected or tested using the alternate method, if required, the organization shall obtain approval from the customer(s). The organization shall maintain and periodically review a list of approved alternate process control methods that are referenced in the control plan.</p>
+<p>Standard work instructions shall be available for each alternate process control method. The organization shall review the operation of alternate process controls on a daily basis, at a minimum, to verify implementation of standard work with the goal to return to the standard process as defined by the control plan as soon as possible. Example methods include but are not limited to the following:</p>
+<p>a) daily quality focused audits (e.g., layered process audits, as applicable);</p>
+<p>b) daily leadership meetings.</p>
+<p>Restart verification is documented for a defined period based on severity and confirmation that all features of the error-proofing device or process are effectively reinstated.</p>
+<p>The organization shall implement traceability of all product produced while any alternate process control devices or processes are being used (e.g., verification and retention of first piece and last piece from every shift).</p>
+
+<h2>Release of products and services</h2>
+<p>See ISO 9001:2015 requirements.</p>
+
+<h3>Release of products and services — supplemental</h3>
+<p>The organization shall ensure that the planned arrangements to verify that the product and service requirements have been met encompass the control plan and are documented as specified in the control plan (see Annex A).</p>
+<p>The organization shall ensure that the planned arrangements for initial release of products and services encompass product or service approval.</p>
+<p>The organization shall ensure that product or service approval is accomplished after changes following initial release, according to ISO 9001, Section 8.5.6.</p>
+
+<h3>Layout inspection and functional testing</h3>
+<p>A layout inspection and a functional verification to applicable customer engineering material and performance standards shall be performed for each product as specified in the control plans. Results shall be available for customer review.</p>
+<p>NOTE 1 Layout inspection is the complete measurement of all product dimensions shown on the design record(s).</p>
+<p>NOTE 2 The frequency of layout inspection is determined by the customer.</p>
+
+<h3>Appearance items</h3>
+<p>For organizations manufacturing parts designated by the customer as “appearance items,” the organization shall provide the following:</p>
+<p>a) appropriate resources, including lighting, for evaluation;</p>
+<p>b) masters for colour, grain, gloss, metallic brilliance, texture, distinctness of image (DOI), and haptic technology, as appropriate;</p>
+<p>c) maintenance and control of appearance masters and evaluation equipment;</p>
+<p>d) verification that personnel making appearance evaluations are competent and qualified to do so.</p>
+
+<h3>Verification and acceptance of conformity of externally provided products and services</h3>
+<p>The organization shall have a process to ensure the quality of externally provided processes, products, and services utilizing one or more of the following methods:</p>
+<p>a) receipt and evaluation of statistical data provided by the supplier to the organization;</p>
+<p>b) receiving inspection and/or testing, such as sampling based on performance;</p>
+<p>c) second-party or third-party assessments or audits of supplier sites when coupled with records of acceptable delivered product conformance to requirements;</p>
+<p>d) part evaluation by a designated laboratory;</p>
+<p>e) another method agreed with the customer.</p>
+
+<h3>Statutory and regulatory conformity</h3>
+<p>Prior to release of externally provided products into its production flow, the organization shall confirm and be able to provide evidence that externally provided processes, products, and services conform to the latest applicable statutory, regulatory, and other requirements in the countries where they are manufactured and in the customer-identified countries of destination, if provided.</p>
+
+<h3>Acceptance criteria</h3>
+<p>Acceptance criteria shall be defined by the organization and, where appropriate or required, approved by the customer. For attribute data sampling, the acceptance level shall be zero defects (see Section 9.1.1.1).</p>
+
+<h2>Control of nonconforming outputs</h2>
+<p><strong>8.7.1</strong><br>See ISO 9001:2015 requirements.</p>
+
+<h3>Customer authorization for concession</h3>
+<p>The organization shall obtain a customer concession or deviation permit prior to further processing whenever the product or manufacturing process is different from that which is currently approved.</p>
+<p>The organization shall obtain customer authorization prior to further processing for “use as is” and rework dispositions of nonconforming product. If sub-components are reused in the manufacturing process, that sub-component reuse shall be clearly communicated to the customer in the concession or deviation permit.</p>
+<p>The organization shall maintain a record of the expiration date or quantity authorized under concession. The organization shall also ensure compliance with the original or superseding specifications and requirements when the authorization expires. Material shipped under concession shall be properly identified on each shipping container (this applies equally to purchased product). The organization shall approve any requests from suppliers before submission to the customer.</p>
+
+<h3>Control of nonconforming product — customer-specified process</h3>
+<p>The organization shall comply with applicable customer-specified controls for nonconforming product(s).</p>
+
+<h3>Control of suspect product</h3>
+<p>The organization shall ensure that product with unidentified or suspect status is classified and controlled as nonconforming product. The organization shall ensure that all appropriate manufacturing personnel receive training for containment of suspect and nonconforming product.</p>
+
+<h3>Control of reworked product</h3>
+<p>The organization shall utilize risk analysis (such as FMEA) methodology to assess risks in the rework process prior to a decision to rework the product. If required by the customer, the organization shall obtain approval from the customer prior to commencing rework of the product.</p>
+<p>The organization shall have a documented process for rework confirmation in accordance with the control plan or other relevant documented information to verify compliance to original specifications.</p>
+<p>Instructions for disassembly or rework, including re-inspection and traceability requirements, shall be accessible to and utilized by the appropriate personnel.</p>
+<p>The organization shall retain documented information on the disposition of reworked product including quantity, disposition, disposition date, and applicable traceability information.</p>
+
+<h3>Control of repaired product</h3>
+<p>The organization shall utilize risk analysis (such as FMEA) methodology to assess risks in the repair process prior to a decision to repair the product. The organization shall obtain approval from the customer before commencing repair of the product.</p>
+<p>The organization shall have a documented process for repair confirmation in accordance with the control plan or other relevant documented information.</p>
+<p>Instructions for disassembly or repair, including re-inspection and traceability requirements, shall be accessible to and utilized by the appropriate personnel.</p>
+<p>The organization shall obtain a documented customer authorization for concession for the product to be repaired.</p>
+<p>The organization shall retain documented information on the disposition of repaired product including quantity, disposition, disposition date, and applicable traceability information.</p>
+
+<h3>Customer notification</h3>
+<p>The organization shall immediately notify the customer(s) in the event that nonconforming product has been shipped. Initial communication shall be followed with detailed documentation of the event.</p>
+
+<h3>Nonconforming product disposition</h3>
+<p>The organization shall have a documented process for disposition of nonconforming product not subject to rework or repair. For product not meeting requirements, the organization shall verify that the product to be scrapped is rendered unusable prior to disposal.</p>
+<p>The organization shall not divert nonconforming product to service or other use without prior customer approval.</p>
+
+<p><strong>8.7.2</strong><br>See ISO 9001:2015 requirements.</p>
+
+<h1>Performance evaluation</h1>
+
+<h2>Monitoring, measurement, analysis and evaluation</h2>
+
+<h3>General</h3>
+<p>See ISO 9001:2015 requirements.</p>
+
+<h3>Monitoring and measurement of manufacturing processes</h3>
+<p>The organization shall perform process studies on all new manufacturing (including assembly or sequencing) processes to verify process capability and to provide additional input for process control, including those for special characteristics.</p>
+<p>NOTE For some manufacturing processes, it may not be possible to demonstrate product compliance through process capability. For those processes, alternate methods such as batch conformance to specification may be used.</p>
+<p>The organization shall maintain manufacturing process capability or performance results as specified by the customer’s part approval process requirements. The organization shall verify that the process flow diagram, PFMEA, and control plan are implemented, including adherence to the following:</p>
+<p>a) measurement techniques;</p>
+<p>b) sampling plans;</p>
+<p>c) acceptance criteria;</p>
+<p>d) records of actual measurement values and/or test results for variable data;</p>
+<p>e) reaction plans and escalation process when acceptance criteria are not met.</p>
+<p>Significant process events, such as tool change or machine repair, shall be recorded and retained as documented information.</p>
+<p>The organization shall initiate a reaction plan indicated on the control plan and evaluated for impact on compliance to specifications for characteristics that are either not statistically capable or are unstable. These reaction plans shall include containment of product and 100 percent inspection, as appropriate. A corrective action plan shall be developed and implemented by the organization indicating specific actions, timing, and assigned responsibilities to ensure that the process becomes stable and statistically capable. The plans shall be reviewed with and approved by the customer, when required.</p>
+<p>The organization shall maintain records of effective dates of process changes.</p>
+
+<h3>Identification of statistical tools</h3>
+<p>The organization shall determine the appropriate use of statistical tools. The organization shall verify that appropriate statistical tools are included as part of the advanced product quality planning (or equivalent) process and included in the design risk analysis (such as DFMEA) (where applicable), the process risk analysis (such as PFMEA), and the control plan.</p>
+
+<h3>Application of statistical concepts</h3>
+<p>Statistical concepts, such as variation, control (stability), process capability, and the consequences of over-adjustment, shall be understood and used by employees involved in the collection, analysis, and management of statistical data.</p>
+
+<h2>Customer satisfaction</h2>
+<p>See ISO 9001:2015 requirements.</p>
+
+<h3>Customer satisfaction — supplemental</h3>
+<p>Customer satisfaction with the organization shall be monitored through continual evaluation of internal and external performance indicators to ensure compliance to the product and process specifications and other customer requirements.</p>
+<p>Performance indicators shall be based on objective evidence and include but not be limited to the following:</p>
+<p>a) delivered part quality performance;</p>
+<p>b) customer disruptions;</p>
+<p>c) field returns, recalls, and warranty (where applicable);</p>
+<p>d) delivery schedule performance (including incidents of premium freight);</p>
+<p>e) customer notifications related to quality or delivery issues, including special status.</p>
+<p>The organization shall monitor the performance of manufacturing processes to demonstrate compliance with customer requirements for product quality and process efficiency. The monitoring shall include the review of customer performance data including online customer portals and customer scorecards, where provided.</p>
+
+<h2>Analysis and evaluation</h2>
+<p>See ISO 9001:2015 requirements.</p>
+
+<h3>Prioritization</h3>
+<p>Trends in quality and operational performance shall be compared with progress toward objectives and lead to action to support prioritization of actions for improving customer satisfaction.</p>
+
+<h2>Internal audit</h2>
+<p><strong>AND 9.2.2</strong><br>See ISO 9001:2015 requirements.</p>
+
+<h3>Internal audit programme</h3>
+<p>The organization shall have a documented internal audit process. The process shall include the development and implementation of an internal audit programme that covers the entire quality management system including quality management system audits, manufacturing process audits, and product audits.</p>
+<p>The audit programme shall be prioritized based upon risk, internal and external performance trends, and criticality of the process(es).</p>
+<p>Where the organization is responsible for software development, the organization shall include software development capability assessments in their internal audit programme.</p>
+<p>The frequency of audits shall be reviewed and, where appropriate, adjusted based on occurrence of process changes, internal and external nonconformities, and/or customer complaints. The effectiveness of the audit programme shall be reviewed as a part of management review.</p>
+
+<h3>Quality management system audit</h3>
+<p>The organization shall audit all quality management system processes over each three-year calendar period, according to an annual programme, using the process approach to verify compliance with this Automotive QMS Standard. Integrated with these audits, the organization shall sample customer-specific quality management system requirements for effective implementation.</p>
+
+<h3>Manufacturing process audit</h3>
+<p>The organization shall audit all manufacturing processes over each three-year calendar period to determine their effectiveness and efficiency using customer-specific required approaches for process audits. Where not defined by the customer, the organization shall determine the approach to be used.</p>
+<p>Within each individual audit plan, each manufacturing process shall be audited on all shifts where it occurs, including the appropriate sampling of the shift handover.</p>
+<p>The manufacturing process audit shall include an audit of the effective implementation of the process risk analysis (such as PFMEA), control plan, and associated documents.</p>
+
+<h3>Product audit</h3>
+<p>The organization shall audit products using customer-specific required approaches at appropriate stages of production and delivery to verify conformity to specified requirements. Where not defined by the customer, the organization shall define the approach to be used.</p>
+
+<h2>Management review</h2>
+
+<h3>General</h3>
+<p>See ISO 9001:2015 requirements.</p>
+
+<h3>Management review — supplemental</h3>
+<p>Management review shall be conducted at least annually. The frequency of management review(s) shall be increased based on risk to compliance with customer requirements resulting from internal or external changes impacting the quality management system and performance-related issues.</p>
+
+<h3>Management review inputs</h3>
+<p>See ISO 9001:2015 requirements.</p>
+
+<h3>Management review inputs — supplemental</h3>
+<p>Input to management review shall include:</p>
+<p>a) cost of poor quality (cost of internal and external nonconformance);</p>
+<p>b) measures of process effectiveness;</p>
+<p>c) measures of process efficiency;</p>
+<p>d) product conformance;</p>
+<p>e) assessments of manufacturing feasibility made for changes to existing operations and for new facilities or new product (see Section 7.1.3.1);</p>
+<p>f) customer satisfaction (see ISO 9001, Section 9.1.2);</p>
+<p>g) review of performance against maintenance objectives;</p>
+<p>h) warranty performance (where applicable);</p>
+<p>i) review of customer scorecards (where applicable);</p>
+<p>j) identification of potential field failures identified through risk analysis (such as FMEA);</p>
+<p>k) actual field failures and their impact on safety or the environment.</p>
+
+<h3>Management review outputs</h3>
+<p>See ISO 9001:2015 requirements.</p>
+
+<h3>Management review outputs — supplemental</h3>
+<p>Top management shall document and implement an action plan when customer performance targets are not met.</p>
+
+<h1>Improvement</h1>
+
+<h2>General</h2>
+<p>See ISO 9001:2015 requirements.</p>
+
+<h2>Nonconformity and corrective action</h2>
+<p><strong>and 10.2.2</strong><br>See ISO 9001:2015 requirements.</p>
+
+<h3>Problem solving</h3>
+<p>The organization shall have a documented process(es) for problem solving including:</p>
+<p>a) defined approaches for various types and scale of problems (e.g., new product development, current manufacturing issues, field failures, audit findings);</p>
+<p>b) containment, interim actions, and related activities necessary for control of nonconforming outputs (see ISO 9001, Section 8.7);</p>
+<p>c) root cause analysis, methodology used, analysis, and results;</p>
+<p>d) implementation of systemic corrective actions, including consideration of the impact on similar processes and products;</p>
+<p>e) verification of the effectiveness of implemented corrective actions;</p>
+<p>f) reviewing and, where necessary, updating the appropriate documented information (e.g., PFMEA, control plan).</p>
+<p>Where the customer has specific prescribed processes, tools, or systems for problem solving, the organization shall use those processes, tools, or systems unless otherwise approved by the customer.</p>
+
+<h3>Error-proofing</h3>
+<p>The organization shall have a documented process to determine the use of appropriate error-proofing methodologies. Details of the method used shall be documented in the process risk analysis (such as PFMEA) and test frequencies shall be documented in the control plan.</p>
+<p>The process shall include the testing of error-proofing devices for failure or simulated failure. Records shall be maintained. Challenge parts, when used, shall be identified, controlled, verified, and calibrated where feasible. Error-proofing device failures shall have a reaction plan.</p>
+
+<h3>Warranty management systems</h3>
+<p>When the organization is required to provide warranty for their product(s), the organization shall implement a warranty management process. The organization shall include in the process a method for warranty part analysis, including NTF (no trouble found). When specified by the customer, the organization shall implement the required warranty management process.</p>
+
+<h3>Customer complaints and field failure test analysis</h3>
+<p>The organization shall perform analysis on customer complaints and field failures, including any returned parts, and shall initiate problem solving and corrective action to prevent recurrence.</p>
+<p>Where requested by the customer, this shall include analysis of the interaction of embedded software of the organization’s product within the system of the final customer’s product.</p>
+<p>The organization shall communicate the results of testing/analysis to the customer and also within the organization.</p>
+
+<h2>Continual improvement</h2>
+<p>See ISO 9001:2015 requirements.</p>
+
+<h3>Continual improvement — supplemental</h3>
+<p>The organization shall have a documented process for continual improvement. The organization shall include in this process the following:</p>
+<p>a) identification of the methodology used, objectives, measurement, effectiveness, and documented information;</p>
+<p>b) a manufacturing process improvement action plan with emphasis on the reduction of process variation and waste;</p>
+<p>c) risk analysis (such as FMEA).</p>
+<p>NOTE Continual improvement is implemented once manufacturing processes are statistically capable and stable or when product characteristics are predictable and meet customer requirements.</p>
+
+<h1>Annex A: Control Plan</h1>
+
+<h2>Phases of the control plan</h2>
+<p>A control plan covers three distinct phases, as appropriate:</p>
+<p>a) <strong>Prototype</strong>: a description of the dimensional measurements, material, and performance tests that will occur during building of the prototype. The organization shall have a prototype control plan, if required by the customer.</p>
+<p>b) <strong>Pre-launch</strong>: a description of the dimensional measurements, material, and performance tests that occur after prototype and before full production. Pre-launch is defined as a production phase in the process of product realization that may be required after prototype build.</p>
+<p>c) <strong>Production</strong>: documentation of product/process characteristics, process controls, tests, and measurement systems that occur during mass production.</p>
+<p>Control plans are established at a part number level; but in many cases, family control plans may cover a number of similar parts produced using a common process. Control plans are an output of the quality plan.</p>
+<p>NOTE 1 It is recommended that the organization require its suppliers to meet the requirements of this Annex.</p>
+<p>NOTE 2 For some bulk materials, the control plans do not list most of the production information. This information can be found in the corresponding batch formulation/recipe details.</p>
+
+<h2>Elements of the control plan</h2>
+<p>A control plan includes, as a minimum, the following contents:</p>
+<p><strong>General data</strong></p>
+<p>a) control plan number;</p>
+<p>b) issue date and revision date, if any;</p>
+<p>c) customer information (see customer requirements);</p>
+<p>d) organization's name/site designation;</p>
+<p>e) part number(s);</p>
+<p>f) part name/description;</p>
+<p>g) engineering change level;</p>
+<p>h) phase covered (prototype, pre-launch, production);</p>
+<p>i) key contact;</p>
+<p>j) part/process step number;</p>
+<p>k) process name/operation description;</p>
+<p>l) functional group/area responsible.</p>
+<p><strong>Product control</strong></p>
+<p>a) product-related special characteristics;</p>
+<p>b) other characteristics for control (number, product or process);</p>
+<p>c) specification/tolerance;</p>
+<p><strong>Process control</strong></p>
+<p>a) process parameters (including process settings and tolerances);</p>
+<p>b) process-related special characteristics;</p>
+<p>c) machines, jigs, fixtures, tools for manufacturing (including identifiers, as appropriate);</p>
+<p><strong>Methods</strong></p>
+<p>a) evaluation measurement technique;</p>
+<p>b) error-proofing;</p>
+<p>c) sample size and frequency;</p>
+<p>d) control method;</p>
+<p><strong>Reaction plan</strong></p>
+<p>a) reaction plan (include or reference);</p>
+
+<h1>Annex B: Bibliography – supplemental automotive</h1>
+<p><strong>Internal audit</strong></p>
+<p><strong>AIAG</strong></p>
+<p><strong>ANFIA</strong><br>CQI-8 Layered Process Audit<br>CQI-9 Special Process: Heat Treatment System Assessment<br>CQI-11 Special Process: Plating System Assessment<br>CQI-12 Special Process: Coating System Assessment<br>CQI-15 Special Process: Welding System Assessment<br>CQI-17 Special Process: Soldering System Assessment<br>CQI-23 Special Process: Molding System Assessment<br>CQI-27 Special Process: Casting System Assessment</p>
+<p><strong>FIEV</strong></p>
+<p><strong>IATF</strong></p>
+<p><strong>VDA</strong><br>AQ 008 Process Audit<br>V2.0 Production Process Audit Manual<br>Auditor Guide for IATF 16949<br>Volume 6 part 3 Process Audit<br>Volume 6 part 5 Product Audit</p>
+<p><strong>Nonconformity and corrective action</strong></p>
+<p><strong>AIAG</strong><br>CQI-14 Automotive Warranty Management Guideline<br>CQI-20 Effective Problem Solving Practitioner Guide</p>
+<p><strong>VDA</strong><br>Volume “Audit standard field failure analysis”<br>Volume “Field failures analysis”</p>
+<p><strong>Measurement systems analysis</strong></p>
+<p><strong>AIAG</strong><br>Measurement Systems Analysis (MSA)</p>
+<p><strong>ANFIA</strong><br>AQ 024 MSA Measurement Systems Analysis</p>
+<p><strong>VDA</strong><br>Volume 5 “Capability of Measuring Systems”</p>
+<p><strong>Product approval</strong></p>
+<p><strong>AIAG</strong><br>Production Part Approval Process (PPAP)</p>
+<p><strong>VDA</strong><br>Volume 2 Production process and product approval (PPA)<br>Volume 19 Part 1 (“Inspection of Technical Cleanliness - Particulate Contamination of Functionally Relevant Automotive Components”)<br>Volume 19 Part 2 (“Technical cleanliness in assembly - Environment, Logistics, Personnel and Assembly Equipment”)</p>
+<p><strong>Product design</strong></p>
+<p><strong>AIAG</strong><br>APQP and Control Plan<br>CQI-24 Design Review Based on Failure Modes (DRBFM Reference Guide)<br>Potential Failure Mode &amp; Effects Analysis (FMEA)</p>
+<p><strong>ANFIA</strong><br>AQ 009 FMEA<br>AQ 014 Manual of Experimental Design<br>AQ 025 Reliability Guide</p>
+<p><strong>VDA</strong><br>Volume 4 Chapter Product and Process FMEA<br>Volume VDA-RGA “Maturity Level Assurance for New Parts”<br>Volume “Robust Production Process”<br>Volume Special Characteristics (SC)</p>
+<p><strong>Production control</strong></p>
+<p><strong>AIAG</strong><br>MMOG/LE Materials Management Operational Guidelines / Logistics Evaluation</p>
+<p><strong>SMMT</strong><br>Implementing Standardised Work</p>
+<p><strong>Quality management system administration</strong></p>
+<p><strong>ANFIA</strong><br>AQ 026 Managing and improving the process</p>
+<p><strong>IATF</strong><br>Rules for achieving and maintaining IATF recognition</p>
+<p><strong>Risk analysis</strong></p>
+<p><strong>VDA</strong><br>Volume 4 “Ring-binder” (elementary aids, risk analyses, methods, and process models)</p>
+<p><strong>Software Process Assessment</strong></p>
+<p>Capability Maturity Model Integration (CMMI)</p>
+<p><strong>VDA</strong><br>Automotive SPICE® (Software Process Improvement and Capability Determination)</p>
+<p><strong>Statistical tools</strong></p>
+<p><strong>AIAG</strong><br>Statistical Process Control (SPC)</p>
+<p><strong>ANFIA</strong><br>AQ 011 SPC</p>
+<p><strong>Supplier quality management</strong></p>
+<p><strong>AIAG</strong><br>CQI-19 Sub-Tier Supplier Management Process Guideline</p>
+<p><strong>IATF</strong><br>Minimum Automotive Quality Management System Requirements for Sub-Tier Suppliers (MAQMSR)</p>
+<p><strong>Health and safety</strong></p>
+<p><strong>ISO</strong><br>ISO 45001 Occupational health and safety management systems</p>
+            ]]>
+        </field>
+    </record>
+</odoo>

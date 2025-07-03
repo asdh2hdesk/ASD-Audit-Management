@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record id="mgmtsystem_audit.seq_mgmtsystem_audit" model="ir.sequence">
+        <field name="name">Management System Audit</field>
+        <field name="code">mgmtsystem.audit</field>
+        <field name="prefix">MSA</field>
+        <field name="padding">4</field>
+        <field name="company_id" eval="False"/>
+    </record>
+
+</odoo>

@@ -1,0 +1,923 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo noupdate="1">
+    <record id="document_page_quality_manual" model="document.page">
+        <field name="name">ISO 9001 Quality Management System Manual</field>
+        <field name="type">category</field>
+        <field name="template">
+            <![CDATA[
+<h1>ISO 9001:2015—A Complete Guide to Quality Management Systems</h1>
+
+<p>Itay Abuhav</p>
+
+<p>Taylor & Francis Group<br>6000 Broken Sound Parkway NW, Suite 300 Boca Raton, FL 33487-2742</p>
+
+<p>© 2017 by Taylor & Francis Group, LLC<br>CRC Press is an imprint of Taylor & Francis Group, an Informa business<br>No claim to original U.S. Government works<br>Printed on acid-free paper<br>Version Date: 20161130</p>
+
+<p>International Standard Book Number-13: 978-1-4987-3321-2 (Hardback)</p>
+
+<p>This book contains information obtained from authentic and highly regarded sources. Reasonable efforts have been made to publish reliable data and information, but the author and publisher cannot assume responsibility for the validity of all materials or the consequences of their use. The authors and publishers have attempted to trace the copyright holders of all material reproduced in this publication and apologize to copyright holders if permission to publish in this form has not been obtained. If any copyright material has not been acknowledged please write and let us know so we may rectify in any future reprint.</p>
+
+<p>Except as permitted under U.S. Copyright Law, no part of this book may be reprinted, reproduced, transmitted, or utilized in any form by any electronic, mechanical, or other means, now known or hereafter invented, including photocopying, microfilming, and recording, or in any information storage or retrieval system, without written permission from the publishers.</p>
+
+<p>For permission to photocopy or use material electronically from this work, please access www.copyright.com (http://www.copyright.com/) or contact the Copyright Clearance Center, Inc. (CCC), 222 Rosewood Drive, Danvers, MA 01923, 978-750-8400. CCC is a not-for-profit organization that provides licenses and registration for a variety of users. For organizations that have been granted a photocopy license by the CCC, a separate system of payment has been arranged.</p>
+
+<p>Trademark Notice: Product or corporate names may be trademarks or registered trademarks, and are used only for identification and explanation without intent to infringe.</p>
+
+<p>Library of Congress Cataloging-in-Publication Data [LoC Data here]</p>
+
+<p>Visit the Taylor & Francis Web site at http://www.taylorandfrancis.com<br>and the CRC Press Web site at http://www.crcpress.com</p>
+
+<h1>Contents</h1>
+
+<ul>
+    <li>Preface</li>
+    <li>Acknowledgments</li>
+    <li>Author</li>
+    <li>1. Scope</li>
+    <li>2. Normative References</li>
+    <li>3. Terms and Definitions</li>
+    <li>4. Context of the Organization</li>
+    <li>4.1 Understanding the Organization and Its Context</li>
+    <li>4.2 Understanding the Needs and Expectations of Interested Parties</li>
+    <li>4.3 Determining the Scope of the Quality Management System</li>
+    <li>4.4 Quality Management System and Its Processes</li>
+    <li>5. Leadership</li>
+    <li>5.1 Leadership and Commitment</li>
+    <li>5.1.1 General</li>
+    <li>5.1.2 Customer Focus</li>
+    <li>5.2 Policy</li>
+    <li>5.2.1 Establishing the Quality Policy</li>
+    <li>5.2.2 Communicating the Quality Policy</li>
+    <li>5.3 Organizational Roles, Responsibilities, and Authorities</li>
+    <li>6. Planning</li>
+    <li>6.1 Actions to Address Risks and Opportunities</li>
+    <li>6.2 Quality Objectives and Planning to Achieve Them</li>
+    <li>6.3 Planning of Changes</li>
+    <li>7. Support</li>
+    <li>7.1 Resources</li>
+    <li>7.1.1 General</li>
+    <li>7.1.2 People</li>
+    <li>7.1.3 Infrastructure</li>
+    <li>7.1.4 Environment for the Operation of Processes</li>
+    <li>10.1 General</li>
+    <li>10.2 Nonconformity and Corrective Action</li>
+    <li>10.3 Continual Improvement</li>
+    <li>Index</li>
+</ul>
+
+<h1>Preface</h1>
+
+<p>The quality management world is about to go through a big change represented by the publication of the new revision of the ISO 9001 Standard: the 2015 revision. The new revision of the standard introduces new challenges to the organization but also a revision to old challenges. This book is a complete guide to implementing all the requirements of the standard. In order to present the reader with a practical and useful guide, I have provided a definition of my quality policy and objectives.</p>
+
+<h2>My Quality Policy</h2>
+
+<p>Presenting and reviewing the ISO 9001:2015 standard requirements through analysis, interpretation, and demonstration, with explanations, insightful examples, and events from various industries and sectors.</p>
+
+<h2>My Quality Objectives</h2>
+
+<ul>
+    <li>Commitment to the highest level of consulting regarding the ISO 9001:2015 standard</li>
+    <li>Reviewing all the topics and issues related to the realization of a product or service with reference to various types of processes and products</li>
+    <li>Providing support in the implementation of an effective quality management system</li>
+    <li>Facilitating the documentation of processes</li>
+    <li>Providing references to the new challenges presented in the ISO 9001:2015 standard</li>
+</ul>
+
+<p>However, a policy and related objectives are ineffective without also having in place designed and structured tactics and methods to achieve them:</p>
+
+<ul>
+    <li>The book is designed and structured to mirror the standard’s table of contents in order to simplify navigation and use.</li>
+    <li>Each clause and sub-clause of the standard are discussed and analyzed through quality perspectives, such as the implications for an organization—its processes, risk-based thinking, resources, infrastructures, process environment, control and effectiveness, and documented information.</li>
+    <li>The ISO 9001:2015 standard acts like a complicated web of prerequisites with relations between them. A full and comprehensive reference to the interrelations between the different clauses and sub-clauses has been included.</li>
+    <li>Putting words into actions—the book will assist in translating the requirements and objectives into feasible activities and tasks. It visualizes situations with everyday events from the different sectors, branches, and products or services.</li>
+</ul>
+
+<h2>List of Exclusions</h2>
+
+<p>I decided to exclude chapter 0 of the standard from this book since it mainly provides explanations regarding the ISO 9001:2015 that are already covered elsewhere in this book.</p>
+
+<p>My biggest wish is that you, as a reader, will refer to this book as a consulting session; that you will read and explore it, draw information and knowledge that suit you and your organization; and that you will introduce this information to your quality management system and processes.</p>
+
+<h1>Acknowledgments</h1>
+
+<p>I wish to thank all the people—consultants, coworkers, auditors, mentors, bosses, and friends—that introduced me to the quality world and have aided, supported, taught, lectured, consulted, and provided valuable knowledge and information during the undertaking of this book and also in my professional career. You have helped to give an edge to this book. The list of names is too extensive to include here, but you know who you are.</p>
+
+<p>I wish to thank my dear family for their warm support throughout the years.</p>
+
+<p>I also wish to thank my wife Angela and daughter No'omi for understanding, pushing, believing, and supporting me throughout this project.</p>
+
+<p>Thank you.</p>
+
+<h1>Author</h1>
+
+<p>Itay Abuhav has been acting as a consultant for many organizations in various areas for the past 10 years, specializing in the quality management/control industry, consulting with a number of small- to medium-sized firms dealing with implementing quality management systems, with a major focus on the European medical device industry. He is highly qualified to certify organizations to various standards: ISO 9001 and ISO 13485. The author has two active websites related to these topics, namely, www.9001quality.com and www.13485quality.com.</p>
+
+<h1>1. Scope</h1>
+
+<p>Clause 1 of the ISO 9001 Standard is used to present the purposes and concepts of the standard and define the scope of application of the standard to your quality management system. The following aspects are covered in this clause:</p>
+
+<ul>
+    <li>The goals and purposes of the standard</li>
+    <li>The approach and reference to customer requirements</li>
+    <li>The approach and reference to regulatory or statutory requirements</li>
+    <li>Applicability of the standard requirements</li>
+</ul>
+
+<p>Before we start to understand the requirements of clause 1—Scope, let us review them first:</p>
+
+<ul>
+    <li>The ISO 9001 Standard is an international standard for the establishment, design, and implementation of a quality management system (QMS) in an organization.</li>
+    <li>Applying the ISO 9001 Standard requirements enables an organization to demonstrate its ability to consistently provide products or services that meet customer requirements.</li>
+    <li>Applying the ISO 9001 Standard requirements enables an organization to demonstrate its ability to consistently provide products or services that meet applicable statutory or regulatory requirements.</li>
+    <li>Applying the ISO 9001 Standard requirements enables an organization to enhance customer satisfaction through the use of quality management instruments that include methods for planning and improvements of processes and ensuring conformity to customer and applicable statutory and regulatory requirements.</li>
+    <li>The requirements of this standard are generic and apply to any sector and area of business and may be implemented in any organization regardless of its size or the type of its products or services.</li>
+    <li><strong>Note 1</strong>—The use of the words “product” or “service” in this standard refers to a product or a service as intended or required by the customer.</li>
+    <li><strong>Note 2</strong>—Legal requirements may be regarded as statutory and regulatory requirements.</li>
+</ul>
+
+<p>For me, clause 1 is an important introduction to the ISO 9001 Standard and I consider it crucial for:</p>
+
+<ul>
+    <li>The understanding of the expectations of the standard from an organization: What is the purpose of a QMS?</li>
+    <li>Future definitions of a QMS: How may the QMS reach its purpose?</li>
+</ul>
+
+<h2>The Principles of the ISO 9001 Standard</h2>
+
+<p>Clause 1—Scope presents us with the principles and concepts of the standard. The ISO 9001 Standard is aimed to satisfy customers by fulfilling its requirements along with applicable international and national regulations. This is expressed through four principles:</p>
+
+<ul>
+    <li>The goal and objective of the standard is to initiate a QMS that acts to consistently meet customer requirements as well as applicable regulatory requirements.</li>
+    <li>The requirements of this standard initiate harmonization between a QMS of an organization and applicable regulatory requirements.</li>
+    <li>The requirements suggested in the ISO 9001 Standard facilitate an improvement of processes included in the QMS and assurance of conformity to customer or regulatory requirements.</li>
+    <li>The requirements suggested in the ISO 9001 Standard are applicable to all sorts of organizations regardless of their size or type, the type of their customers, and the type of products or services that they are providing.</li>
+</ul>
+
+<p>Harmonization between a QMS of an organization and applicable regulatory requirements means bringing the applicable and relevant international, national, local, and regulatory requirements into consensus with QMS aspects, for example, the planning and implementation of processes and activities, the design of documentation, and the training qualification of human resources.</p>
+
+<h2>The Ability to Provide Appropriate Product</h2>
+
+<p>What are actually the requirements here? When an organization decides to implement the ISO 9001 Standard, it is required, through the use and application of the methods and instruments presented in this standard, to prove its ability to identify customer requirements and provide products and services according to these requirements. And while identifying customer requirements, the organization must consider the application of relevant applicable regulatory, statutory, or other requirements, for example, codes or practices. In other words, the purposes presented in this clause must be reflected through the QMS of the organization. How? Through applying the quality management tools and instruments that are suggested in the standard, such as setting defining quality policy, quality objectives, planning processes, and much more.</p>
+
+<h1>2. Normative References</h1>
+
+<p>The meaning and purpose of normative references is the indication that terminology and nomenclature specified in this standard is not open for debate or an interpretive discussion. A normative reference refers to a document that includes terms, fundamental concepts, principles, and vocabulary that are essential for the application of the ISO 9001 Standard. The ISO 9001 Standard requirements are as follows:</p>
+
+<ul>
+    <li>When dated normative references are used, only the edition cited applies (the ISO 9000:2015 Standard).</li>
+    <li>When undated normative references are used, the latest edition of this referenced document (including any amendments) applies.</li>
+    <li>The document ISO 9000:2015, Quality management systems—Fundamentals and vocabulary are to be normatively referred to while establishing a quality management system (QMS) according to the ISO 9001 Standard requirements.</li>
+</ul>
+
+<p>A normative reference lists other ISO or IEC documents or standards that are necessary for the application of the standard. In other words, which documentation may assist you in how to comply with the requirements stated in the ISO 9001 Standard. The objective of a normative reference is to relate to a standard that is applicable to the implementation of the ISO 9001:2015 Standard and to relate to directives, definitions, or understanding of the ISO 9001:2015 Standard.</p>
+
+<p>The ISO 9001 Standard refers us to a specific document, “ISO 9000:2015: Quality management systems—Fundamentals and vocabulary.” In case questions or misunderstanding regarding the definitions or the requirements of the ISO 9001 Standard arises during the implementation and application of the standard requirements, you can turn to this document. For example, when you are discussing and planning activities related to customer focus and you are not sure what the definition of customer focus is, you may turn to the ISO 9000 Standard and understand how the ISO 9001 Standard interprets the issue of customer focus.</p>
+
+<h1>3. Terms and Definitions</h1>
+
+<p>Clause 3 of the standard—Term and Definitions is necessary to clarify matters and disputes regarding the terms and definitions mentioned in the ISO 9001 Standard. The terms and definitions mentioned and discussed in the ISO 9000 Standard—Quality management systems, Fundamentals and vocabulary—are applicable to this standard (the ISO 9001 Standard). The ISO 9001 Standard requirements are as follows:</p>
+
+<ul>
+    <li>The terms and definitions given in ISO 9000:2015 apply for the purposes of the ISO 9001 Standard.</li>
+</ul>
+
+<h2>ISO 9000:2015 Standard</h2>
+
+<p>The ISO 9000 Standard provides the fundamental concepts, principles, and vocabulary that are to be used when establishing a quality management system according to the requirements stated in the ISO 9001 Standard. In other words, when you stumble upon a term in the ISO 9001 Standard that are unfamiliar to you, you cannot interpret it correctly or you have a dispute with another on the meaning, you may turn to the ISO 9000 Standard and resolve the conflict. A good example may be the term “risk”; you may consider it as one thing but your auditor may see it as another. In order to avoid unnecessary disputes in advance, I advise you to review this standard and learn the terms and definitions that are mentioned there.</p>
+
+<h1>4. Context of the Organization</h1>
+
+<h2>4.1 Understanding the Organization and Its Context</h2>
+
+<p>Understanding the context of an organization is now standard requirement. It is not a new concept but it is officially adopted by the ISO 9001:2015 Standard, and when developing a quality management system (QMS), it is required to identify, analyze, and understand the business environment in which the organization conducts its business and realizes its product.</p>
+
+<p>Any organization is a combination of different business entities (functions or systems—internal or external) that relate and interact with each other and exchange information and materials. The context of the organization is an outline of the interaction and integration of these business entities. It is the set of functions, factors, processes, inputs and outputs, and conditions and limitations that create the business environment of an organization—these encompass both internal and external issues. These issues have an impact on the ability of the organization to provide the product and thus affect the goals and objectives of the organization. Thus the deduction: when determining your business strategy and setting the objectives of your QMS, you should understand, consider, and refer to these aspects. Understanding the context of the organization is key to a correct business strategy, let alone a correct quality strategy.</p>
+
+<p>Before we plunge into this topic, let us review what the ISO 9001:2015 Standard requirements are:</p>
+
+<ul>
+    <li>The organization must determine the organizational context in which it is active. The organizational context includes issues that:</li>
+    <ul>
+        <li>Are relevant to its purpose</li>
+        <li>Are relevant to the scope of the QMS</li>
+        <li>Are relevant to its strategy (goals and objectives)</li>
+        <li>Affect the organization’s ability to achieve the intended results and customer expectations</li>
+    </ul>
+    <li>Internal and external information and issues related to the context of the organization shall be reviewed in order to evaluate changes that might affect the objectives of the organization.</li>
+    <li><strong>Note 1</strong>—The review may refer to positive and negative factors or conditions that may affect the QMS and its context of the organization.</li>
+    <li><strong>Note 2</strong>—Issues arising from legal, technological, competitive, market, cultural, social, and economic environments conditions, whether international, national, regional, or local, may be considered for the definition of the context of the organization.</li>
+    <li><strong>Note 3</strong>—Organizational values, perceptions, and cultural environment may help understand and form the context of the organization.</li>
+</ul>
+
+<h3>The Principle of the Context of the Organization</h3>
+
+<p>The ISO 9001 Standard recognizes the importance and role of the context of the organization and requires its definition when establishing a QMS. The analysis regarding the context of the organization is a natural process that each organization must follow at some point in its life. The ISO 9001:2015 aspires to institutionalize the context as the foundation for the QMS.</p>
+
+<p>Organizations usually have several strategies or concepts in various fields and areas that dictate the direction of the organization: financial strategy, sales and marketing strategy, purchase strategy, IT concept, and so on. One clear objective of determining the context of the organization is to harmonize these various strategies and concepts. By determining the context of the organization, the organization identifies the scope and boundaries of its activities that will be reflected in the QMS. From the context of the organization we derive the goals and objectives of the QMS. After attending to these points, you should have a clear picture of the business environment in which your organization is active and you would be in the right position to plan and define your QMS, its goals, and objectives.</p>
+
+<h3>External and Internal Issues Relevant to the Organization</h3>
+
+<p>The main goal of understanding the context of the organization is the identification of the external and internal issues that are relevant to the purpose of the organization. Organizational issues are significant factors, conditions, influences, situations, or events that have an effect on the QMS and will affect the ability of the organization in achieving its objectives and desired results. The issues may be affected or directed by relevant parties that have an effect on the organization, such as investors, employees, competitors, suppliers, regulators, and customers.</p>
+
+<p>Every area of expertise, sector, market, product family, or other business segmentation has its own relevant issues that affect the organizational context. External or internal issues may include:</p>
+
+<ul>
+    <li>The expectations of interested parties</li>
+    <li>The main products that provide the most value for its interested parties</li>
+    <li>Processes and activities needed to meet specifications and expectations of its interested parties</li>
+    <li>The influence of the business environment in which the organization is active</li>
+    <li>Availability of resources needed for the realization</li>
+    <li>Competence of the human resource</li>
+    <li>Statutory and regulatory requirements</li>
+</ul>
+
+<p>In practice, the standard expects awareness of these issues, and when issues are identified you must categorize them. I suggest two integrated methods for the effective identification of external and internal issues and their influence on the organization.</p>
+
+<h3>Understanding and Defining the Organizational Context</h3>
+
+<p>As mentioned earlier, the context of the organization consists of the environment in which it operates and refers to internal and external issues relevant to the activity of the organization. As a first step in defining the organizational context, I suggest following a course that will put you in a position to better define your quality policy, to identify the business environment in which the organization is active, to identify which internal and external issues in this environment influence the organization, and to understand who the relevant interested parties are. The following is the suggested process for an effective definition of the context of the organization (the different stages are elaborated throughout Section 4.1):</p>
+
+<ul>
+    <li>The definition of the context of the organization will begin with PEST (political, economic, social, and technological factors) analysis, which will provide inputs for the strengths, weaknesses, opportunities, and threats (SWOT) analysis.</li>
+    <li>SWOT analysis will define inputs for the determination of the internal and external issues.</li>
+    <li>The determination of the internal and the external issues will help identifying relevant interested parties.</li>
+    <li>Identifying interested parties will assist in defining the scope of the QMS.</li>
+    <li>The scope of the QMS will provide the foundation of the QMS.</li>
+</ul>
+
+<h4>PEST Analysis</h4>
+
+<p>PEST stands for political, economic, social, and technological factors that may affect the strategy of the organization. In order to understand better the context of the organization, it is recommended to conduct a PEST analysis—analysis of different conditions that affect the organization in the business environment in which it is active. This analysis reviews the macro environment of an organization and is a useful tool for understanding how a business environment behaves and affects the QMS. A business environment will be analyzed by what it is addressing: the products, the customers’ expectations, the activities of the organization, and so on. And these are reviewed through four different perspectives: political, economic, social, and technological.</p>
+
+<p>PEST analysis identifies external factors that might change and while changing will affect or influence the organization and its operations. Each of the factors (political, economic, social, and technological) is used to assess the extent of influence of the business environment on the ability of the organization to deliver a product according to its customers’ expectations. The organization, on the other hand, cannot influence these factors but must try to adapt to them. The outputs of PEST analysis will be used as opportunities and threats for the later SWOT analysis, which will be discussed later. PEST analysis may be also extended to seven or even more factors: ecological (or environmental), legislative (or legal), and industry analysis, which uses the name PESTELI analysis. But I will concentrate on the four main factors.</p>
+
+<p>The four parameters for analysis vary in significance and influence depending on the type of organization, its business environment, and activities. For example, a software development company should give more scale to the technology while a voluntary association in a developing country should pay more attention to the political conditions.</p>
+
+<h5>Political Factors</h5>
+
+<p>Political factors consist of government regulations and legal factors that can affect the business environment. Issues such as political stability, trade regulations, manufacturing regulations, safety regulations, and employment laws will be assessed for their influence on the QMS. More example factors are:</p>
+
+<ul>
+    <li>Ecological/environmental issues</li>
+    <li>Current legislation</li>
+    <li>Anticipated future legislation</li>
+    <li>International legislation (global influences)</li>
+    <li>Regulatory bodies and processes</li>
+    <li>Government policies, terms, and change</li>
+    <li>Funding, grants, and initiatives</li>
+    <li>Market lobbying groups</li>
+    <li>Wars and conflicts</li>
+</ul>
+
+<p>These factors may have a significant influence on defining the processes, their resources, and their required controls. These factors may dictate the implementation of processes and activities or may demand product specifications. Other good examples of a factor are work grants and permissions between different countries in different areas of the world that affect the availability or costs of human resources and the medical industry, when a manufacturer must implement local or regional regulations in each country or region where it is marketing its devices.</p>
+
+<h5>Economic Factors</h5>
+
+<p>The economic factors evaluate issues that are bound to impact on the cash flow, the business cycle, and any critical decisions regarding the direction of the organization. Here we can find factors such as economic growth, unemployment rate, inflation, and interest rates. Some more examples are:</p>
+
+<ul>
+    <li>National economies and trends</li>
+    <li>General taxation issues</li>
+    <li>Taxation to activities, products, services</li>
+    <li>Seasonality</li>
+    <li>Weather issues</li>
+    <li>Market and trade cycles</li>
+    <li>Specific sector factors</li>
+    <li>Customer/end user drivers</li>
+    <li>Interest and exchange rates</li>
+    <li>International trade and monetary issues</li>
+</ul>
+
+<p>Another good example is the big economic crisis of 2008, when many companies experienced a decline in their business. This led to the cancelation or delay of many plans and developments for new products.</p>
+
+<h5>Social Factors</h5>
+
+<p>Social factors represent the socioeconomic environment of the markets in which the organization is active. Social factors affect how one organization perceives its customers and the interested parties, their needs, and expectations (clause 4.2 of the ISO 9001 Standard), and understanding the social factors help the organization ensure meeting those needs and expectations by supplying the appropriate products and services. Examples of social factors are:</p>
+
+<ul>
+    <li>Lifestyle trends</li>
+    <li>Demographic trends</li>
+    <li>Consumer attitudes and opinions</li>
+    <li>Media views</li>
+    <li>Changes in laws that affect social behaviors</li>
+    <li>Image of the organization</li>
+    <li>Consumer buying patterns</li>
+    <li>Fashion and role models</li>
+    <li>Major events and influences</li>
+    <li>Buying access and trends</li>
+    <li>Ethnic/religious factors</li>
+    <li>Advertising and publicity</li>
+    <li>Ethical issues</li>
+</ul>
+
+<p>Lifestyle trends are a good example of how a change of lifestyle can change realization processes of a product—today people shop online so that products are delivered directly to their home instead of going out to the stores. As a result the delivery businesses are booming. This fact impels many organizations to change their realization processes and adopt new distribution channels.</p>
+
+<h5>Technological Factors</h5>
+
+<p>Technological factors may have a significant effect on the expectations of customers, on the products or services offered, and thus on the processes and how products are realized. And in today’s world technological factors are the ones that are changing most rapidly. An organization that has the ability to detect and identify and react to these changes faster has an advantage in its market. Examples for technological factors are:</p>
+
+<ul>
+    <li>Competing technology development</li>
+    <li>Associated/dependent technologies</li>
+    <li>Replacement technology/solutions</li>
+    <li>Maturity of technology</li>
+    <li>Information and communications</li>
+    <li>Consumer buying mechanisms</li>
+    <li>Technology legislation</li>
+    <li>Innovation potential</li>
+    <li>Technology access, licensing, patents</li>
+    <li>Intellectual property issues</li>
+    <li>Global communication</li>
+    <li>Social media use</li>
+    <li>Maturity of organizations</li>
+</ul>
+
+<p>A good example that describes such significant technological changes is taken from the music recording industry in the last 20 years. In the early 2000s, the industry went from analog technology to digital technology leaving thousands of studios with irrelevant equipment. In a very short time, all studios needed to adapt to the new technologies and purchase new digital equipment because all its customers adapted it. That means adapting their substructures, their work environment, their purchase, the competence of the human resources, and so on. But guess what? After 20 years of digital sound, a social trend (social factor) has changed and today people are looking again for the warm analog sound! So studios that were smart and kept the old technology can satisfy today’s customers who will pay a bit more for the vintage technology. How the world is changing and then changing back again ….</p>
+
+<h4>SWOT Analysis</h4>
+
+<p>After understanding the business environment in which the organization is active and the factors that influence this environment, the organization must evaluate itself. SWOT analysis (or SWOT model) was originally developed as a corporate planning tool. The analysis uses comparative data that enables the organization to evaluate itself and to help develop and shape a strategy—in our case, the QMS. SWOT evaluates the internal business environment of an organization through four axes: Strengths, Weaknesses, Opportunities, and Threats. Most of us know or use SWOT as part of our marketing strategy. But in fact the conclusions of this analysis may assist organizations in identifying the relevant quality elements that affect the QMS: products and/or services, processes, and resources. The principle of SWOT analysis is easy to understand:</p>
+
+<ul>
+    <li>What is good in the present and in the past is a strength</li>
+    <li>What is bad in the present and in the past is a weakness</li>
+    <li>What is good in the future is an opportunity</li>
+    <li>What is bad in the future is a threat</li>
+</ul>
+
+<p>The Strengths, Weaknesses, Opportunities, and Threats are axes of the analysis. Each of these axes will be analyzed according to the next index:</p>
+
+<ul>
+    <li>Product (what are we realizing?)</li>
+    <li>Process (how do we realize the product?)</li>
+    <li>Customer (to whom are we delivering it?)</li>
+    <li>Administration (and how do we manage these activities?)</li>
+</ul>
+
+<p>What is the difference between PEST and SWOT analysis? PEST analysis measures the market and external business environment that a business unit is active in. SWOT analysis measures the internal factors of the business unit. The factors of PEST analysis cannot be influenced; the factors of SWOT can. The most effective (and easy) way to perform a SWOT analysis is to begin with answering question regarding each of the parameters mentioned earlier.</p>
+
+<h5>Strengths</h5>
+
+<p>The strengths are the internal attributes and resources that support the realization of the product and the establishment, implementation, maintenance, and improvement of the QMS. In other words, the advantages the organization has to realize the product or service. The appropriate questions in this case will be:</p>
+
+<ul>
+    <li>What are the reasons that on their behalf we achieve our objectives (process, administration)?</li>
+    <li>Which resources in the organization are at our advantage and support the realization of the product (product, process)?</li>
+    <li>Which knowledge in our organization is at our advantage (product, process)?</li>
+    <li>Which processes do we perform better than others (process)?</li>
+    <li>Which customer expectations and requirements do we meet the best (customer)?</li>
+    <li>What are the reasons our customers are satisfied (customer)?</li>
+</ul>
+
+<h5>Weaknesses</h5>
+
+<p>Weaknesses are internal attributes that may interrupt the realization of the product and may produce a nonconformity in the QMS. When analyzing the weaknesses it is highly recommended to consider it from an external (as well as internal) point of view. With external point of view I mean—do other parties perceive a weakness that you are unaware of? Another external point of view is seeing the strengths of your competitors as your weaknesses. The appropriate questions in this case will be:</p>
+
+<ul>
+    <li>What are the reasons we do not achieve our objectives (process, administration)?</li>
+    <li>Which resources in our organization we need to improve or supplement (process, administration)?</li>
+    <li>What knowledge are we lacking in order to achieve our objectives (process, product)?</li>
+    <li>Which processes we need to improve (process)?</li>
+    <li>Which customer expectations do we fail to understand or answer (product, customer)?</li>
+    <li>What are the reasons our customers are not satisfied (product, customer)?</li>
+</ul>
+
+<h5>Opportunities</h5>
+
+<p>Opportunities are factors the organization can draw advantages from in the future. These are the chances for improvements that the ISO 9001 is so fond of. A lot is written on this topic in this standard—many of the standard’s clauses refer directly to the opportunities. In fact the standard requires an assessment of external as well as internal issues that may serve as opportunities that may assure that the QMS can achieve its objectives. The outputs of the analysis of opportunities may serve as inputs to some of the standard’s clauses (e.g., 6.1—Actions to address risks and opportunities, 6.3—Planning of changes). In these clauses, you will need to demonstrate methods and manners for identifying opportunities (aside from SWOT analysis). So the advantage of performing a clear and accurate analysis of opportunities will serve you with other standard requirements. The appropriate questions in this case will be:</p>
+
+<ul>
+    <li>Which product features, customer expectations, or trends can we develop or improve (product, customer)?</li>
+    <li>Which processes can we do better (product, customer, admin)?</li>
+    <li>Which outputs of PEST analysis can we view as opportunities for chances improvement (product, process, customer, administration)?</li>
+</ul>
+
+<h5>Threats</h5>
+
+<p>Threats may be considered as the risks that the organization faces while managing the QMS and realizing the products or services. Threats are the risks that may cause nonconformities in the QMS or in the realization processes, which the organization must address and eliminate. In fact the standard requires that the organization address risks that may affect the ability of the organization to provide a product according to the expectations of the interested parties. While conducting SWOT analysis, you need to assess the factors that may influence this ability. The appropriate questions in this case will be:</p>
+
+<ul>
+    <li>Which regulatory issues or standard specifications may affect the realization processes or the products (process, product)?</li>
+    <li>Which technological issues may affect the product, its realization, or its distribution (process, product)?</li>
+    <li>Which economic issues may affect the product, its realization, or its distribution (process, product)?</li>
+    <li>Which processes, product characteristics, and/or customer satisfaction factors may be affected by upcoming changes or events (process, product, and customer)?</li>
+</ul>
+
+<h4>Determining and Documenting the Internal and External Issues and the Context of the Organization</h4>
+
+<p>After completing the analyses discussed earlier, gathering all the information and identifying the issues that may influence the organizational context and affect the QMS, you are in a position to define what internal and external issues are relevant to the organization and its QMS. We reviewed the business environment through PEST analysis. We analyzed our SWOT. Now we should have enough inputs and should know which issues are affecting our activities and what the extent of each one is.</p>
+
+<p>I highly recommend documenting this analysis for the following reasons:</p>
+
+<ul>
+    <li>In clause 4.1 (Understanding the organization and its context) there is no explicit requirement for documented information, but in clause 4.3 (Determining the scope of the quality management system) it is required to maintain as documented information the scope of the organization’s QMS. The analyses and its conclusion are a great part of the scope.</li>
+    <li>In clause 4.2 (Understanding the needs and expectations of interested parties), the organization is required to monitor and review information about the interested parties and their relevant requirements. This review is done through update of the analysis mentioned in this clause.</li>
+    <li>Audit—During an audit you will probably be asked to explain and demonstrate how you reached the conclusion of your analysis. When the day comes and the question will pop “please enlighten me how you came to all these conclusions?” you then will refer to the quality manual (if you decide to maintain one) or any other document and will have all the answers at hand.</li>
+</ul>
+
+<p>In case you decide to still maintain your quality manual, you may include the conclusions there; just add chapters bearing the information and conclusions you came to during your analyses.</p>
+
+<h2>4.2 Understanding the Needs and Expectations of Interested Parties</h2>
+
+<p>Understanding the needs and expectations of the interested parties is the first step in developing the QMS and the foundation for determining its scope, defining relevant quality objectives, and developing quality activities for achieving them. After understanding the context of the organization, it must be determined who the interested parties are and what their needs and expectations are. Interested parties are individuals and other business entities that may affect the organization’s ability to provide a product according to the specifications. Understanding their needs and expectations will create the organizational quality management conditions for the fulfillment of those needs and expectations over the long term and will enable the organization to achieve its objectives.</p>
+
+<p>Interested parties differ from one another and thus have different needs and expectations. For example, investors want security for their investment and a good return, while customers expect to get a product that meets their needs in the most effective way. Identifying these expectations may be crucial for determining the scope of the QMS and setting the quality objectives. What does the ISO 9001 Standard require?</p>
+
+<ul>
+    <li>Interested parties have a potential effect on the organization’s ability to consistently provide products and services that meet customer and applicable statutory and regulatory requirements.</li>
+    <li>The organization shall identify and determine the interested parties that are relevant to the QMS.</li>
+    <li>The organization shall determine the requirements of these interested parties that are relevant to the QMS.</li>
+    <li>The organization shall monitor and review information about these interested parties and their relevant requirements.</li>
+</ul>
+
+<h3>Identification of Interested Parties and Their Effect on the Organization</h3>
+
+<p>Interested parties are entities that perform and are active in the business environment, in which the organization is active that has an effect on the QMS. Interested parties may be a person or another organization that can affect, be affected by, or perceive themselves to be affected by the organization or its activities. Interested parties can be investors of the organization; suppliers of materials, products, or service; technological providers; financial institutions; and governmental and nongovernmental organizations. The first step in determining the needs and expectations of interested parties is identifying what area in the QMS they relate to. The following will help this identification process:</p>
+
+<table>
+    <tr><th>Interested Party</th><th>Influence</th></tr>
+    <tr><td>Customers</td><td>Expectations of the product, its intended use, and its characteristics. Changes in those expectations may influence the QMS and its activities.</td></tr>
+    <tr><td>Employees</td><td>Employees directly affect the QMS and its processes and, thus, the quality of the product.</td></tr>
+    <tr><td>Suppliers and external providers</td><td>The quality of materials, components, or parts that must be integrated in the end product and their delivery from suppliers and external providers may directly influence the quality and conformity of the product.</td></tr>
+    <tr><td>Regulators</td><td>Regulations and statutory requirements may dictate processes and activities of the organization and thus may affect the characteristics of a product.</td></tr>
+    <tr><td>Investors</td><td>The investors of the organization determine the availability of resources and thus may influence the quality and conformity of the product.</td></tr>
+    <tr><td>Competitors</td><td>Competitors may affect the profitability of the organization by delivering a product that meets customer needs and expectations better.</td></tr>
+    <tr><td>Other interested parties relevant to the area of expertise or activity of the organization</td><td>Other interested parties and their influence on the quality and conformity of the product identified through PEST analysis.</td></tr>
+</table>
+
+<p>It is important to stay focused on interested parties that are relevant to the organization, its area of activities, and its QMS.</p>
+
+<h3>Identification of the Needs and Expectations of the Interested Parties</h3>
+
+<p>After listing the interested parties, we must identify their needs and expectation with reference to the QMS. I suggest here a very simple table that specifies the needs and expectations of each interested party.</p>
+
+<table>
+    <tr><th>Interested Party</th><th>Needs and Expectations</th></tr>
+    <tr><td>Customers</td><td>
+        <ul>
+            <li>Enhancement of customer satisfaction</li>
+            <li>Delivery of quality, price, and performance of products according to specifications</li>
+            <li>Appropriate communication channels with the organization</li>
+            <li>Handling of property belonging to customers</li>
+        </ul>
+    </td></tr>
+    <tr><td>Owners/shareholders</td><td>
+        <ul>
+            <li>Increased revenue and market share</li>
+            <li>Sustained profitability</li>
+            <li>Flexible and fast responses to market opportunities</li>
+            <li>Evaluation of risks and opportunities</li>
+        </ul>
+    </td></tr>
+    <tr><td>Employees of the organization</td><td>
+        <ul>
+            <li>Clear vision of the organization’s future</li>
+            <li>Appropriate integration in the organization</li>
+            <li>A proper job definition</li>
+            <li>Good work environment</li>
+            <li>Work opportunities</li>
+            <li>Job security</li>
+            <li>Social conditions</li>
+            <li>Recognition and reward</li>
+            <li>Facilities for personnel in the organization</li>
+            <li>Developing and improving the competence of personnel (training)</li>
+        </ul>
+    </td></tr>
+    <tr><td>Suppliers and partners</td><td>
+        <ul>
+            <li>Return on supply of goods or provision of services; appropriate communication channels between the organization and the supplier</li>
+            <li>Provision of resources such as information, knowledge, expertise, technology, processes, and training</li>
+            <li>Mutual benefits and continuity</li>
+            <li>Sticking to payment conditions</li>
+            <li>Handling of property belonging to external providers</li>
+        </ul>
+    </td></tr>
+    <tr><td>Society in which the organization is active</td><td>
+        <ul>
+            <li>Environmental protection</li>
+            <li>Ethical behavior</li>
+            <li>Delivering product in accordance to the social, economic, ecological trends, and local cultural aspects</li>
+        </ul>
+    </td></tr>
+    <tr><td>Regulators</td><td>
+        <ul>
+            <li>Compliance with statutory and regulatory requirements</li>
+            <li>Anticipating and reacting to expected changes in statutory and regulatory requirements</li>
+            <li>Understanding the labor market and its effect on the loyalty of people in the organization</li>
+        </ul>
+    </td></tr>
+</table>
+
+<p>After the identification of needs and expectations of the interested parties, you are in a position to develop and plan your QMS effectively. The ISO 9001 Standard refers through the following issues to the needs and expectations of interested parties:</p>
+
+<ul>
+    <li>Defining the scope of the QMS according to their expectations</li>
+    <li>Communicating the quality policy to them</li>
+    <li>Identifying their needs and expectations related to the product</li>
+    <li>Designing and developing products according to their needs</li>
+    <li>Periodically reviewing their needs and expectations and changes</li>
+</ul>
+
+<h3>Monitoring and Reviewing Information Related to the Interested Parties</h3>
+
+<p>The organization’s business environment is ever-changing and dynamic and the needs and expectations of the related interested parties change with it. Thus, the organization is required to monitor and review changes and trends in the business environment and related changes in the needs and expectations of the interested parties. This can be done through a constant monitoring and analysis of the organization’s business environment and the context of the organization:</p>
+
+<ul>
+    <li>The collection and management of data and information related to the context of the organization (periodical update to PEST and SWOT analyses).</li>
+    <li>Evaluation of the new results of the analysis.</li>
+    <li>Identifying and understanding the different changes in the different aspects: social, economic, ecological trends, or local cultural.</li>
+    <li>Determining whether new needs or expectations arise from those changes.</li>
+    <li>Updating the relevant QMS elements: new quality objectives, changing products, launching new products, employing new workers, and so on.</li>
+    <li>Informing its interested parties of changes and updates relevant to the QMS through appropriate channels.</li>
+</ul>
+
+<p>Updating the needs and expectations of the interested parties is related to the different areas in an organization: human resources are responsible for identifying changes related to human resources, marketing is responsible for identifying changes in the needs and expectations of customers, and top management shall receive inputs from the investors. This type of update must be performed periodically; the organization shall define the interval. In order to create a systematic review, I refer back to chapter 4.1 (Understanding the context of the organization), where I recommended a method for documentation. This type of documentation will serve as the input for management review (as required in clause 9.3.2, c-1).</p>
+
+<h2>4.3 Determining the Scope of the Quality Management System</h2>
+
+<p>Boundaries and applicability of the QMS must be determined in order to enable the definitions of the scope of the QMS. The scope of the QMS refers to the areas, locations, product or lines of products (or services), and processes or activities of the organization to which the QMS is relevant and will be influenced by them. In other words, the scope of the QMS defines its domain. The ISO 9001 Standard requirements are that:</p>
+
+<ul>
+    <li>The organization shall determine the boundaries and applicability of the QMS to establish its scope.</li>
+    <li>The scope shall refer to products and services of the organization as well as the processes and activities required to realize them and the various locations which the organization uses for the realization of the product or services.</li>
+    <li>When determining the scope of the QMS, the organization shall relate to external as well as internal issues as discussed in clause 4.1.</li>
+    <li>When determining the scope, the organization shall relate to the requirements of interested parties as mentioned in clause 4.2.</li>
+    <li>The organization shall meet all the ISO 9001 Standard requirements as applicable to the QMS.</li>
+    <li>While determining the scope, the organization shall justify any decision for not including any requirements of the ISO 9001 Standard in its QMS (i.e., exclusions).</li>
+    <li>A justification for exclusion must prove that the exclusion of a standard requirement does not affect the ability or responsibility of the organization to deliver products or services with conformity to customer requirements and the ability to enhance customer satisfaction.</li>
+    <li>Claiming conformity to the ISO 9001 Standard is only possible when the exclusions are proven not to affect the organization’s ability or responsibility to ensure the conformity of its products and services and the enhancement of customer satisfaction.</li>
+    <li>The scope will be documented and maintained as documented information.</li>
+</ul>
+
+<h3>Determining the Scope of the Quality Management System</h3>
+
+<p>The scope of the QMS defines in which areas and boundaries the organization is active and describes the services, resources, processes, operations, and products the quality system applies to. In practice, it is a text that will be maintained as documented information and also appear on the certification. An accurate and correct definition of the scope is crucial because it determines which products and services are included under the QMS and that determines the processes and activities that need to be planned, controlled, and documented according to the ISO 9001 Standard requirements. The scope will relate to the following issues:</p>
+
+<ul>
+    <li>The products or services included under the QMS and that organization delivers to its customers.</li>
+    <li>All the applicable realization activities that will be under the QMS: research and development, production, marketing, installation, service, and support.</li>
+    <li>Locations of the organizational units that will be under the QMS (if applicable). Bear in mind that each location that is included in the scope must be audited separately.</li>
+</ul>
+
+<h3>Reference to External and Internal Issues</h3>
+
+<p>As said before, external and internal issues are significant factors, conditions, influences, situations, opportunities, or events that have an effect on the QMS and will affect the ability of the organization in achieving its objectives and the intended results. Such issues and their influences were identified when we discussed the context of the organization. These issues shall serve as inputs when determining the scope of the QMS.</p>
+
+<p>For example, when the organization produces a product that is submitted to several regulations, this will be mentioned in the scope: Developing and manufacturing a product while applying the relevant local, regional, and international regulations.</p>
+
+<h3>Reference to Relevant Needs and Expectations of Interested Parties</h3>
+
+<p>Interested parties are persons or organizations that affect, or may be affected, or perceive themselves to be affected by the organization or its activities. The interested parties and their relevant needs and expectations were identified and discussed in clause 4.2 (Understanding the needs and expectations of interested parties).</p>
+
+<p>For example, if one need or expectation of your customer is distribution of your product with a certain technology, for example, an online shop, the scope will indicate it: Marketing of products on an online or an Internet platform.</p>
+
+<h3>Application of All the ISO 9001 Standard Requirements in the Scope</h3>
+
+<p>The Standard requires complete adherence to all the requirements mentioned in the standard when they are applicable. In other words, you may not exclude or neglect any requirement of the standard unless this requirement is not applicable to your QMS and you have an acceptable justification. For example, if you are not purchasing any services or goods from an external provider, there is no sense in developing quality management tools and controls for those areas.</p>
+
+<h3>List of Exclusions and Nonapplications</h3>
+
+<p>In the case one of the standard requirements does not apply to your QMS, you are entitled to exclude it. Excluding means not implementing those requirements in the QMS. The scope of the QMS shall indicate a list of exclusions of the standard requirements—requirements from the ISO 9001 Standard that the organization for some reason decided are not applicable to the QMS and has chosen to exclude them. The reason for the exclusions and nonapplications is that those specific standard requirements do not apply to the operations, products, or services of the organization. For example, if your organization does not use any monitoring and measuring devices on its products or processes, it may exclude the requirements of clause 7.1.5—Monitoring and measuring resources.</p>
+
+<p>Each exclusion requires a justification on behalf of the organization—a statement with the explanation of an acceptable reason for excluding the requirement.</p>
+
+<p>For example, I would manage a table with the relevant clause from the standard along with the justification, which would look like this:</p>
+
+<table>
+    <tr><th>Exclusion</th><th>Reason</th></tr>
+    <tr><td>7.1.5—Monitoring and measuring resources</td><td>The organization does not use any resources, personnel, tools, or equipment for ensuring results of monitoring and measuring.</td></tr>
+    <tr><td>8.3—Design and development of products and services</td><td>The organization does not develop any products or services.</td></tr>
+    <tr><td>8.5.3—Property belonging to customers or external providers</td><td>The organization does not hold, store, maintain stocks, or inventory of property belonging to customers or external providers.</td></tr>
+</table>
+
+<p>When you decide to exclude a requirement, make sure any activity, operation, or process is not included in the QMS and that the does not refer to those requirements. For example, if you exclude the requirements of clause 8.5.3 but do receive packages from a supplier, make sure that activities for handling packages or containers of the supplier are not included in the processes.</p>
+
+<h3>Including New Process Operations and Product under the QMS</h3>
+
+<p>When the scope of the QMS is already defined and documented, and the organization decides to develop a brand new product with new processes, operations, and activities, as long as the product is not included in the scope of the QMS, it is not officially included in the QMS, although the development and realization were done under the appropriate controls and all the records are maintained, and so on.</p>
+
+<h3>Documenting the Scope of the QMS</h3>
+
+<p>The scope of the QMS and the list of exclusions must be maintained as documented information; must be created, updated, and controlled under the requirements of clause 7.5 (Documented information). One option is to create a designated document for the scope. I (along this book) recommend to document and maintain the scope of the QMS and the exclusions in the quality manual, if you still want to maintain this type of documentation (the 2015 revision of the Standard does not require maintaining a quality manual anymore).</p>
+
+<h3>Example Scopes for the QMS</h3>
+
+<p>Here are some example wordings for QMS scope from certificates I have seen:</p>
+
+<ul>
+    <li>The design and development, manufacturing, and service for motor units and control equipment for pumps, fire pumps, fans, blowers, and automatic water supply systems.</li>
+    <li>Design, manufacture, supply, service, and customer support for diesel engines from type XXX to type YYY.</li>
+    <li>Developing and manufacturing semiconductors components for the XXX industry.</li>
+    <li>Developing and provision of construction engineering services, consulting services including project management services. Included sites: New York branch, London branch, Zurich branch.</li>
+    <li>Provision of cleaning services at the customer premises and provision of cleaning products and materials.</li>
+</ul>
+
+<h2>4.4 Quality Management System and Its Processes</h2>
+
+<h3>4.4.1</h3>
+
+<p>Clause 4.4.1 is a declaration of the standard’s intention regarding the QMS. In this clause, the requirements and main principles of a QMS are presented. This clause can be regarded as a foundation for self-evaluation of whether the organization’s QMS follows the general requirements. First let me review the basic requirements:</p>
+
+<ul>
+    <li>The organization shall establish, implement, and maintain a QMS within the organization with conformity to the requirements of the ISO 9001 Standard.</li>
+    <li>The organization is required to continually improve the QMS and its processes in accordance with the requirements of this International standard.</li>
+    <li>The organization shall determine the processes needed for the QMS.</li>
+    <li>The organization shall determine how these processes will be applied in the QMS.</li>
+    <li>The processes included in the QMS shall be identified and planned, implemented, controlled, and improved.</li>
+    <li>The organization shall determine the required inputs and expected outputs of every process.</li>
+    <li>The organization shall determine the sequence and interaction of processes included in the QMS.</li>
+    <li>The organization shall determine how these processes and their controls will be implemented in the organization.</li>
+    <li>Methods, criteria, performance indicators, and measurements for ensuring effective monitoring and control of the processes will be defined and implemented.</li>
+    <li>Resources needed to support these processes shall be allocated and available.</li>
+    <li>Responsibilities and authorities for these processes shall be assigned.</li>
+    <li>Risks and opportunities identified and determined in accordance with the requirements of 6.1 shall be addressed.</li>
+    <li>Changes necessary to ensure processes achieve their intended results shall be evaluated, planned, and implemented.</li>
+    <li>The organization will implement specific measures for the improvement of these processes (achievement of objectives and maintenance of effectiveness).</li>
+</ul>
+
+<h3>4.4.2</h3>
+
+<ul>
+    <li>According to its needs and requirements, the organization shall maintain documented information to support the operation of its processes.</li>
+    <li>According to the needs and requirements, the organization shall retain documented information to ensure that the processes are being carried out as planned.</li>
+</ul>
+
+<h3>Establishing a QMS according to Clear Principles</h3>
+
+<p>The ISO 9001:2015 declares in clause 4.4 quite clearly with which principles the QMS shall be established:</p>
+
+<ul>
+    <li>Establishment of a QMS according to the ISO 9001:2015 Standard Requirements</li>
+    <li>Definition of processes and their interactions needed for the operation of this QMS</li>
+    <li>Continually maintaining and the effectiveness of the QMS through improvement</li>
+</ul>
+
+<p>The important message here is that in order to deliver a conformed product or service and to meet customer requirements as well as other needs and expectations of other relevant interested parties in an effective way, a QMS must be established and maintained—a QMS:</p>
+
+<ul>
+    <li>That is based on the quality principles suggested in the ISO 9001 Standard.</li>
+    <li>That is defined, planned, implemented, and controlled.</li>
+    <li>That is customer focused—the QMS should use methods to understand present and future customer needs, and shall develop processes to meet customer requirements and strive to exceed customer expectations.</li>
+    <li>Whose activities and processes address the needs and expectations of interested parties.</li>
+    <li>Whose resources are planned, allocated, and controlled.</li>
+    <li>Whose processes and activities are managed and whose interrelations are clear.</li>
+    <li>That is constantly analyzed and controlled—analysis of data and information is implemented and decisions are based on facts.</li>
+    <li>Supports improvement through collection of evidences and their analysis.</li>
+    <li>That is fueled by the top management leadership—through leadership the purpose and strategic direction of the organization are established. Leadership shall create the environment for establishing the appropriate quality policy, in which employees can become fully involved and quality objectives can be achieved.</li>
+    <li>That persons in the organization are aware of.</li>
+</ul>
+
+<h3>Employing the Process Approach</h3>
+
+<p>The ISO 9001:2015 Standard employs the process approach in order to enable the organization to effectively plan its processes and their interactions (see clause 0.1 of the Standard—General). How effective? The effectiveness of an organization depends much on its ability to perform several interconnected activities simultaneously in order to achieve intended results—the expectations of the interested parties.</p>
+
+<p>These relations should be managed, prioritized, and controlled. The ISO 9001 Standard requires adopting a system of processes within the organization. This system of processes requires the application and implementation of a method for the identification of processes in the organization, the definition of their sequences and interrelations, and the application of their controls. The goal here is to develop and plan processes and methods for the realization of products or services. The ISO 9001 Standard regards it as a critical element of product realization.</p>
+
+<h3>Terms and Definitions</h3>
+
+<p>Before we start to unveil the requirements of clause 4.4 and their implementation, it is important to know some terms and definitions:</p>
+
+<ul>
+    <li><strong>Process</strong>—A set of interrelated or interacting activities that convert inputs into outputs and accomplish a specific organizational goal. These activities require allocation of resources such as people and materials.</li>
+    <li><strong>Scope of a process</strong>—Scope of the process defines precisely where a process starts and ends, what its related inputs and outputs are, and which activities are included and excluded.</li>
+    <li><strong>Supplier of a process</strong>—The deliverer of inputs to a process (data, information, goods, or services). Supplier may be an external supplier that delivers, for instance, goods or material or an internal supplier—an organizational unit that delivers inputs to a process.</li>
+    <li><strong>Customer of a process</strong>—The receiver of the outputs of a process (data, information, goods, or services). The customer defines what outputs are expected according to its needs. Customers may be external customers, end customers, or internal customers.</li>
+    <li><strong>Inputs</strong>—Specified requirements needed to be put into a process in order to start the process. The inputs will be processed by a process or activity.</li>
+    <li><strong>Output</strong>—Specified expected or intended result of a process.</li>
+    <li><strong>Risk</strong>—Combination of the probability of occurrence of not fulfilling process specifications or customer requirements.</li>
+    <li><strong>Monitoring of processes</strong>—A continuous, sequential, and periodic examination of processes and its outputs.</li>
+    <li><strong>Measurement of processes</strong>—Determining a physical measurement of processes and their outputs based on data.</li>
+    <li><strong>Process owner</strong>—An organizational function responsible for a process or subprocesses.</li>
+</ul>
+
+<h3>Applying the Process Approach</h3>
+
+<p>Process approach or system approach refers to the act of implementing a method or rules that analyze, identify, manage, and measure the processes of the organization. These processes are necessary for the operation of the QMS and the realization of the product. The fundamental goal is to create standardization of processes in the organization and to ensure that persons or different organizational units in the organization work in a unified way. The objectives of the process approach are as follows:</p>
+
+<ul>
+    <li>Creating awareness and understanding in the organization regarding responsibility for managing activities</li>
+    <li>Implementing a method for the identification and planning of activities needed for the operation of the QMS</li>
+    <li>Defining the sequences between processes</li>
+    <li>Promoting a smooth and transparent flow of operations in the workflow</li>
+    <li>Identifying and ensuring the interactions between processes, that is, activities in the organization</li>
+    <li>Ensuring accurate delivery of inputs to processes</li>
+    <li>Monitoring and controlling activities of the QMS</li>
+    <li>Ensuring delivery of the right process outputs</li>
+    <li>Ensuring achievement of intended results or process objectives</li>
+    <li>Enhancing satisfaction of process customers</li>
+    <li>Creating basis and environment for addressing risks and preventing errors</li>
+    <li>Creating basis and environment for the planning, implementation, and analysis of improvements (PDCA cycle)</li>
+</ul>
+
+<h3>Determining the Processes in the Organization</h3>
+
+<p>Which processes are to be included in the QMS? Applying the process approach requires identification and determination of all processes needed to realize the product or service. In other words, you are required to determine all key stages and substages (processes or subprocesses if you may) necessary for the delivery and realization of the product or service. Identifying and determining the processes included in the QMS is the first practical step in applying the process approach. Until now we:</p>
+
+<ul>
+    <li>Understood the context of the organization</li>
+    <li>Identified needs and expectations of interested parties</li>
+    <li>Determined the scope of the QMS</li>
+</ul>
+
+<p>Now, we must declare which operations are required in order to fulfill the scope (realize the product). The level of details and complexity of the processes depends solely on your organization and the nature of its products. But the thumb rule indicates that only processes and activities that affect the product, its intended use, and quality must be included.</p>
+
+<p>There are many methods and ways to identify and determine which are the processes included under the QMS. For the ISO 9001 Standard it is important to have a clear definition of these processes because these are the activities that will be planned, monitored, analyzed, and controlled. It is important that the list of processes you come up with answers these questions:</p>
+
+<ul>
+    <li>Do these processes reflect your ability to deliver your product or service?</li>
+    <li>Are all processes, key stages, subprocesses, operations, or activities critical for the realization of the product identified?</li>
+    <li>Are all areas of the realization of the product covered?</li>
+    <li>Is the scope of each process clear?</li>
+</ul>
+
+<p>The end result of this determination of the processes and activities included in the QMS may be displayed with a list that specifies all processes, or a diagram (or a set of diagrams) that illustrates the processes and the interactions between them. Again, the book is too short to suggest a certain method. You must identify the method most suitable to your organization and its processes.</p>
+
+<h3>Relation between Processes and the ISO 9001 Requirements</h3>
+
+<p>It is important that the defined processes will refer to the relevant ISO 9001 Standard requirements. What do I mean by that? The ISO 9001 Standard presents us with many quality management requirements such as management review, management of resources, but many quality requirements for the operation of the QMS. For example, when you design the process of offering or selling products to the customer, you must take into account the specification in clause 8.2—Determination of market needs and interactions with customers:</p>
+
+<ul>
+    <li>Plan and implement activities to interact with customers.</li>
+    <li>Plan and implement a method to meet requirements specified by the customer.</li>
+    <li>Answering the requirements for the intended use, and so on.</li>
+</ul>
+
+<p>While defining and designing the processes included in the QMS, one must include such operational quality requirements.</p>
+
+<h3>Outsourced Processes</h3>
+
+<p>Outsourcing a process is a situation where the organization has chosen to execute a certain process or activity by an external organization (external provider), that is, the organization delegates the responsibilities for this activity to another organization. Outsourced processes, that are part of the realization of the product, must be identified and included as part of the QMS because the organization is obliged to control them (see clause 8.1). In other words, handing over the task to the external provider does not dismiss the organization from the responsibility of conformity to all customer, statutory, and regulatory requirements. For example, when a manufacturer is realizing the product, but the packaging activities are carried out by a supplier, the following are required:</p>
+
+<ul>
+    <li>To define the scope of those packaging activities that must be planned and controlled by the organization—This means to define what is being done by the organization and what will be taken care of by the external provider.</li>
+    <li>To include these activities under the QMS—describing them in the diagram of the processes, for example.</li>
+    <li>To apply the method for process approach to these processes—demand at least from the supplier to prove that these processes are being planned with the process approach.</li>
+    <li>To monitor, measure, analyze, improve, and to control the effectiveness of the process—define how you control and measure the process outputs of the supplier.</li>
+</ul>
+
+<h3>Determining the Sequence of Processes</h3>
+
+<p>Determining the sequence of processes means determining the sequence of different activities of different elements involved in the process and constructing the workflow in the organization. The goal is to make sure that the processes achieve quality objectives, deliver intended outputs, and ensure conformity of products or services. In practice, you...</p>
+
+<h1>5. Leadership</h1>
+
+<h2>5.1 Leadership and Commitment</h2>
+
+<h3>5.1.1 General</h3>
+
+<p>[Content truncated in the provided document; typically, this section would discuss the general requirements for leadership commitment under ISO 9001:2015, emphasizing top management's role in ensuring the QMS's effectiveness, integrating it into business processes, and promoting a customer-focused culture.]</p>
+
+<h3>5.1.2 Customer Focus</h3>
+
+<p>The ISO 9001 Standard requirements for customer focus are as follows:</p>
+
+<ul>
+    <li>Top management shall ensure that customer requirements are determined, understood, and consistently met.</li>
+    <li>Risks and opportunities that can affect conformity of products and services and the ability to enhance customer satisfaction are identified and addressed.</li>
+    <li>The focus on enhancing customer satisfaction is maintained.</li>
+</ul>
+
+<p>Customer focus is about ensuring that the organization places the customer at the center of its quality management efforts. This involves:</p>
+
+<ul>
+    <li><strong>Goals</strong>: Ensuring products and services meet customer needs and expectations, enhancing satisfaction.</li>
+    <li><strong>Internal Customers</strong>: Recognizing employees and internal processes as customers within the organization.</li>
+    <li><strong>External Customers</strong>: Focusing on end-users and clients who receive the final product or service.</li>
+    <li><strong>Needs and Expectations</strong>: Identifying and meeting both explicit and implicit customer requirements.</li>
+    <li><strong>Risks and Opportunities</strong>: Addressing potential issues that could impact product conformity or customer satisfaction.</li>
+    <li><strong>Delivery</strong>: Consistently providing products and services that meet specified requirements.</li>
+</ul>
+
+<h2>5.2 Policy</h2>
+
+<h3>5.2.1 Establishing the Quality Policy</h3>
+
+<p>The organization’s top management shall establish a quality policy that:</p>
+
+<ul>
+    <li>Is appropriate to the purpose and context of the organization.</li>
+    <li>Provides a framework for setting quality objectives.</li>
+    <li>Includes a commitment to satisfy applicable requirements.</li>
+    <li>Includes a commitment to continual improvement of the QMS.</li>
+</ul>
+
+<h3>5.2.2 Communicating the Quality Policy</h3>
+
+<p>The quality policy shall be:</p>
+
+<ul>
+    <li>Available and maintained as documented information.</li>
+    <li>Communicated, understood, and applied within the organization.</li>
+    <li>Available to relevant interested parties as appropriate.</li>
+</ul>
+
+<h2>5.3 Organizational Roles, Responsibilities, and Authorities</h2>
+
+<p>Top management shall ensure that relevant roles, responsibilities, and authorities are assigned, communicated, and understood within the organization to ensure the effective implementation and maintenance of the QMS.</p>
+
+<h1>6. Planning</h1>
+
+<h2>6.1 Actions to Address Risks and Opportunities</h2>
+
+<p>The ISO 9001 Standard requirements are:</p>
+
+<ul>
+    <li>When planning for the QMS, the organization shall consider the issues referred to in 4.1 and the requirements referred to in 4.2 and determine the risks and opportunities that need to be addressed.</li>
+    <li>The organization shall plan actions to address these risks and opportunities, how to integrate and implement them into its QMS processes, and evaluate their effectiveness.</li>
+</ul>
+
+<p><strong>Objectives</strong>: To ensure the QMS can achieve its intended results, enhance desirable effects, prevent or reduce undesired effects, and achieve improvement.</p>
+
+<p><strong>Risk-Based Thinking</strong>: This involves identifying risks and opportunities based on the organizational context and interested parties’ needs, planning actions to mitigate risks or capitalize on opportunities, and integrating these into the QMS.</p>
+
+<h2>6.2 Quality Objectives and Planning to Achieve Them</h2>
+
+<p>The organization shall establish quality objectives at relevant functions, levels, and processes, which shall be:</p>
+
+<ul>
+    <li>Consistent with the quality policy.</li>
+    <li>Measurable.</li>
+    <li>Take into account applicable requirements.</li>
+    <li>Be monitored, communicated, and updated as appropriate.</li>
+</ul>
+
+<p>The organization shall also plan how to achieve these objectives, including what will be done, resources required, responsibilities, timeframes, and evaluation methods.</p>
+
+<h2>6.3 Planning of Changes</h2>
+
+<p>When changes to the QMS are needed, they shall be carried out in a planned manner, considering the purpose, potential consequences, integrity of the QMS, availability of resources, and allocation of responsibilities.</p>
+
+<h1>7. Support</h1>
+
+<h2>7.1 Resources</h2>
+
+<h3>7.1.1 General</h3>
+
+<p>The organization shall determine and provide the resources needed for the establishment, implementation, maintenance, and continual improvement of the QMS.</p>
+
+<h3>7.1.2 People</h3>
+
+<p>The organization shall determine and provide the persons necessary for the effective implementation of its QMS and operation of its processes.</p>
+
+<h3>7.1.3 Infrastructure</h3>
+
+<p>The organization shall determine, provide, and maintain the infrastructure necessary for the operation of its processes and to achieve conformity of products and services.</p>
+
+<h3>7.1.4 Environment for the Operation of Processes</h3>
+
+<p>The organization shall determine, provide, and maintain the environment necessary for the operation of its processes and to achieve conformity of products and services.</p>
+
+<h1>10. Improvement</h1>
+
+<h2>10.1 General</h2>
+
+<p>The organization shall determine and select opportunities for improvement and implement necessary actions to meet customer requirements and enhance customer satisfaction.</p>
+
+<h2>10.2 Nonconformity and Corrective Action</h2>
+
+<p>When a nonconformity occurs, the organization shall:</p>
+
+<ul>
+    <li>React to the nonconformity and take action to control and correct it.</li>
+    <li>Evaluate the need for action to eliminate the causes of the nonconformity.</li>
+    <li>Implement any action needed.</li>
+    <li>Review the effectiveness of any corrective action taken.</li>
+    <li>Update risks and opportunities determined during planning, if necessary.</li>
+    <li>Make changes to the QMS, if necessary.</li>
+</ul>
+
+<p><strong>Documented Information</strong>: The organization shall retain documented information as evidence of the nature of nonconformities, actions taken, and results.</p>
+
+<h2>10.3 Continual Improvement</h2>
+
+<p>The organization shall continually improve the suitability, adequacy, and effectiveness of the QMS, considering the results of analysis, evaluation, and management review to determine if there are needs or opportunities for improvement.</p>
+
+<h1>Index</h1>
+
+<p>[The index provided in the document is extensive and covers various topics discussed throughout the book. Below is a summarized version for brevity:]</p>
+
+<ul>
+    <li><strong>A</strong>: Acceptable risks, Auditing, Awareness</li>
+    <li><strong>C</strong>: Communication channels, Competence, Context of organization, Continual improvement, Customer focus</li>
+    <li><strong>D</strong>: Documented information, Design and development</li>
+    <li><strong>E</strong>: External customers, Externally provided products and services</li>
+    <li><strong>I</strong>: Improvements, Innovation, Interested party, Internal audit</li>
+    <li><strong>J</strong>: Job description</li>
+    <li><strong>K</strong>: Key performance indicators (KPIs), Knowledge</li>
+    <li><strong>L</strong>: Leadership</li>
+    <li><strong>M</strong>: Microsoft, Nonconformity and corrective action, Normative references</li>
+    <li><strong>O</strong>: Objective expectations, Operation, Organizational sources, Outsourcing</li>
+    <li><strong>P</strong>: Performance evaluation, PEST analysis, Plan-Do-Check-Act (PDCA) cycle, Planning, Principles, Process approach, Process controls</li>
+    <li><strong>R</strong>: Records and information management (RIM) system, Regulatory controls, Resources, Risk-based thinking</li>
+    <li><strong>S</strong>: Subjective expectations, SWOT analysis</li>
+    <li><strong>T</strong>: Tacit knowledge, Terms and definitions, Traceability</li>
+    <li><strong>U</strong>: Unacceptable risks</li>
+    <li><strong>V</strong>: Validation activity, Verification activity</li>
+    <li><strong>W</strong>: Work environment</li>
+</ul>
+
+<p>[Note: The full index in the original document spans multiple pages with detailed sub-entries, but it has been condensed here due to space constraints.]</p>
+            ]]>
+        </field>
+    </record>
+</odoo>

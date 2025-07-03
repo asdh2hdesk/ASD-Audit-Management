@@ -1,0 +1,699 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo noupdate="1">
+
+    <record id="document_page_environmental_manual" model="document.page">
+        <field name="name">ISO 14001 Environmental Management System Manual</field>
+        <field name="type">category</field>
+        <field name="template">
+            <![CDATA[
+<h1>The ISO 14001:2015 Implementation Handbook</h1>
+
+<h2>Using the Process Approach to Build an Environmental Management System</h2>
+
+<p><strong>Milton P. Dentch</strong></p>
+
+<p>ASQ Quality Press<br>Milwaukee, Wisconsin</p>
+
+<p>American Society for Quality, Quality Press, Milwaukee 53203<br>© 2016 by ASQ<br>All rights reserved.<br>Printed in the United States of America<br>21 20 19 18 17 16 5 4 3 2 1</p>
+
+<p><strong>Library of Congress Cataloging-in-Publication Data</strong><br>Names: Dentch, Milton P., 1942– author.<br>Title: The ISO 14001:2015 implementation handbook : using the process approach to build an environmental management system / Milton P. Dentch.<br>Description: Milwaukee, Wisconsin : ASQ Quality Press, [2016] | Includes bibliographical references and index.<br>Identifiers: LCCN 2016006564 | ISBN 9780873899291 (hardcover : alk. paper)<br>Subjects: LCSH: Factory and trade waste—Handbooks, manuals, etc. | Environmental protection—Handbooks, manuals, etc. | ISO 14001 Standard—Handbooks, manuals, etc.<br>Classification: LCC TD897.5 .D45 2016 | DDC 658.4/083—dc23<br>LC record available at http://lccn.loc.gov/2016006564</p>
+
+<p>No part of this book may be reproduced in any form or by any means, electronic, mechanical, photocopying, recording, or otherwise, without the prior written permission of the publisher.</p>
+
+<p><strong>Publisher:</strong> Seiche Sanders<br><strong>Acquisitions Editor:</strong> Matt Meinholz<br><strong>Managing Editor:</strong> Paul Daniel O’Mara<br><strong>Production Administrator:</strong> Randall Benson</p>
+
+<p><strong>ASQ Mission:</strong> The American Society for Quality advances individual, organizational, and community excellence worldwide through learning, quality improvement, and knowledge exchange.</p>
+
+<p><strong>Attention Bookstores, Wholesalers, Schools, and Corporations:</strong> ASQ Quality Press books, video, audio, and software are available at quantity discounts with bulk purchases for business, educational, or instructional use. For information, please contact ASQ Quality Press at 800-248-1946, or write to ASQ Quality Press, P.O. Box 3005, Milwaukee, WI 53201–3005.</p>
+
+<p>To place orders or to request a free copy of the ASQ Quality Press Publications Catalog, visit our website at http://www.asq.org/quality-press.</p>
+
+<p>Printed on acid-free paper</p>
+
+<h1>Table of Contents</h1>
+
+<ul>
+    <li>List of Figures and Tables</li>
+    <li>Preface</li>
+    <li>Chapter 1 ISO 14001 History and Chronology</li>
+    <li>Chapter 2 The Environmental Management System as a Process</li>
+    <li>Chapter 3 ISO 14001:2015 Requirements</li>
+    <li>Chapter 4 Clause 4: Context of the Organization</li>
+    <li>Chapter 5 Clause 5: Leadership</li>
+    <li>Chapter 6 Clause 6: Planning</li>
+    <li>Chapter 7 Clause 7: Support</li>
+    <li>Chapter 8 Clause 8: Operation</li>
+    <li>Chapter 9 Clause 9: Performance Evaluation</li>
+    <li>Chapter 10 Clause 10: Improvement</li>
+    <li>Chapter 11 Summary Conclusion</li>
+    <li>Appendix A Correspondence: ISO 14001:2015 to ISO 14001:2004</li>
+    <li>Appendix B ISO 14001 Workshop for Managers and Employees</li>
+    <li>Appendix C Definitions from ISO 14001:2015</li>
+    <li>Appendix D United States Environmental Protection Agency Enforcement Annual Results for Fiscal Year (FY) 2015</li>
+    <li>Appendix E EPA Regulations</li>
+    <li>References</li>
+    <li>Index</li>
+    <li>About the Author</li>
+</ul>
+
+<h1>List of Figures and Tables</h1>
+
+<ul>
+    <li>Figure P.1 Aerial view of pulp waste from the Hammermill Paper Company in Erie, Pennsylvania, as it drains into Lake Erie, 1968</li>
+    <li>Table P.1 The difference between a program and a system</li>
+    <li>Figure 2.1 Plan-do-check-act cycle</li>
+    <li>Figure 2.2 The core processes of an EMS</li>
+    <li>Table 2.1 Relative costs of ISO 14001: prevention versus response to errors</li>
+    <li>Table 2.2 Environmental violations at laboratory as related to ISO 14001</li>
+    <li>Table 2.3 Cost benefits of ISO 14001</li>
+    <li>Table 4.1 Examples of the context and interested parties for various types of organizations</li>
+    <li>Figure 5.1 Sample environmental policy</li>
+    <li>Figure 6.1 Environmental aspects and impacts for injection molding operation example</li>
+    <li>Table 6.1 Injection molding plant aspect rating</li>
+    <li>Table 6.2 Environmental aspects related to interested parties</li>
+    <li>Figure 6.2 Inputs to compliance obligations</li>
+    <li>Table 6.3 Regulated aspects for the injection molding plant</li>
+    <li>Table 6.4 Environmental regulations for the injection molding plant</li>
+    <li>Table 6.5 EPA compliance list for injection molding plant</li>
+    <li>Table 6.6 Industry compliance obligations for injection molding plant</li>
+    <li>Table 6.7 Aspects risk assessment</li>
+    <li>Table 6.8 Compliance obligations risk assessment</li>
+    <li>Figure 6.3 Processes to maintain compliance and improve the EMS</li>
+    <li>Figure 6.4 Inputs for determining the environmental objectives, targets, and programs</li>
+    <li>Table 6.9 Potential objectives analysis</li>
+    <li>Table 6.10 2015 Environmental Objectives—January 5, 2015</li>
+    <li>Figure 6.5 Example: environmental program</li>
+    <li>Figure 7.1 The relationship of the subclauses of clause 7, Support</li>
+    <li>Table 7.1 Training requirements for environmental tasks</li>
+    <li>Table 7.2 Focus and evidence for competence, awareness, and communications clauses</li>
+    <li>Table 7.3 Example of an environmental records list</li>
+    <li>Table 8.1 Focus for various requirements of clause 8.1, Operational planning and control</li>
+    <li>Table 8.2 Examples of operational controls for significant environmental aspects</li>
+    <li>Table 8.3 Examples of operational controls for the injection molding plant’s environmental aspects</li>
+    <li>Table 8.4 Environmental activities for suppliers, temporary workers, and contractors</li>
+    <li>Figure 9.1 The subclauses of clause 9.0</li>
+    <li>Table 9.1 Examples: monitoring of various EMS processes</li>
+    <li>Table 9.2 Monitoring of ISO 14001:2015 clauses related to managing hazardous waste</li>
+    <li>Figure 9.2 A sample audit plan</li>
+    <li>Figure 9.3 Sample check sheet for clause 8.1, Operational control and planning</li>
+    <li>Table 10.1 Example of objective evidence to support the organization’s improvement activities</li>
+    <li>Table 10.2 Example: environmental issues noted during plant inspections</li>
+    <li>Figure 11.1 The EMS as a process</li>
+    <li>Table 11.1 ISO 14001:2015 clauses linked to PDCA</li>
+</ul>
+
+<h1>Preface</h1>
+
+<p>I started my professional career in the paper industry in the early 1960s. The company I worked for, Rice Barton of Worcester, Massachusetts, produced machinery that manufactured pulp and paper. In my early twenties, I visited paper mills all over the United States and Canada. On my first visit to a paper mill, when I commented to my traveling companion from Rice Barton regarding the pungent odor as we approached the paper mill in Madawaska, Maine, my colleague advised, “That’s the smell of money, son—get used to it.” On a similar trip a few years later to a paper mill in Alabama, I experienced the alleged improved odor of “sweet southern pine,” and it actually was less offensive.</p>
+
+<p>I loved my job at Rice Barton; paper mills and mill towns were an important part of Americana. The engineering work was exciting—and other than the smell from the pulp mill stacks, I wasn’t really conscious of the impact the paper industry had on air and water quality for the areas adjacent to the mills. A turning point for the paper industry occurred in the late 1960s when the cover of Life magazine was an aerial photograph of Lake Erie showing the runoff from the pulp mill at the Hammermill Paper Company in Erie, Pennsylvania (see Figure P.1). The mill discharged the effluent directly into the lake. The waste material was lighter than water, so the foamy material would rise to the surface and float many yards offshore, contained by truck tires or similar barriers. With some frequency, the mill would skim off the flotsam and deposit the waste in a landfill. The toxic chemicals would remain in the lake, damaging all sorts of fish and wildlife.</p>
+
+<p><strong>Figure P.1</strong> Aerial view of pulp waste from the Hammermill Paper Company in Erie, Pennsylvania, as it drains into Lake Erie, 1968. (Photo by Alfred Eisenstaedt/the LIFE Picture Collection/Getty Images)</p>
+
+<p>While there were many other factors involved, the graphic Life magazine photograph illustrating the almost arrogant pollution of our lakes and rivers by industry helped spawn the Environmental Protection Agency (EPA) in 1970. That year also saw the publication of Rachel Carson’s Silent Spring, the immensely popular book describing how the indiscriminate use of pesticides was poisoning birds and wildlife. Americans at large became aware of the ecology.</p>
+
+<p>In 1969, I left the paper industry to work for the film and camera company Polaroid. The chemicals and materials used to produce instant film were often toxic; the processes included considerable wastewater and discharge of volatile air compounds. While Polaroid was always a responsible company, the required environmental control technology was in its infancy and safety trumped environmental concerns. “The solution to pollution is dilution” was the mantra, meaning keep adding air to chemical discharges to alleviate the released odor of volatile chemicals; a similar mind-set existed with management of wastewater.</p>
+
+<p>The wake-up call for Polaroid was a front-page photograph in a Boston, Massachusetts, newspaper of several drums of hazardous waste that had washed up on the city’s Revere Beach. Polaroid had contracted a company to dispose of the waste chemicals. We obviously did not conduct due diligence for this firm. Its disposal process was quite simple: take the drums a few miles out in Boston Harbor and dump them overboard. The workers would shoot bullet holes in the drums to ensure the partially full drums sank to the bottom of the sea. On this particular Saturday evening, the marksmen were not so accurate, and a half-dozen drums with Polaroid Corporation labels quite evident found their way to shore. Needless to say, Polaroid developed immensely improved controls for contractors over the next several years, and the company became a leader over the next decades in protecting the environment.</p>
+
+<p>I worked as an engineer and manager for Polaroid for 27 years, holding positions with environmental responsibilities in several areas. While the company continued to reduce its environmental impact during my time there, there was something about the way companies like Polaroid managed their environmental programs that seemed less than ideal. We strove to obey the EPA and Massachusetts regulations. We sponsored “Earth Days,” encouraging employees to reduce their environmental impact both at work and at home. But the individuals who managed the environmental programs were outside the mainstream manufacturing or engineering groups. The corporate environmental leaders were tasked by company management to “police” the manufacturing groups to ensure compliance with environmental regulations was met.</p>
+
+<p>The corporate environmental leaders had associates in the various divisions, but these individuals were seen as caretakers of the environmental programs in their divisions, assumed to be mostly responsible for the environmental issues in their plant. The environmental associates maintained all the permits and other records associated with air, water, and waste controls. The “ownership” by the folks who produced the pollution was absent. When an associate left the division, the replacement sometimes had to scramble to locate the pertinent files.</p>
+
+<p>Several years after leaving Polaroid, I became certified to provide audits for the International Organization for Standardization (ISO), first as a quality auditor, then later as an environmental auditor and EMS internal auditor trainer and consultant. Since 2001, I have audited the environmental management systems (EMSs) of over 100 companies to the International Standard ISO 14001. Observing what allowed some companies to implement a very successful environmental program, I discovered they weren’t managing an environmental program; rather, these companies had created an environmental management system. The differences between a management system and a program are illustrated in Table P.1.</p>
+
+<p><strong>Table P.1</strong> The difference between a program and a system.</p>
+
+<p>One of the goals of this book is to explain how an organization can use a management system to both control and improve its environmental performance. I provide guidance in building the EMS in support of the organization’s operations—linking the management system to the requirements of ISO 14001, to support third-party certification to ISO 14001:2015. Included in the text are best practices as well as common pitfalls and weaknesses I’ve observed in various organizations. For those organizations already certified to ISO 14001:2004, I highlight the changes required to upgrade to the new International Standard.</p>
+
+<p>In addition, included on an accompanying CD are comprehensive check sheets to be used by internal auditors in auditing an EMS’s conformance to ISO 14001:2015. Note: The contents of ISO 14001:2015 have been paraphrased in this book. Paraphrased text by its very nature can introduce differences in understanding and interpretation. This book should be used in conjunction with ASQ/ANSI/ISO 14001:2015 Environmental management systems—Requirements with guidance for use.</p>
+
+<h1>Chapter 1 ISO 14001 History and Chronology</h1>
+
+<p>In 1968, the public outcry related to the contamination of Lake Erie by the discharge of waste from the pulp mill of the Hammermill Paper Company led to the eventual establishment of the United States Environmental Protection Agency (EPA) in 1970. On a worldwide basis, the leak of poisonous gas in 1984 from the pesticide plant in Bhopal, India, greatly amplified concerns on how chemical companies managed their environmental and safety operations, particularly in third-world countries. The discharge of the toxic gas, methyl isocyanate (MIC), from the Union Carbide India Limited (UCIL) plant in Bhopal, India, resulted in the deaths of thousands of employees and neighbors of the plant and caused serious injury to hundreds of thousands of others. Eventually, Union Carbide Corporation, parent company of UCIL, agreed to pay $470 million to the Indian government to be distributed to claimants as a settlement.</p>
+
+<p>In response to the Bhopal tragedy, environmental management systems were established over the next several years:</p>
+
+<ul>
+    <li>1988: The American Chemistry Council (ACC) established Responsible Care to help member companies significantly improve their environmental performance and the health of the communities in which they operate</li>
+    <li>1992: The British Standards Institute (BSI) published the world’s first environmental management systems standard: BS 7750, a standard for environmental control in the manufacturing and services sector</li>
+    <li>1993: The Eco-Management and Audit Scheme (EMAS) was established to allow industrial sector companies operating in the European Union to voluntarily participate in an environmental management scheme to demonstrate commitment to responsible environmental stewardship</li>
+    <li>1996: The International Organization for Standardization (ISO) created ISO 14001, a worldwide registration scheme that was compatible with BS 7750 and EMAS and consistent with the quality management system standard ISO 9001</li>
+</ul>
+
+<p>ISO 14001 is a certifiable standard related to environmental management; it is similar to the quality management systems standard ISO 9001. The focus of ISO 14001 is to assist organizations in managing and improving their operations that affect the environment to comply with applicable laws and regulations. ISO 14001 is similar to ISO 9001 in that certification is performed by third-party organizations (registrars) rather than being awarded by ISO directly.</p>
+
+<p>As of 2015, over 300,000 companies in 171 countries have been certified to ISO 14001. Since 1996, the “Big Three” automotive manufacturers—General Motors, Ford Motor Company, and Fiat Chrysler—along with their Japanese and German counterparts have mandated that their direct product suppliers (tier 1) achieve and maintain third-party certification to ISO 14001. The automotive manufacturers also require their assembly plants to maintain ISO 14001 certification. Additionally, many European and Japanese companies require their tier 1 suppliers to achieve ISO 14001 certification to demonstrate commitment to responsible environmental stewardship.</p>
+
+<p>ISO has a goal to upgrade the management systems approximately every seven years. The first environmental standard, ISO 14001:1996 was reissued as ISO 14001:2004 in 2004 and had a delayed upgrade to ISO 14001:2015 due to the desire to harmonize the environmental standard with the quality management standard ISO 9001:2015.</p>
+
+<h1>Chapter 2 The Environmental Management System as a Process</h1>
+
+<p>The internationally recognized standard for environmental management, ISO 14001 is built on the plan-do-check-act (PDCA) approach (see Figure 2.1). This is the operating principle of all ISO management system standards, including ISO 9001.</p>
+
+<p><strong>Figure 2.1</strong> Plan-do-check-act cycle.</p>
+
+<p>Put in the context of environmental management, the PDCA approach works as follows:</p>
+
+<ul>
+    <li><strong>Plan:</strong> Top management establishes the scope and environmental policy of the EMS with consideration of the context of the organization’s business model and interested parties. Environmental aspects and impacts with related compliance obligations are determined and analyzed to determine the risks related to maintaining the organization’s environmental performance. Objectives are established to improve the environmental performance of the organization.</li>
+    <li><strong>Do:</strong> Controls are implemented to ensure compliance with obligations. Environmental objectives and programs are initiated and implemented to improve the organization’s environmental performance.</li>
+    <li><strong>Check:</strong> The EMS is monitored and audited to measure performance against the organization’s objectives and compliance obligations. The performance and results of the EMS are reported.</li>
+    <li><strong>Act:</strong> Actions are initiated to correct deficiencies and improve the environmental performance as indicated by the monitoring and measurement of the EMS results. Resources and employee training are provided as appropriate to ensure improvement of the EMS.</li>
+</ul>
+
+<p>While establishing the plans and actions to support an EMS, it is helpful to look at the EMS as a process with two desired outputs: compliance with applicable environmental regulations and improvement of the EMS. The organization’s management provides the inputs to the EMS process: scope of activities (business model), the environmental policy, and regulated environmental activities (aspects).</p>
+
+<p><strong>Figure 2.2</strong> The core processes of an EMS.</p>
+
+<p>The chart shown in Figure 2.2 represents the core processes of an EMS and is the starting point for building the EMS. The next step is to define the business model for the organization with linkage to related ISO 14001:2015 requirements.</p>
+
+<p>For organizations looking to certify to ISO 14001 for the first time, I recommend a review of what is already in place in the business related to the core EMS process before attempting to conform to the ISO requirements. Unfortunately, there is quite a bit of “ISO-speak” in all International Standards, due to the need to cover organizations of various sizes and complexities, with a multitude of worldwide languages and interpretations. So, an organization with a high or low environmental impact can collect existing process controls and documentation in support of the EMS process model shown in Figure 2.2 before engaging in steps to conform to ISO 14001:2015. The goal should be to achieve and maintain compliance with the organization’s environmental regulatory requirements, while improving its environmental performance. Becoming certified to ISO 14001 provides verification by a third party, certified by ISO.</p>
+
+<p>For organizations currently certified to ISO 14001:2004, this book highlights and explains what’s needed to satisfy ISO 14001:2015. The major changes from ISO 14001:2004 are summarized in the following section.</p>
+
+<h2>CHANGES FROM ISO 14001:2004</h2>
+
+<p>Organizations currently certified to ISO 14001:2004 will need to address the new (or expanded) requirements of ISO 14001:2015 with the following general groupings:</p>
+
+<ul>
+    <li>Understanding the context of the organization and expectations of interested parties</li>
+    <li>Integration of the EMS requirements into the organization’s business processes</li>
+    <li>Actions to address risks and opportunities</li>
+    <li>Expanded top management commitment</li>
+    <li>Expanded definition of operational controls</li>
+</ul>
+
+<h3>Context and Interested Parties</h3>
+
+<p>Past revisions of ISO 14001 required organizations to define the scope—the activities, processes, and buildings and property within their EMS. The organization’s environmental policy included commitments to comply with applicable environmental regulations, reduce pollution, and continually improve its environmental performance. While many ISO 14001–certified organizations included initiatives such as replacement of toxic materials, recycle activities, and reduction of fossil fuel use, the majority of the environmental programs fostered by certified organizations were “reactive” in nature. The new clauses of ISO 14001:2015, Understanding the organization and its context and Understanding the needs and expectations of interested parties, challenge organizations to analyze their operations and environmental impact from a more holistic, proactive vantage point.</p>
+
+<p>With regard to the context of the organization, depending on the organization’s business model and environmental impact, there may be opportunities to have programs with a positive, proactive impact: air emissions related to climate change, improvement in soil quality of adjacent land or neighboring waterways, and supporting biodiversity (local flora-fauna) initiatives. The organization should be able to explain, within the context of its operations, what opportunities exist. A company producing machined parts or electronic components may have limited options; a large chemical plant, oil refinery, or paper mill may have many opportunities.</p>
+
+<p>In a similar fashion, in response to expectations of interested parties, the organization should analyze how its activities and products may have an environmental impact on its customers, community, and neighbors. Examples could be end-of-life product disposal, voluntary labeling on products, reduction of unregulated materials, sustainable resources, and commitments to maintain adjacent community land or waterways. A key focus of ISO 14001:2015 is “life-cycle thinking,” considering each stage of a product or service, from development to end of life. Organizations producing consumer products may have many opportunities (but also challenges) to have an impact on product disposal, while manufacturers of components for sale to industry may be limited in this regard. Organizations providing components for sale to industry can demonstrate their commitment to life-cycle thinking by reducing or eliminating the use of environmentally challenged materials and maximizing recycle initiatives. Consumer product manufacturers can support life-cycle thinking by moving to “zero-landfill” disposal via waste-to-energy disposal options (waste is burned to produce electricity). Chapter 4 discusses these requirements in more detail.</p>
+
+<h3>Integration of EMS Requirements into the Organization’s Business Processes</h3>
+
+<p>Many ISO 14001–certified companies have integrated the EMS into their business planning and strategy. I have audited companies of all sizes where the environmental performance metrics are woven into the business plan; the key process indicators (KPIs) assigned to quality and business parameters include the environmental metrics of hazardous waste reduction, material recycle, and utility use. Quality-driven waste-reduction projects include improved environmental performance. Best-in-class organizations have established a business management system (BMS) incorporating their financial, quality, safety, and environmental systems into a cohesive operational model. I have also experienced ISO 14001–certified companies that operate with their EMS at arm’s length from their business—just doing the minimum in environmental management to maintain certification. The ISO 14001:2015 standard requirements should nudge these companies into broadening their perspective on environmental performance. Chapter 9 discusses ways to integrate the EMS into the organization’s business.</p>
+
+<h3>Actions to Address Risks and Opportunities</h3>
+
+<p>From my perspective, the requirement to provide risk analysis in the EMS activities is the key difference between ISO 14001:2015 and previous revisions. An identified method to analyze risk associated with threats and opportunities related to the organization’s significant environmental aspects, compliance obligations, or other issues is now required. Results of the analysis should be used in establishing objectives and planning to mitigate the risks. Utilization of failure mode effects analysis (FMEA) as a quality tool could be applied. While organizations with an effective EMS certainly understand risks related to noncompliance, the new requirements of ISO 14001:2015 may have a positive effect on many organizations by requiring a more formalized process and subjecting the risk evaluation process to a third-party audit. Chapter 6 discusses this requirement in more detail with examples of application to environmental controls and legal obligations. It should be noted that ISO 14001:2015 does not have a requirement for “preventive action.” The thought is that the entire EMS is preventive in nature and that the risk analysis approach is also preventive.</p>
+
+<h3>Top Management Commitment</h3>
+
+<p>While the previous revisions to ISO 14001 included commitment from management to support the EMS, ISO 14001:2015 amplifies this commitment. The ISO 14001:2015 standard does not use the title “Management Representative” as previous versions did. The organization can continue to use “Management Representative” as the title having certain responsibilities, but the intent of ISO 14001:2015 is to emphasize top management’s responsibilities as more than delegating. My past experience with a small group of organizations was that management had delegated the environmental management coordination too far down the organizational chart. This was evident by way of the environmental management representative not attending the management review meetings to present the status of the EMS. Not a good sign. Management would justify this by citing the need to discuss financial or sensitive issues at the meeting, and the environmental coordinator should not be privy to such information. ISO 14001:2015 requirements strive to prevent the over-delegation of the EMS support and coordination.</p>
+
+<h3>Expanded Definition of Operational Controls</h3>
+
+<p>The intent of ISO 14001:2015 clause 8 closely matches the previous revisions of ISO 14001 related to operational controls; however, ISO 14001:2015 provides more specific requirements related to outsourced activities (contractors and suppliers), change control, design, and product life-cycle considerations.</p>
+
+<p>When processes are provided by contractors and/or suppliers (outsourced), the environmental impacts need to be defined with appropriate controls established and implemented. Examples of outsourced processes include cleaning services, waste removal, landscaping, contracted maintenance, and construction.</p>
+
+<p>The product design process should consider the impact of materials used in order to avoid environmentally challenged materials during use, delivery, and disposal at end of life. The design and life-cycle requirements of ISO 14001:2015 are mostly applicable to organizations manufacturing consumer products. Other organizations, such as discrete manufacturers, original equipment suppliers, and contract electronics manufacturers, are restricted by compliance obligations such as the RoHS (Restriction of Hazardous Substances) Directive and REACH (Registration, Evaluation, Authorisation and Restriction of Chemicals).</p>
+
+<p>The organization needs to ensure controls are in place when changes occur in processes, resources, and equipment. This requirement was implied in ISO 14001:2004 clause 4.4.6, Operational control (and clause 4.3.1, Environmental aspects); however, ISO 14001:2015 now explicitly requires the organization to evaluate and adjust operational controls when new processes or equipment is added to the operation.</p>
+
+<p>Chapter 8 provides additional detail on the expanded requirements in clause 8 of ISO 14001:2015.</p>
+
+<h3>Auditor Interpretations</h3>
+
+<p>The new or expanded ISO 14001:2015 requirements outlined here will be somewhat subjective for the third-party auditors to evaluate. When will an organization be judged nonconforming in addressing the context/interested parties, risk analysis, or top management commitment? If there are no examples of proactive initiatives related to reducing the organization’s environmental impact, is that a nonconformance? My past experience in auditing to the ISO 14001 environmental standards (and ISO 9001 for quality) was that the auditor would not issue nonconformances when the organization did not meet its improvement objective or goal—provided the organization either documented the reason why the goal was missed or established actions to correct the situation. At a minimum, an organization is expected to have some form of “risk analysis” process related to the EMS. I would expect third-party auditors to follow this guideline when assessing performance against the new ISO 14001:2015 requirements. With regard to assessing top management commitment to the EMS, an experienced third-party auditor can detect when resources are not adequate to support the EMS—and will issue nonconformances as applicable.</p>
+
+<p>Two other changes (but not new requirements) are the modification of the clause outlines and documentation formatting. These changes were made in ISO 14001:2015 to provide alignment with the formatting of ISO 9001:2015. Chapter 7 outlines these adjustments. Appendix A, “Correspondence: ISO 14001:2015 to ISO 14001:2004,” provides clause-by-clause correspondence of the two standards.</p>
+
+<h3>Transitional Period of ISO 14001:2015</h3>
+
+<p>ISO 14001:2015 was published on September 15, 2015. Companies that are certified to ISO 14001:2004 will have three years to bring their EMS up to date with ISO 14001:2015. Eventually all certificates in accordance with ISO 14001:2004 will become invalid and will be withdrawn as of September 15, 2018.</p>
+
+<p>It is usually more efficient for both the organization and the ISO registrar to conduct the upgrade audit to ISO 14001:2015 during the organization’s three-year recertification audit; however, the upgrade can occur during the annual surveillance audit.</p>
+
+<h2>ISO 14001 BENEFITS</h2>
+
+<p>I have presented overviews of ISO 14001 to managers and executives at several large companies over the past several years. The agenda for the meetings typically included:</p>
+
+<ul>
+    <li>Major elements of ISO 14001</li>
+    <li>ISO 14001 common “gaps”</li>
+    <li>ISO 14001 best practices</li>
+    <li>Benefits of an EMS</li>
+    <li>Role of senior management</li>
+    <li>Steps toward third-party registration</li>
+    <li>Questions and wrap-up</li>
+</ul>
+
+<p>Note: Appendix B summarizes the key points from the presentation and may be useful for organizations looking to certify to ISO 14001:2015. A review of the benefits of ISO 14001 is included in this chapter before moving on to defining the requirements of ISO 14001:2015.</p>
+
+<p>Most management teams want to understand the return on their investment in an EMS and why they should obtain third-party certification to ISO 14001. What are the benefits of an EMS? In many cases, the company is already “committed” to certifying to ISO 14001 by way of a requirement placed on them by customers, often from the automotive sector or firms from Europe or Asia. Depending on the organization’s business model and environmental impact, potential benefits in certifying can be grouped into three categories: risk reduction, cost reduction, and enhanced competitive edge.</p>
+
+<h3>Risk Reduction</h3>
+
+<ul>
+    <li>Environmental legal liability</li>
+    <li>Accidents and environmental damage</li>
+</ul>
+
+<h3>Cost Reduction</h3>
+
+<ul>
+    <li>Disposal costs</li>
+    <li>Utility costs</li>
+    <li>Permitting fees</li>
+</ul>
+
+<h3>Competitive Edge</h3>
+
+<ul>
+    <li>Improved corporate image</li>
+    <li>Investment in long-term stability</li>
+    <li>Improved relations with regulators</li>
+    <li>Counter international market pressures</li>
+    <li>Strategic investment now versus necessary expense later</li>
+    <li>Demonstration of leadership</li>
+</ul>
+
+<p>It can be difficult to place hard dollar amounts on the savings or cost avoidance in managing an organization’s EMS. In relative terms, the cost of implementing an ISO 14001 system as a preventive action versus the cost of environmental noncompliance is illustrated in Table 2.1.</p>
+
+<p><strong>Table 2.1</strong> Relative costs of ISO 14001: prevention versus response to errors.</p>
+
+<p>My “exponential” ranking may be soft in today’s noncompliance penalties process, where regulatory fines can be in the hundreds of thousands of dollars. A local newspaper recently reported on a laboratory that was fined by the Massachusetts Department of Environmental Protection (MassDEP):</p>
+
+<p><em>An environmental testing company based in Marlborough will pay $100,000 to resolve allegations it failed to comply with hazardous waste laws, in violation of a previous court judgment.</em></p>
+
+<p><em>The Massachusetts Attorney General’s Office announced Thursday that Accutest Laboratories of New England, Inc. recently reached a settlement with the state after being accused of failing to make improvements at its facility as required by a previous court ruling.</em></p>
+
+<p><em>State officials allege the company improperly stored hazardous waste for longer than permitted, did not properly label hazardous waste containers and violated other waste storage rules.</em></p>
+
+<p><em>State environmental officials also allege the company’s efforts to prevent emergencies at its analytical laboratory in Marlborough were inadequate, and that it should have provided more training for employees about handling hazardous waste.</em></p>
+
+<p><em>“This company ignored the terms of a court judgment,” Attorney General Maura Healey said in a prepared statement. “We expect defendants in all cases, including companies caught violating environmental laws that protect public health and natural resources, to take their compliance obligations seriously.”</em></p>
+
+<p><em>Accutest was ordered to pay a $350,000 fine in May 2014, settling prior allegations the company failed to obtain necessary permits to emit large quantities of hazardous pollutants into the air.</em></p>
+
+<p><em>According to Healey’s office, the company was accused of underreporting the level of hazardous waste it was generating to the state Department of Environmental Protection. It was ordered to apply for a new air permit and install emission control equipment to reduce emissions by 95 percent, according to Healey’s office.</em></p>
+
+<p><em>Inspectors from MassDEP visited Accutest’s facility in Marlborough again in October 2014 and found that, while the company had taken “appropriate steps” to comply with air permitting requirements, the building still did not comply with hazardous waste laws, according to the state.</em></p>
+
+<p><em>The company has since corrected the problems. It was also ordered to hire an environmental health and safety officer to ensure it is complying with environmental laws. The employee must remain on staff while the court order is in effect—a period of at least three years, according to Healey’s office. (Haddadin 2015)</em></p>
+
+<p>The irony of the citation is that the laboratory performed environmental testing services including organic and inorganic analysis of air, water, soil, and waste characterization in support of federal and state environmental programs. The firm’s website did not indicate certification to ISO 14001 (or ISO 9001).</p>
+
+<p>The violations cited provide both an excellent segue to subsequent chapters of The ISO 14001:2015 Implementation Handbook and justification for becoming certified to ISO 14001. A properly implemented EMS requires controls and auditing for all the issues raised by MassDEP (see Table 2.2).</p>
+
+<p><strong>Table 2.2</strong> Environmental violations at laboratory as related to ISO 14001.</p>
+
+<p>Additionally, an ISO 14001–certified company is required to perform internal and compliance-based self-audits. Either type of audit would have helped the laboratory address the issues before they became external violations. In similar cases, the EPA has mandated that the offending organization require certification by a third party, often a registrar providing ISO 14001 certification. I have audited several firms to ISO 14001 based on responses to violations cited by the EPA. Appendix D, “United States Environmental Protection Agency Enforcement Annual Results for Fiscal Year (FY) 2015,” describes other notifications of violations raised during 2015.</p>
+
+<h3>Cost Reductions and ISO 14001</h3>
+
+<p>In addition to avoiding the costs of environmental noncompliance, organizations that establish a formal EMS and become certified to ISO 14001 can benefit by reduced disposal costs, utility costs, and permitting fees. Some possibilities I have encountered at various organizations are listed in Table 2.3.</p>
+
+<p><strong>Table 2.3</strong> Cost benefits of ISO 14001.</p>
+
+<p>Many organizations without ISO 14001 certification are already achieving the cost savings outlined by exercising good business practices and environmental management. Well-managed companies, when seeking ISO 14001 certification (often due to customer decree), are challenged to demonstrate improvements in their environmental performance, as they have already harvested the low-hanging fruit. In my experience auditing many companies, there are always opportunities for improvements, particularly in large manufacturing plants. Reduction of utility costs, energy savings, material substitution, and recycling programs are an ongoing challenge for all in industry. For smaller firms with minimal environmental impact, an experienced third-party auditor will understand their challenge and review other facets of the organization’s environmental performance to assess performance.</p>
+
+<p>While auditing a small, low environmental impact machine shop that was forced into ISO 14001 by a customer, I was informed by the plant manager: “Well, this ISO certification will cost us $10,000 this year. I told the guys—we better find some way to pay for it.” And, they did. The shop put a push on separation of metal waste types. They found that by developing a process to remove the lubricating oil, the recycled material was more valuable to the recycling company. Also, by managing the quantity of recycled material to equal a full truckload, savings were generated in shipping. The savings continued into the next year as well.</p>
+
+<h1>Chapter 3 ISO 14001:2015 Requirements</h1>
+
+<p>In the 2015 revisions, ISO formatted the management systems in sections for both quality (ISO 9001:2015) and environmental (ISO 14001:2015):</p>
+
+<ul>
+    <li>Scope</li>
+    <li>Normative references</li>
+    <li>Terms and definitions</li>
+    <li>Context of the organization</li>
+    <li>Leadership</li>
+    <li>Planning</li>
+    <li>Support</li>
+    <li>Operation</li>
+    <li>Performance evaluation</li>
+    <li>Improvement</li>
+</ul>
+
+<h2>SCOPE</h2>
+
+<p>This International Standard specifies the requirements of an EMS for organizations seeking to establish, implement, maintain, and continually improve a framework with the aim of managing its environmental responsibilities in a manner that contributes to the “environmental pillar” of sustainability. The intended outcomes of an EMS provide value for the environment, the organization, and its interested parties. Consistent with the organization’s environmental policy, the intended outcomes of an EMS include enhancement of environmental performance, conformance to compliance obligations, and fulfillment of environmental objectives. This International Standard is applicable to any organization regardless of size, type, or nature and applies to the environmental aspects that the organization determines it can either control or influence considering a life-cycle perspective. It does not state specific environmental performance criteria, nor does it increase or change an organization’s legal obligations.</p>
+
+<p>This International Standard can be used in whole or in part to improve environmental management, but all the requirements are intended to be incorporated into an EMS and fulfilled, without exclusion, if an organization claims it complies with this International Standard.</p>
+
+<h2>NORMATIVE REFERENCES</h2>
+
+<p>No normative references are cited. This clause is included to maintain clause numbering alignment with other ISO management system standards.</p>
+
+<h2>TERMS AND DEFINITIONS</h2>
+
+<p>See Appendix C (refer to pp. 1–6 of ASQ/ANSI/ISO 14001:2015).</p>
+
+<h2>CLAUSES 4–10</h2>
+
+<p>Sections (clauses) 4–10 provide the requirements for certification to ISO 14001:2015. Note: In the chapters following, the general requirements of each ISO 14001: 2015 clause are paraphrased in the opening box. “Needs to” and “should” indicate requirements. Where requirements in ISO 14001:2015 have changed from ISO 14001:2004, the issue is highlighted in the text in bold.</p>
+
+<h1>Chapter 4 Clause 4: Context of the Organization</h1>
+
+<p>In previous revisions of ISO 14001, the organization was required to define and document the scope of its EMS. There was some confusion as to what was meant by “scope.” Could the organization exclude certain activities at the site? How about organizations that lease or rent the site? What was the leaseholder responsible for in environmental controls? In ISO 14001:2015, the context, scope, and boundaries of the organization’s EMS need to be clearly defined to provide a baseline for control and monitoring. In general terms, the scope, boundaries, and context as related to an EMS can be explained as follows.</p>
+
+<h2>SCOPE</h2>
+
+<p>The scope is what the organization does, the products or services the organization provides. For organizations with a quality management system (QMS), the scope is what the organization states on its ISO 9001 certificate and advertising media. For example, a plastic manufacturer might have “Manufacturer of injection molded products” as its scope. This scope would apply for this organization’s EMS, but more information is needed in the scope to describe the boundaries included in the organization’s responsibilities and the context of its commitments.</p>
+
+<h2>BOUNDARIES</h2>
+
+<p>The scope needs to define the spatial and organizational boundaries to which the EMS will apply, especially if the organization is part of a larger organization at a given location. How many sites (building addresses) are under the scope? Who owns the property? If the organization does not own the site(s) but leases the properties from a landlord (leaseholder), then the responsibilities for the organization and the landlord need to be defined. What is the leaseholder responsible for in environmental controls? Are there manufacturing or service groups located on the organization’s site that are not in the scope of the EMS? The organization needs to define and clarify environmental aspects and impacts under its control.</p>
+
+<p>The boundaries and site ownership should not be considered a form of “exclusion” or “outsourcing.” In the case where the organization leases the property, the organization has responsibility to ensure its processes or activities do not have an adverse environmental impact on the leaseholder’s property. While the leaseholder may hold the storm water or wastewater permits for the site, there should be clear definition as to the organization’s responsibilities. Likewise, if the organization rents out portions of the site to another firm, the organization has responsibility to ensure the renter does not have an adverse impact on the organization’s EMS.</p>
+
+<h2>CONTEXT OF THE ORGANIZATION</h2>
+
+<p><strong>The organization needs to determine the external and internal issues that are relevant to its purpose and that affect its ability to achieve the intended outcomes of its EMS.</strong> The organization should consider the environmental conditions that could affect its operations or be affected by its operations, such as climate change, air quality, water quality, land use, existing contamination, natural resource availability, and biodiversity.</p>
+
+<p>The organization needs to identify the interested parties relevant to the EMS and their needs and expectations. Some of these needs and expectations may become compliance obligations.</p>
+
+<p>The organization needs to determine the scope of the EMS, considering its boundaries, activities, products, and services, and document this information.</p>
+
+<p>The organization needs to establish, implement, maintain, and continually improve an EMS, including the processes needed and their interactions, in accordance with ISO 14001:2015 requirements.</p>
+
+<p>The context of the organization is a new requirement in ISO 14001:2015 and involves understanding both internal and external issues that can affect the EMS. Internal issues might include organizational culture, resources, and capabilities, while external issues could encompass legal, technological, competitive, market, cultural, social, and economic environments.</p>
+
+<p>Table 4.1 provides examples of the context and interested parties for various types of organizations.</p>
+
+<p><strong>Table 4.1</strong> Examples of the context and interested parties for various types of organizations.</p>
+
+<p>The policies established by the organization should be specific to its business context. For example, a chemical plant might focus on reducing emissions and waste, while a service provider might emphasize energy efficiency and sustainable procurement.</p>
+
+<h1>Chapter 5 Clause 5: Leadership</h1>
+
+<p><strong>Top management needs to demonstrate leadership and commitment to the EMS by ensuring that the environmental policy and objectives are established and compatible with the strategic direction and context of the organization. Top management should ensure the integration of the EMS into the organization’s business processes, provide resources, communicate the importance of the EMS, and promote continual improvement.</strong></p>
+
+<h2>5.2 Environmental Policy</h2>
+
+<p><strong>Top management needs to establish, implement, and maintain an environmental policy that is appropriate to the purpose and context of the organization, provides a framework for setting environmental objectives, includes commitments to protect the environment, fulfill compliance obligations, and continually improve the EMS. The policy should be documented, communicated within the organization, and available to interested parties.</strong></p>
+
+<p>Figure 5.1 provides a sample environmental policy.</p>
+
+<p><strong>Figure 5.1</strong> Sample environmental policy.</p>
+
+<h2>5.3 Organizational Roles, Responsibilities and Authorities</h2>
+
+<p><strong>Top management needs to ensure that relevant roles, responsibilities, and authorities are assigned and communicated within the organization to facilitate effective EMS implementation and maintenance. Top management should assign responsibility for reporting on the performance of the EMS.</strong></p>
+
+<p>The requirement for top management to demonstrate leadership and commitment is expanded in ISO 14001:2015. The intent is to ensure that the EMS is not just delegated to a lower level but is actively supported and directed by top management. This shift moves away from the previous “Management Representative” role, emphasizing that environmental management is a core leadership responsibility.</p>
+
+<h1>Chapter 6 Clause 6: Planning</h1>
+
+<p><strong>The organization needs to establish a planning process to address risks and opportunities, determine environmental aspects and their impacts, identify compliance obligations, and set environmental objectives and plans to achieve them.</strong></p>
+
+<h2>6.1 Actions to Address Risks and Opportunities</h2>
+
+<h3>6.1.2 Environmental Aspects</h3>
+
+<p><strong>The organization needs to determine the environmental aspects of its activities, products, and services that it can control and influence, considering a life-cycle perspective. The organization should determine which aspects have or can have a significant environmental impact (significant environmental aspects—SEAs) and document this information.</strong></p>
+
+<p>Figure 6.1 provides an example of environmental aspects and impacts for an injection molding operation.</p>
+
+<p><strong>Figure 6.1</strong> Environmental aspects and impacts for injection molding operation example.</p>
+
+<p>Table 6.1 shows an aspect rating for an injection molding plant.</p>
+
+<p><strong>Table 6.1</strong> Injection molding plant aspect rating.</p>
+
+<p>Table 6.2 relates environmental aspects to interested parties.</p>
+
+<p><strong>Table 6.2</strong> Environmental aspects related to interested parties.</p>
+
+<h3>6.1.3 Compliance Obligations</h3>
+
+<p><strong>The organization needs to determine and have access to the compliance obligations related to its environmental aspects, determine how these apply to the organization, and take them into account when establishing, implementing, and maintaining its EMS. Compliance obligations should be documented.</strong></p>
+
+<p>Figure 6.2 illustrates inputs to compliance obligations.</p>
+
+<p><strong>Figure 6.2</strong> Inputs to compliance obligations.</p>
+
+<p>Table 6.3 lists regulated aspects for the injection molding plant.</p>
+
+<p><strong>Table 6.3</strong> Regulated aspects for the injection molding plant.</p>
+
+<p>Table 6.4 provides environmental regulations for the injection molding plant.</p>
+
+<p><strong>Table 6.4</strong> Environmental regulations for the injection molding plant.</p>
+
+<p>Table 6.5 is an EPA compliance list for the injection molding plant.</p>
+
+<p><strong>Table 6.5</strong> EPA compliance list for injection molding plant.</p>
+
+<p>Table 6.6 outlines industry compliance obligations for the injection molding plant.</p>
+
+<p><strong>Table 6.6</strong> Industry compliance obligations for injection molding plant.</p>
+
+<h3>6.1.4 Planning Action (Risk Analysis)</h3>
+
+<p><strong>The organization needs to plan actions to address its significant environmental aspects, compliance obligations, and risks and opportunities identified in 6.1.1. The organization should consider how to integrate and implement these actions into its EMS processes and evaluate their effectiveness.</strong></p>
+
+<p>Table 6.7 provides an aspects risk assessment.</p>
+
+<p><strong>Table 6.7</strong> Aspects risk assessment.</p>
+
+<p>Table 6.8 provides a compliance obligations risk assessment.</p>
+
+<p><strong>Table 6.8</strong> Compliance obligations risk assessment.</p>
+
+<p>The requirement for risk analysis is a significant change in ISO 14001:2015, emphasizing a proactive approach to managing environmental risks and opportunities.</p>
+
+<h2>6.2 Environmental Objectives and Planning to Achieve Them</h2>
+
+<p><strong>The organization needs to establish environmental objectives at relevant functions and levels, taking into account its significant environmental aspects and compliance obligations. The objectives should be measurable (if practicable), monitored, communicated, and updated as appropriate. The organization should plan how to achieve these objectives, including what will be done, resources required, responsibilities, timeframes, and how results will be evaluated.</strong></p>
+
+<p>Figure 6.3 illustrates processes to maintain compliance and improve the EMS.</p>
+
+<p><strong>Figure 6.3</strong> Processes to maintain compliance and improve the EMS.</p>
+
+<p>Figure 6.4 shows inputs for determining environmental objectives, targets, and programs.</p>
+
+<p><strong>Figure 6.4</strong> Inputs for determining the environmental objectives, targets, and programs.</p>
+
+<p>Table 6.9 provides a potential objectives analysis.</p>
+
+<p><strong>Table 6.9</strong> Potential objectives analysis.</p>
+
+<p>Table 6.10 lists 2015 environmental objectives as of January 5, 2015.</p>
+
+<p><strong>Table 6.10</strong> 2015 Environmental Objectives—January 5, 2015.</p>
+
+<p>Figure 6.5 provides an example of an environmental program.</p>
+
+<p><strong>Figure 6.5</strong> Example: environmental program.</p>
+
+<h1>Chapter 7 Clause 7: Support</h1>
+
+<p><strong>The organization needs to determine and provide the resources needed for the establishment, implementation, maintenance, and continual improvement of the EMS. This includes determining competence, ensuring awareness, establishing communication processes, and managing documented information.</strong></p>
+
+<h2>7.2 Competence</h2>
+
+<p><strong>The organization needs to determine the necessary competence of persons doing work under its control that affects its environmental performance, ensure these persons are competent based on education, training, or experience, and retain documented information as evidence of competence.</strong></p>
+
+<p>Table 7.1 lists training requirements for environmental tasks.</p>
+
+<p><strong>Table 7.1</strong> Training requirements for environmental tasks.</p>
+
+<h2>7.3 Awareness</h2>
+
+<p><strong>The organization needs to ensure that relevant persons are aware of the environmental policy, significant environmental aspects, their roles in achieving compliance, and the implications of not conforming with EMS requirements.</strong></p>
+
+<h2>7.4 Communication</h2>
+
+<p><strong>The organization needs to establish processes for internal and external communication relevant to the EMS, including what, when, with whom, and how to communicate. The organization should ensure that environmental information communicated is consistent with the EMS and reliable.</strong></p>
+
+<p>Figure 7.1 illustrates the relationship of the subclauses of clause 7, Support.</p>
+
+<p><strong>Figure 7.1</strong> The relationship of the subclauses of clause 7, Support.</p>
+
+<p>Table 7.2 provides focus and evidence for competence, awareness, and communications clauses.</p>
+
+<p><strong>Table 7.2</strong> Focus and evidence for competence, awareness, and communications clauses.</p>
+
+<h2>7.5 Documented Information</h2>
+
+<p><strong>The organization needs to maintain documented information to support the effective implementation of the EMS. This includes creating, updating, and controlling documented information to ensure it is available, suitable, and protected.</strong></p>
+
+<p>Table 7.3 provides an example of an environmental records list.</p>
+
+<p><strong>Table 7.3</strong> Example of an environmental records list.</p>
+
+<h1>Chapter 8 Clause 8: Operation</h1>
+
+<p><strong>The organization needs to plan, implement, and control the processes needed to meet EMS requirements and implement actions identified in Clause 6 by establishing operating criteria and implementing control of the processes.</strong></p>
+
+<h2>8.1 Operational Planning and Control</h2>
+
+<p><strong>The organization needs to establish, implement, and maintain processes to control its significant environmental aspects, compliance obligations, and risks and opportunities. This includes outsourced processes and ensuring that contractors and suppliers conform to EMS requirements.</strong></p>
+
+<p>Table 8.1 provides focus for various requirements of clause 8.1, Operational planning and control.</p>
+
+<p><strong>Table 8.1</strong> Focus for various requirements of clause 8.1, Operational planning and control.</p>
+
+<p>Table 8.2 provides examples of operational controls for significant environmental aspects.</p>
+
+<p><strong>Table 8.2</strong> Examples of operational controls for significant environmental aspects.</p>
+
+<p>Table 8.3 provides examples of operational controls for the injection molding plant’s environmental aspects.</p>
+
+<p><strong>Table 8.3</strong> Examples of operational controls for the injection molding plant’s environmental aspects.</p>
+
+<p>Table 8.4 lists environmental activities for suppliers, temporary workers, and contractors.</p>
+
+<p><strong>Table 8.4</strong> Environmental activities for suppliers, temporary workers, and contractors.</p>
+
+<h2>8.2 Emergency Preparedness and Response</h2>
+
+<p><strong>The organization needs to establish, implement, and maintain processes to prepare for and respond to potential emergency situations that could have an environmental impact. This includes identifying potential emergencies, planning response actions, testing response procedures, and providing training.</strong></p>
+
+<h1>Chapter 9 Clause 9: Performance Evaluation</h1>
+
+<p><strong>The organization needs to monitor, measure, analyze, and evaluate its environmental performance, evaluate compliance with obligations, conduct internal audits, and review the EMS through management review.</strong></p>
+
+<h2>9.1 Monitoring, Measurement, Analysis and Evaluation</h2>
+
+<p><strong>The organization needs to monitor, measure, analyze, and evaluate its environmental performance, including significant environmental aspects and compliance obligations, and retain documented information as evidence.</strong></p>
+
+<p>Figure 9.1 illustrates the subclauses of clause 9.0.</p>
+
+<p><strong>Figure 9.1</strong> The subclauses of clause 9.0.</p>
+
+<p>Table 9.1 provides examples of monitoring various EMS processes.</p>
+
+<p><strong>Table 9.1</strong> Examples: monitoring of various EMS processes.</p>
+
+<p>Table 9.2 provides monitoring of ISO 14001:2015 clauses related to managing hazardous waste.</p>
+
+<p><strong>Table 9.2</strong> Monitoring of ISO 14001:2015 clauses related to managing hazardous waste.</p>
+
+<h2>9.1.2 Evaluation of Compliance</h2>
+
+<p><strong>The organization needs to establish, implement, and maintain processes to evaluate fulfillment of its compliance obligations, take action if needed, and retain documented information as evidence.</strong></p>
+
+<h2>9.2 Internal Audit</h2>
+
+<p><strong>The organization needs to conduct internal audits at planned intervals to determine whether the EMS conforms to ISO 14001:2015 and its own requirements and is effectively implemented and maintained.</strong></p>
+
+<p>Figure 9.2 provides a sample audit plan.</p>
+
+<p><strong>Figure 9.2</strong> A sample audit plan.</p>
+
+<p>Figure 9.3 provides a sample check sheet for clause 8.1, Operational control and planning.</p>
+
+<p><strong>Figure 9.3</strong> Sample check sheet for clause 8.1, Operational control and planning.</p>
+
+<h2>9.3 Management Review</h2>
+
+<p><strong>Top management needs to review the EMS at planned intervals to ensure its continuing suitability, adequacy, and effectiveness, and to identify opportunities for improvement.</strong></p>
+
+<h1>Chapter 10 Clause 10: Improvement</h1>
+
+<p><strong>The organization needs to determine opportunities for improvement and implement necessary actions to achieve the intended outcomes of its EMS.</strong></p>
+
+<h2>10.1 General</h2>
+
+<p><strong>The organization needs to determine opportunities for improvement and implement actions to enhance environmental performance.</strong></p>
+
+<h2>10.2 Nonconformity and Corrective Action</h2>
+
+<p><strong>The organization needs to react to nonconformities, take action to control and correct them, and deal with the consequences. The organization should evaluate the need for action to eliminate the causes of nonconformities to prevent recurrence, implement corrective actions, and review their effectiveness.</strong></p>
+
+<p>Table 10.1 provides an example of objective evidence to support the organization’s improvement activities.</p>
+
+<p><strong>Table 10.1</strong> Example of objective evidence to support the organization’s improvement activities.</p>
+
+<p>Table 10.2 provides an example of environmental issues noted during plant inspections.</p>
+
+<p><strong>Table 10.2</strong> Example: environmental issues noted during plant inspections.</p>
+
+<h2>10.3 Continual Improvement</h2>
+
+<p><strong>The organization needs to continually improve the suitability, adequacy, and effectiveness of the EMS to enhance environmental performance.</strong></p>
+
+<h1>Chapter 11 Summary Conclusion</h1>
+
+<p>The EMS as a process is summarized in Figure 11.1.</p>
+
+<p><strong>Figure 11.1</strong> The EMS as a process.</p>
+
+<p>Table 11.1 links ISO 14001:2015 clauses to the PDCA cycle.</p>
+
+<p><strong>Table 11.1</strong> ISO 14001:2015 clauses linked to PDCA.</p>
+
+<h1>Appendix A Correspondence: ISO 14001:2015 to ISO 14001:2004</h1>
+
+<p>[Content of Appendix A]</p>
+
+<h1>Appendix B ISO 14001 Workshop for Managers and Employees</h1>
+
+<p>[Content of Appendix B]</p>
+
+<h1>Appendix C Definitions from ISO 14001:2015</h1>
+
+<p>[Content of Appendix C]</p>
+
+<h1>Appendix D United States Environmental Protection Agency Enforcement Annual Results for Fiscal Year (FY) 2015</h1>
+
+<p><strong>EPA Enforcement Annual Results for Fiscal Year (FY) 2015</strong></p>
+
+<p>The EPA concluded civil and criminal enforcement cases in 2015 that resulted in significant penalties and commitments to reduce pollution:</p>
+
+<ul>
+    <li><strong>Civil Enforcement:</strong> Over $2 billion in penalties and $4 billion in injunctive relief.</li>
+    <li><strong>Criminal Enforcement:</strong> 129 defendants charged, resulting in 91 years of incarceration and $169 million in fines and restitution.</li>
+    <li><strong>Notable Cases:</strong> Settlements with companies like Duke Energy, Mosaic Fertilizer, and Noble Energy for violations related to air, water, and hazardous waste management.</li>
+</ul>
+
+<h1>Appendix E EPA Regulations</h1>
+
+<p><strong>The following US laws and regulations are available on the EPA website (http://www.epa.gov). The notes are current as of January 2015.</strong></p>
+
+<h2>CLEAN AIR ACT</h2>
+
+<p>The Clean Air Act (CAA) 42 U.S.C. §7401 et seq. (1970) is the comprehensive federal law that regulates air emissions from stationary and mobile sources...</p>
+
+<h2>CLEAN WATER ACT</h2>
+
+<p>Wastewater Management. Under the CWA’s National Pollutant Discharge Elimination System (NPDES) program...</p>
+
+<h2>SAFE DRINKING WATER ACT (SDWA)</h2>
+
+<p>Drinking Water. EPA safeguards human health by enforcing the requirements of the SDWA...</p>
+
+<h2>WASTE, CHEMICAL, AND CLEANUP ENFORCEMENT</h2>
+
+<p>EPA enforces a variety of environmental requirements related to pollution by waste and chemicals...</p>
+
+<h2>OIL POLLUTION ACT (OPA)</h2>
+
+<p>The Oil Pollution Act (OPA) was signed into law in August 1990...</p>
+
+<h2>THE PHASE-OUT OF OZONE-DEPLETING SUBSTANCES</h2>
+
+<p>EPA regulations issued under Sections 601–607 of the Clean Air Act phase out the production and import of ozone-depleting substances (ODS)...</p>
+
+<h2>UNIVERSAL WASTES</h2>
+
+<p>EPA’s universal waste regulations streamline hazardous waste management standards for federally designated “universal wastes”...</p>
+
+<h1>References</h1>
+
+<ul>
+    <li>ASQ/ANSI/ISO 14001:2015. Environmental management systems—Requirements with guidance for use. September 2015.</li>
+    <li>Haddadin, Jim. 2015. “Marlborough Lab Company Hit with $100K Environmental Fine.” MetroWest Daily News, December 4.</li>
+    <li>Occupational Safety and Health Administration—OSHA 3084 1998, Federal Register.</li>
+</ul>
+
+<h1>Index</h1>
+
+<p>[Content of Index]</p>
+
+<h1>About the Author</h1>
+
+<p>Milton Dentch was born and raised in the Worcester, Massachusetts, area. He has a BS in mechanical engineering from Worcester Polytechnic Institute and an MS in quality management systems from the National Graduate School of Quality Management (NGS). After college, he worked as an engineer in the paper industry for 5 years, then he worked as an engineer and manager at the Polaroid Corporation in Waltham, Massachusetts, for 27 years...</p>
+]]>
+        </field>
+    </record>
+
+</odoo>

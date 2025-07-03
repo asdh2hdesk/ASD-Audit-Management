@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Add a button to the mgmtsystem.nonconformity form view -->
+    <record id="view_nonconformity_form_inherit" model="ir.ui.view">
+        <field name="name">mgmtsystem.nonconformity.form.inherit</field>
+        <field name="model">mgmtsystem.nonconformity</field>
+        <field name="inherit_id" ref="mgmtsystem_nonconformity.view_mgmtsystem_nonconformity_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//header" position="inside">
+                    <button name="action_generate_nonconformities_report" string="Download Report"
+                            type="object" class="oe_highlight"/>
+            </xpath>
+            <!-- Add the button to the form view -->
+
+
+        </field>
+    </record>
+</odoo>

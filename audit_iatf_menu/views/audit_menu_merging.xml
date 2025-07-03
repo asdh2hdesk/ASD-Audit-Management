@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <!-- <menuitem
+        id="mgmtsystem.menu_mgmtsystem_root"
+        name="Smart Audit System"
+        web_icon="mgmtsystem,static/description/icon.png"
+        sequence="5"
+        parent="iatf.iatf_menu_root"
+        groups="mgmtsystem.group_mgmtsystem_manager,mgmtsystem.group_mgmtsystem_viewer,mgmtsystem.group_mgmtsystem_auditor"
+    /> -->
+
+    <record id="mgmtsystem.menu_mgmtsystem_root" model="ir.ui.menu">
+        <field name="parent_id" ref="iatf.iatf_menu_root"/>
+        <field name="sequence">8</field>
+    </record>
+    
+</odoo>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Form View -->
+    <record id="view_mgmtsystem_audit_auditor_report" model="ir.ui.view">
+        <field name="name">mgmtsystem.audit.form.view.inherited</field>
+        <field name="model">mgmtsystem.audit</field>
+        <field name="inherit_id" ref="mgmtsystem_audit.view_mgmtsystem_audit_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//header" position="after">
+                <header>
+                    <button name="action_generate_audit_report"
+                            string="Download Report"
+                            type="object"
+                            class="oe_highlight"/>
+                </header>
+            </xpath>
+<!--            <xpath expr="//sheet/group" position="inside">-->
+<!--                <field name="generate_xls_file" filename="name" invisible="1"/>-->
+<!--            </xpath>-->
+        </field>
+    </record>
+</odoo>
