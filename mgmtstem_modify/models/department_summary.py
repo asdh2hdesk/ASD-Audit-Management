@@ -64,14 +64,14 @@ class DepartmentAuditSummary(models.Model):
             record.minor_nc_count = minor_nc_count
             record.action_count = action_count
 
-class HrDepartment(models.Model):
-    _inherit = 'hr.department'
-    
-    def create(self, vals):
-        """Override create to automatically generate a summary record."""
-        dept = super(HrDepartment, self).create(vals)
-        self.env['department.audit.summary'].create({'department_id': dept.id})
-        return dept
+# class HrDepartment(models.Model):
+#     _inherit = 'hr.department'
+#
+#     def create(self, vals):
+#         """Override create to automatically generate a summary record."""
+#         dept = super(HrDepartment, self).create(vals)
+#         self.env['department.audit.summary'].create({'department_id': dept.id})
+#         return dept
 
 class MgmtsystemNonconformity(models.Model):
     _inherit = "mgmtsystem.nonconformity"
